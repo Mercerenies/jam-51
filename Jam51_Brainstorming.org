@@ -1,0 +1,148 @@
+
+* JAM 51
+  Just some rough brainstorming. I'm kind of assuming it's BLENDING
+  IN, which is what I really want it to be.
+
+  A convention of supervillains is meeting to discuss, well,
+  supervillainy. You are a top secret government agent, sent to
+  infiltrate the convention and learn all of their secrets.
+
+  Potential cameos from old Jam games: Icosaking, Barry TBO, Dr.
+  Meguruku (Rabbit Hole), the GMCynchronized Clown, Maxwell Sterling
+  (not a villain but got invited anyway as an important CEO figure)
+
+  The gameplay is a top-down RPG-style world. Most villains will want
+  to challenge you to a card game. This is a deck-builder, and you
+  start with a pretty basic deck.
+
+  Each deck must contain exactly 20 cards and can contain at most 3
+  copies of any given card.
+** SPOILS
+   When you lose a card game, you... probably don't lose anything.
+   Maybe a bit of money.
+
+   When you win a card game, you get money and a card. By default, you
+   get a common card from a loot pool, and those are renewable. But
+   most villains have one or more secondary goals that will impress
+   them (i.e. things you can do during the card game). If you
+   accomplish these goals during the game, then instead of getting a
+   common card, you get a rare, one-of-a-kind card from that villain
+   (up to and including the villain themselves, maybe?). Each villain
+   goal gives you a different card, and you can only collect each rare
+   card once.
+
+   Some common and uncommon cards are also available in shops or as
+   rewards for other RPG-style quests. There will be a Pokemon-style
+   "catch em all" objective, so I'll show a percentage somewhere of
+   how many unique cards you've collected.
+** VILLAINS
+   Enemy players who appear in the game and can be faced.
+   + Minionman :: Gimmick villain whose entire deck is minions. He
+     acts as the first tutorial.
+   + General Badguy :: Obviously a superhero in a bad disguise. Acts
+     as the tutorial for Hero cards.
+   + ??? :: (Tutorial for Invention cards)
+   + ??? :: (Tutorial for Hostage cards)
+   + Barry :: ???
+   + Icosaking :: ???
+   + Dr. Meguruku :: ???
+   + The Clown :: ???
+   + Maxwell Sterling :: ???
+   + The Milkman :: ???
+   + Count Carbonara :: ???
+   + Fireman :: A fire-breathing dragon-turtle thing that's definitely
+     /not/ inspired by Nintendo.
+   + Beekeeper :: ???
+   + Skullz :: Spiky-haired creep who loves graveyards
+** CARD GAME RULES
+   The game proceeds on a turn-by-turn basis. The human player
+   character always goes first, and turns alternate from there.
+
+   The two players are trying to take over the same city. The players
+   are trying to raid the city from opposite sides, and they
+   independently work on wittling away that side of the city's hit
+   points. Whoever gets their side down to zero first wins
+   immediately. (Cities may have special gimmicks, depending on who
+   you're playing against)
+
+   Both players start with five cards in hand. Each player's deck must
+   have exactly twenty cards in it.
+
+   To start your turn, you perform your attack phase. All of your
+   Minions attack the city and deal damage equal to their level. Next
+   is the morale phase: all of your Minions (even those that did not
+   attack due to an effect) lose 1 Morale. After the morale phase is
+   the standby phase, where all cards which "last X turns" tick down
+   their turn counter and are discarded if necessary.
+
+   Next, you get a certain number of Evil Points (EP). The number of
+   Evil Points you get is 2 on the first turn, 3 on the second, then 4
+   on the third, and so on up to a maximum of 8 on the seventh turn
+   and beyond. Evil Point income can also be modified by cards. Any
+   Evil Points not spent are lost at the end of the turn, so you can't
+   simply save them up forever. Most cards cost Evil Points to play.
+
+   Finally, you draw three cards, or until you have five cards,
+   whichever is less. Your hand limit, by default is 5, and you can
+   never draw beyond that amount, even if an effect tells you to.
+
+   After that, you are free to spend your Evil Points playing zero or
+   more cards, before ending your turn.
+
+   There are a few different types of cards: Minions, Heroes,
+   Inventions, and Hostages.
+
+   Side note: I may decide to just go with "Minions" vs "non-Minions"
+   to simplify things, rather than having four different types of
+   cards.
+*** MINIONS
+    Minions make up the bulk of your deck. Once played, they stay on
+    the field. At the start of your turn, all of your minions attack
+    the city, dealing damage equal to their attack power. Then all of
+    your minions lose one morale.
+
+    A minion with zero or less morale is instantly sent to the discard
+    pile.
+
+    Minion cards have the following stats.
+    + Cost :: Cost to play, in Evil Points. Usually equal to Level
+      times Morale.
+    + Level :: Attack power of the minion.
+    + Morale :: Goes down by one each time the minion attacks. Minion
+      dies when it hits zero.
+*** HEROES
+    Hero cards sabotage opponent minions, weakening them or lowering
+    their morale. Hero cards have a Cost to play and are, generally
+    speaking, instant effects that disappear after use.
+*** INVENTIONS
+    Inventions are passive buffs to your own minions. Inventions have
+    a Cost to play and remain in play until their effect is fulfilled
+    (usually a set number of turns).
+*** HOSTAGES
+    Hostages are sort of trap cards and act as your defense /against/
+    Heroes (i.e. the Hero gets busy saving the Hostage instead of
+    doing what he originally planned). You play a Hostage card
+    face-up, and then it passively activates whenever a Hero triggers
+    it.
+** PHASES
+   + Draw Phase :: You draw 3 cards, or up to your hand limit,
+     whichever is less. Gain EP at this time.
+   + Attack Phase :: Your minions attack
+   + Morale Phase :: All your Minions lose 1 Morale
+   + Standby Phase :: Cards which "last X turns" tick down and might
+     be discarded
+   + Main Phase :: Play cards in any order
+   + End Phase :: End of turn. Lose any unspent EP.
+** CARDS
+   See Jam51_Brainstorming.ods
+** ARCHETYPES
+   + The Milkman-themed cards are centered around adding Morale to
+     your own cards.
+   + Shape cards tend to immobilize or discard enemy Minions.
+   + Robots tend to be centered around powering themselves up.
+   + Ninjas render your cards immune to enemy effects.
+   + Bees summon large quantities of low-level minions.
+   + Humans tend to be persistent, even at low Morale.
+   + Pasta cards tend to let you draw more cards.
+   + Undead cards tend to revive themselves from the discard pile
+     frequently.
