@@ -10,11 +10,17 @@ if (array_length(cards) > 4) {
   draw_sprite_ext(sprite_index, 2, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }
 
+if (array_length(cards) > 0) {
+  var topCard = cards[array_length(cards) - 1];
+  var rot = (owner == CardPlayer.LEFT ? 0 : 180);
+  drawCard(topCard, x, cardY, image_xscale, image_yscale, rot, c_white, 1);
+}
+
 var overlayText = string(array_length(cards));
 var xx = mean(bbox_left, bbox_right);
 var yy = lerp(bbox_top, bbox_bottom, 0.8);
 draw_set_font(fnt_GeneralUI);
-draw_set_color(c_gray);
+draw_set_color(COLOR_UI_GRAY);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
@@ -26,9 +32,3 @@ draw_text(xx, yy, overlayText);
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-
-if (array_length(cards) > 0) {
-  var topCard = cards[array_length(cards) - 1];
-  var rot = (owner == CardPlayer.LEFT ? 0 : 180);
-  drawCard(topCard, xx, cardY, image_xscale, image_yscale, rot, c_white, 1);
-}

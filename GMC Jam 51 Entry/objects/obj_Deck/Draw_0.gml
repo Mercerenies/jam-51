@@ -11,7 +11,7 @@ var overlayText = string(array_length(cards)) + " / " + string(originalDeckSize)
 var xx = mean(bbox_left, bbox_right);
 var yy = lerp(bbox_top, bbox_bottom, 0.8);
 draw_set_font(fnt_GeneralUI);
-draw_set_color(c_gray);
+draw_set_color(COLOR_UI_GRAY);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
