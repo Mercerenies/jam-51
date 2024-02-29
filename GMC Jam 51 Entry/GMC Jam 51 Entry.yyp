@@ -33,6 +33,7 @@
     {"id":{"name":"obj_DebugCard","path":"objects/obj_DebugCard/obj_DebugCard.yy",},},
     {"id":{"name":"spr_CardImage","path":"sprites/spr_CardImage/spr_CardImage.yy",},},
     {"id":{"name":"scr_Constants","path":"scripts/scr_Constants/scr_Constants.yy",},},
+    {"id":{"name":"struct_CardPotOfLinguine","path":"scripts/struct_CardPotOfLinguine/struct_CardPotOfLinguine.yy",},},
     {"id":{"name":"fnt_CardStats","path":"fonts/fnt_CardStats/fnt_CardStats.yy",},},
     {"id":{"name":"struct_Card","path":"scripts/struct_Card/struct_Card.yy",},},
     {"id":{"name":"fnt_CardTitle","path":"fonts/fnt_CardTitle/fnt_CardTitle.yy",},},

@@ -1,6 +1,10 @@
 
 function CardMushroom() : MinionCard(1, 1) constructor {
 
+  static getId = function() {
+    return 1;
+  }
+
   static getName = function() {
     return "Mushroom";
   }

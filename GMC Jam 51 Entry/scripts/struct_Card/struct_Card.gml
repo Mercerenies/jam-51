@@ -6,6 +6,10 @@
 // which must be a 0-argument constructor function.
 function Card() {
 
+  static getId = function() {
+    // Abstract method
+  }
+
   static getName = function() {
     // Abstract method
   }
