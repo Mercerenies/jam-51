@@ -1,9 +1,9 @@
 
-var cardY = y + 7;
+var cardY = y + 7 * image_yscale;
 
 if (array_length(cards) > 4) {
   draw_sprite_ext(sprite_index, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
-  cardY -= 14;
+  cardY = y - 7 * image_yscale;
 } else if (array_length(cards) > 0) {
   draw_sprite_ext(sprite_index, 1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 } else {
@@ -26,3 +26,9 @@ draw_text(xx, yy, overlayText);
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+
+if (array_length(cards) > 0) {
+  var topCard = cards[array_length(cards) - 1];
+  var rot = (owner == CardPlayer.LEFT ? 0 : 180);
+  drawCard(topCard, xx, cardY, image_xscale, image_yscale, rot, c_white, 1);
+}

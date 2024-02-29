@@ -1,1 +1,0 @@
-card = new CardPotOfLinguine()

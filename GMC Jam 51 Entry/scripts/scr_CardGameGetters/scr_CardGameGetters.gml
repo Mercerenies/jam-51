@@ -7,3 +7,12 @@ function CardGame_getDeck(owner_value) {
   }
   throw "Could not find deck";
 }
+
+function CardGame_getDiscardPile(owner_value) {
+  with (obj_DiscardPile) {
+    if (owner == owner_value) {
+      return self.id;
+    }
+  }
+  throw "Could not find discard pile";
+}
