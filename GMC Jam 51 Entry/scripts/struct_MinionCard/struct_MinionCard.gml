@@ -23,6 +23,14 @@ function MinionCard(level_, morale_) : Card() constructor {
     // Abstract method, returns list of Archetypes.
   }
 
+  static getLevel = function() {
+    return _level;
+  }
+
+  static getMorale = function() {
+    return _morale;
+  }
+
   static _super_drawCard = drawCard;
 
   static drawCard = function(xx, yy) {

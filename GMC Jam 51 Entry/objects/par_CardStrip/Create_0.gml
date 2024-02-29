@@ -3,7 +3,7 @@
 cards = [];
 
 cardCenterX = function(index) {
-  return lerp(bbox_left, bbox_right, (index + 1) / (array_length(cards) + 2));
+  return lerp(bbox_left, bbox_right, (index + 1) / (array_length(cards) + 1));
 }
 
 getCardToShow = function(index) {
@@ -28,6 +28,10 @@ overlappingCard = function(xx, yy) {
     }
   }
   return best;
+}
+
+drawAtopCard = function(card, xx, yy) {
+  // Default implementation is empty
 }
 
 isHidden = function() {

@@ -1,4 +1,4 @@
 
 if (!CardGame_showingModal()) {
-  CardGame_showCardList(cards);
+  CardGame_showCardList(array_reverse(cards));
 }
