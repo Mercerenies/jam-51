@@ -12,7 +12,7 @@ function archetypeName(archetype) {
   case Archetype.TURTLE:
     return "Turtle"
   case Archetype.SHAPE:
-    return "Shape"
+    return "Geometry"
   case Archetype.PASTA:
     return "Pasta"
   case Archetype.CLOWN:
