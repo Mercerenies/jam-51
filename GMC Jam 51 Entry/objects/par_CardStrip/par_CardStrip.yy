@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "par_CardGameModal",
+  "name": "par_CardStrip",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Modals",
-    "path": "folders/Card Game/Modals.yy",
+    "name": "Card Strips",
+    "path": "folders/Card Game/Card Strips.yy",
   },
   "parentObjectId": null,
   "persistent": false,

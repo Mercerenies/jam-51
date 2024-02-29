@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Card Game",
-    "path": "folders/Card Game.yy",
+    "name": "Card Piles",
+    "path": "folders/Card Game/Card Piles.yy",
   },
   "parentObjectId": null,
   "persistent": false,

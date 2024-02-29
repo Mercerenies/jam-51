@@ -1,5 +1,5 @@
 
 // Instance variable: owner (CardPlayer constant)
 
-// List of cards. Last element is top of deck.
+// List of card types. Last element is top of stack.
 cards = [];

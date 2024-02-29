@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="123.66291"
-     inkscape:cy="88.904547"
+     inkscape:zoom="5.6"
+     inkscape:cx="147.14707"
+     inkscape:cy="129.4688"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -88,7 +88,7 @@
          style="stroke-width:0.383106">TEST</tspan></text>
     <path
        id="rect9409"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#aaaaaa;fill-opacity:1;stroke:#7c7c7c;stroke-width:0.415748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7c7c7c;fill-opacity:1;stroke:#545454;stroke-width:0.415748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        d="M 142.7832 66.564453 C 141.27106 66.564453 140.05273 69.438432 140.05273 73.007812 L 140.05273 81.041016 C 140.05273 81.420206 140.07519 81.785611 140.10156 82.146484 L 138.37695 82.146484 C 137.30571 82.146484 136.44336 83.792077 136.44336 85.835938 L 136.44336 86.087891 L 136.44336 90.435547 L 136.44336 90.6875 C 136.44336 92.731359 137.3057 94.376953 138.37695 94.376953 L 148.25586 94.376953 C 149.3271 94.376953 150.18945 92.731359 150.18945 90.6875 L 150.18945 87.484375 L 150.33203 87.484375 L 150.33203 90.6875 C 150.33203 92.731361 151.19439 94.376953 152.26562 94.376953 L 162.14453 94.376953 C 163.21578 94.376953 164.07812 92.731361 164.07812 90.6875 L 164.07812 90.435547 L 164.07812 86.087891 L 164.07812 85.835938 C 164.07812 83.792079 163.21577 82.146484 162.14453 82.146484 L 160.41992 82.146484 C 160.44645 81.785611 160.46875 81.420204 160.46875 81.041016 L 160.46875 73.007812 C 160.46875 69.43843 159.25042 66.564453 157.73828 66.564453 L 156.72656 66.564453 L 143.79492 66.564453 L 142.7832 66.564453 z "
        transform="scale(0.26458333)" />
     <path

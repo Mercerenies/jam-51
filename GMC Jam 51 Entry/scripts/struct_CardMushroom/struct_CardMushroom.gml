@@ -6,7 +6,7 @@ function CardMushroom() : MinionCard(1, 1) constructor {
   }
 
   static getName = function() {
-    return "Mushroom";
+    return "Mushroom Man";
   }
 
   static getCost = function() {

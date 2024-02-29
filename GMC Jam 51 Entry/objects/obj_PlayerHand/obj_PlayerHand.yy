@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_DiscardPile",
+  "name": "obj_PlayerHand",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Card Piles",
-    "path": "folders/Card Game/Card Piles.yy",
+    "name": "Card Strips",
+    "path": "folders/Card Game/Card Strips.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -32,8 +32,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_DiscardPile",
-    "path": "sprites/spr_DiscardPile/spr_DiscardPile.yy",
+    "name": "spr_PlayerHand",
+    "path": "sprites/spr_PlayerHand/spr_PlayerHand.yy",
   },
   "spriteMaskId": null,
   "visible": true,

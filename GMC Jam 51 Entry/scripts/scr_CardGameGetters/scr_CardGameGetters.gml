@@ -16,3 +16,12 @@ function CardGame_getDiscardPile(owner_value) {
   }
   throw "Could not find discard pile";
 }
+
+function CardGame_getHand(owner_value) {
+  with (obj_PlayerHand) {
+    if (owner == owner_value) {
+      return self.id;
+    }
+  }
+  throw "Could not find hand";
+}

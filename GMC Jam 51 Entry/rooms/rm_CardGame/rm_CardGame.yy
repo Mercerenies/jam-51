@@ -12,10 +12,19 @@
     {"name":"inst_6A217F14","path":"rooms/rm_CardGame/rm_CardGame.yy",},
     {"name":"inst_544ED48C","path":"rooms/rm_CardGame/rm_CardGame.yy",},
     {"name":"inst_160D1517","path":"rooms/rm_CardGame/rm_CardGame.yy",},
+    {"name":"inst_CC08020","path":"rooms/rm_CardGame/rm_CardGame.yy",},
+    {"name":"inst_7DFFBD36","path":"rooms/rm_CardGame/rm_CardGame.yy",},
   ],
   "isDnd": false,
   "layers": [
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_UI","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_UI","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_CC08020","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_PlayerHand","path":"objects/obj_PlayerHand/obj_PlayerHand.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_PlayerHand","path":"objects/obj_PlayerHand/obj_PlayerHand.yy",},"propertyId":{"name":"owner","path":"objects/obj_PlayerHand/obj_PlayerHand.yy",},"value":"CardPlayer.LEFT",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":672.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7DFFBD36","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_PlayerHand","path":"objects/obj_PlayerHand/obj_PlayerHand.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_PlayerHand","path":"objects/obj_PlayerHand/obj_PlayerHand.yy",},"propertyId":{"name":"owner","path":"objects/obj_PlayerHand/obj_PlayerHand.yy",},"value":"CardPlayer.RIGHT",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":0.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_72B02413","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_Deck","path":"objects/obj_Deck/obj_Deck.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_Deck","path":"objects/obj_Deck/obj_Deck.yy",},"propertyId":{"name":"owner","path":"objects/obj_Deck/obj_Deck.yy",},"value":"CardPlayer.LEFT",},

@@ -12,3 +12,7 @@ CardGame_getDeck(CardPlayer.RIGHT).originalDeckSize = array_length(enemyDeck);
 // DEBUG CODE
 CardGame_getDiscardPile(CardPlayer.LEFT).cards = []
 CardGame_getDiscardPile(CardPlayer.RIGHT).cards = [CardPotOfLinguine, CardMushroom, CardMushroom, CardMushroom, CardMushroom]
+
+// DEBUG CODE
+CardGame_getHand(CardPlayer.LEFT).cards = [CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardPotOfLinguine, CardPotOfLinguine, CardPotOfLinguine, CardMushroom]
+CardGame_getHand(CardPlayer.RIGHT).cards = [CardPotOfLinguine, CardMushroom, CardMushroom, CardMushroom, CardMushroom]

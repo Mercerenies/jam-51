@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_CardListModal",
-  "bbox_bottom": 63,
+  "name": "spr_PlayerHand",
+  "bbox_bottom": 99,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 499,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b75e90f5-60b0-411b-b93f-97bebeceb5e7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"68d9d892-841f-4640-a1c8-a0ebe6bb5f24",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 100,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"166b5990-68d4-4ec9-9248-4682ce4e59b9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"83fcb225-ed6e-4212-bdc7-598baaca38ac","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Modals",
-    "path": "folders/Card Game/Modals.yy",
+    "name": "Card Strips",
+    "path": "folders/Card Game/Card Strips.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_CardListModal",
+    "name": "spr_PlayerHand",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b75e90f5-60b0-411b-b93f-97bebeceb5e7","path":"sprites/spr_CardListModal/spr_CardListModal.yy",},},},"Disabled":false,"id":"f1c94390-603a-4479-8805-75eb25f879dd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"68d9d892-841f-4640-a1c8-a0ebe6bb5f24","path":"sprites/spr_PlayerHand/spr_PlayerHand.yy",},},},"Disabled":false,"id":"b3c39785-bca6-4d11-900e-96328493443b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 500,
 }
