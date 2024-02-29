@@ -1,3 +1,5 @@
 
 #macro CARD_WIDTH 302
-#macro CARD_HEIGHT 385
+#macro CARD_HEIGHT 386
+
+#macro EVIL_POINTS_ICON_INDEX 0

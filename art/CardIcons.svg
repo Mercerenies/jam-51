@@ -5,6 +5,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="140"
@@ -13,9 +14,38 @@
    version="1.1"
    id="svg1983"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="CardIcons.svg">
+   sodipodi:docname="CardIcons.svg"
+   inkscape:export-filename="CardIcons.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
-     id="defs1977" />
+     id="defs1977">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1920"
+       id="linearGradient1910"
+       x1="11.859003"
+       y1="24.662947"
+       x2="10.394345"
+       y2="26.009487"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1920">
+      <stop
+         style="stop-color:#d4df35;stop-opacity:1;"
+         offset="0"
+         id="stop1916" />
+      <stop
+         style="stop-color:#dddfc1;stop-opacity:1"
+         offset="0.52606368"
+         id="stop1922" />
+      <stop
+         style="stop-color:#d4df35;stop-opacity:1"
+         offset="1"
+         id="stop1918" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,9 +53,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="80.68376"
-     inkscape:cy="65.719426"
+     inkscape:zoom="3.959798"
+     inkscape:cx="26.254478"
+     inkscape:cy="59.688429"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -1126,5 +1156,49 @@
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#272727;fill-opacity:1;stroke:#000000;stroke-width:0.41444;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        d="M 73.648438 58.376953 A 2.241276 1.4836615 22.003311 0 0 72.179688 59.148438 A 2.241276 1.4836615 22.003311 0 0 72.107422 59.541016 A 2.241276 1.4836615 47.046618 0 0 70.726562 59.564453 A 2.241276 1.4836615 47.046618 0 0 70.582031 59.675781 A 2.241276 1.4836615 47.046618 0 0 71.023438 62.328125 A 2.241276 1.4836615 47.046618 0 0 73.638672 62.955078 A 2.241276 1.4836615 47.046618 0 0 73.675781 62.919922 A 2.241276 1.4836615 71.093601 0 0 74.427734 63.841797 A 2.241276 1.4836615 80.187331 0 0 76.238281 65.626953 A 2.241276 1.4836615 80.187331 0 0 76.289062 65.617188 A 1.4836615 2.241276 14.234314 0 0 77.261719 67.673828 A 1.4836615 2.241276 14.234314 0 0 79.25 65.867188 A 1.4836615 2.241276 14.234314 0 0 79.326172 65.472656 A 2.241276 1.4836615 55.144024 0 0 79.662109 65.320312 A 2.241276 1.4836615 55.144024 0 0 79.597656 62.632812 A 2.241276 1.4836615 55.144024 0 0 77.099609 61.642578 A 2.241276 1.4836615 55.144024 0 0 76.824219 61.931641 A 2.241276 1.4836615 80.187331 0 0 76.238281 61.371094 A 2.241276 1.4836615 71.093601 0 0 76.138672 61.138672 A 2.241276 1.4836615 22.003311 0 0 76.335938 60.828125 A 2.241276 1.4836615 22.003311 0 0 74.814453 58.611328 A 2.241276 1.4836615 22.003311 0 0 73.648438 58.376953 z "
        transform="scale(0.26458333)" />
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:7.18304px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';fill:#acacac;fill-opacity:1;stroke:#6e6e72;stroke-width:0.185;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="23.077698"
+       y="20.769121"
+       id="text8731"><tspan
+         sodipodi:role="line"
+         id="tspan8729"
+         x="23.077698"
+         y="20.769121"
+         style="fill:#acacac;fill-opacity:1;stroke:#6e6e72;stroke-width:0.185;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">C</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:7.18304px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';fill:#959595;fill-opacity:1;stroke:#6a6a6e;stroke-width:0.185;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       x="30.327383"
+       y="20.735712"
+       id="text8752"><tspan
+         sodipodi:role="line"
+         id="tspan8750"
+         x="30.327383"
+         y="20.735712"
+         style="fill:#959595;fill-opacity:1;stroke:#6a6a6e;stroke-width:0.185;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;">U</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:7.18304px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';fill:#a9a965;fill-opacity:1;stroke:#868651;stroke-width:0.185;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       x="0.89432627"
+       y="28.41971"
+       id="text8756"><tspan
+         sodipodi:role="line"
+         id="tspan8754"
+         x="0.89432627"
+         y="28.41971"
+         style="fill:#a9a965;fill-opacity:1;stroke:#868651;stroke-width:0.185;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;">R</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:7.18304px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';fill:url(#linearGradient1910);fill-opacity:1;stroke:#000000;stroke-width:0.161;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-variation-settings:normal;opacity:1;vector-effect:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-dashoffset:0;stop-color:#000000;stop-opacity:1"
+       x="8.4112816"
+       y="28.18585"
+       id="text8760"><tspan
+         sodipodi:role="line"
+         id="tspan8758"
+         x="8.4112816"
+         y="28.18585"
+         style="fill:url(#linearGradient1910);fill-opacity:1;stroke:#000000;stroke-width:0.161;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-variation-settings:normal;vector-effect:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-dashoffset:0;stop-color:#000000;stop-opacity:1">X</tspan></text>
   </g>
 </svg>

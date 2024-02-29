@@ -56,6 +56,21 @@ function Card() {
     draw_set_font(fnt_CardTitle);
     draw_set_color(c_black);
     draw_text(xx - 111, yy - 138, getName())
+    // Card cost
+    var costx = xx + 104;
+    var costy = yy - 171;
+    var cost = getCost();
+    for (var i = 0; i < cost; i++) {
+      draw_sprite(spr_CardIcons, EVIL_POINTS_ICON_INDEX, costx, costy);
+      costx -= 30;
+    }
+    // Card profile
+    draw_sprite(getSprite(), getImageIndex(), xx, yy - 12);
+    // Card text
+    draw_set_font(isTextFlavor() ? fnt_CardFlavorText : fnt_CardText);
+    draw_text_ext(xx - 134, yy + 49, getText(), -1, 268);
+    // Card rarity
+    draw_sprite(spr_CardIcons, rarityTextImageIndex(getRarity()), xx - 118, yy + 163);
   }
 
 }

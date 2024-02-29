@@ -200,8 +200,8 @@
   "lineHeight": 26,
   "maintainGms1Font": false,
   "parent": {
-    "name": "Cards",
-    "path": "folders/Cards.yy",
+    "name": "Fonts",
+    "path": "folders/Cards/Fonts.yy",
   },
   "pointRounding": 0,
   "ranges": [

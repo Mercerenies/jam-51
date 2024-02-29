@@ -16,3 +16,17 @@ function rarityImageIndex(rarity) {
     return 3;
   }
 }
+
+function rarityTextImageIndex(rarity) {
+  // Image index into spr_CardIcons
+  switch (rarity) {
+  case Rarity.COMMON:
+    return 13;
+  case Rarity.UNCOMMON:
+    return 14;
+  case Rarity.RARE:
+    return 15;
+  case Rarity.ULTRA_RARE:
+    return 16;
+  }
+}

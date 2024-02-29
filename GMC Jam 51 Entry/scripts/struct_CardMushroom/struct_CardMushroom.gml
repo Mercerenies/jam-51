@@ -18,7 +18,7 @@ function CardMushroom() : MinionCard(1, 1) constructor {
   }
 
   static getText = function() {
-    return ""; // TODO
+    return "An adorable little mushroom. It doesn't look too threatening.";
   }
 
   static isTextFlavor = function() {

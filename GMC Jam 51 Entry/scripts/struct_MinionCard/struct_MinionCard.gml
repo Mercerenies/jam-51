@@ -23,4 +23,25 @@ function MinionCard(level_, morale_) : Card() constructor {
     // Abstract method, returns list of Archetypes.
   }
 
+  static _super_drawCard = drawCard;
+
+  static drawCard = function(xx, yy) {
+    _super_drawCard(xx, yy);
+    // Archetypes
+    var archex = xx - 112;
+    var archey = yy - 82;
+    var archetypes = getArchetypes();
+    for (var i = 0; i < array_length(archetypes); i++) {
+      draw_sprite(spr_CardIcons, archetypeImageIndex(archetypes[i]), archex, archey);
+      archex += 30;
+    }
+    // Level / Morale
+    draw_set_font(fnt_CardStats);
+    draw_set_halign(fa_right);
+    draw_set_valign(fa_middle);
+    draw_text(xx + 118, yy + 163, "Lvl " + string(base_level) + " / " + string(base_morale) + " Mor");
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+  }
+
 }
