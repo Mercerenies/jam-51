@@ -1,0 +1,1 @@
+CardGame_playGame(new CharacterProfile([CardMushroom]), new FieldProfile(), new CharacterProfile([CardMushroom]));

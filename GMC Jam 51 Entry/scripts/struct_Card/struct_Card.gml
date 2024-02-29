@@ -35,7 +35,7 @@ function Card() {
   }
 
   static getSprite = function() {
-    return spr_CardImage;
+    return spr_CardProfiles;
   }
 
   static isMinion = function() {

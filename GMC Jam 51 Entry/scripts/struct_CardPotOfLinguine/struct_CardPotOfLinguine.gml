@@ -18,7 +18,7 @@ function CardPotOfLinguine() : EffectCard() constructor {
   }
 
   static getImageIndex = function() {
-    return 0; // TODO
+    return 2;
   }
 
   static getText = function() {

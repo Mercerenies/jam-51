@@ -16,8 +16,8 @@
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
    sodipodi:docname="Card.svg"
    inkscape:export-filename="Card.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96">
+   inkscape:export-xdpi="95.946693"
+   inkscape:export-ydpi="95.946693">
   <defs
      id="defs1219">
     <linearGradient
@@ -220,7 +220,7 @@
        rx="0"
        ry="0" />
     <rect
-       style="fill:#818181;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+       style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
        id="rect1880"
        width="78.143349"
        height="100.10377"
@@ -228,24 +228,6 @@
        y="103.19678"
        rx="9.8047791"
        ry="9.0167007" />
-    <rect
-       style="fill:#818181;fill-opacity:1;stroke:#000000;stroke-width:0.883828;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="rect1882"
-       width="66.152122"
-       height="12.501189"
-       x="6.8957858"
-       y="113.67532"
-       rx="4.0675974"
-       ry="9.0238361" />
-    <rect
-       style="fill:#818181;fill-opacity:1;stroke:#000000;stroke-width:0.588;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="rect1884"
-       width="25.972702"
-       height="26.105061"
-       x="27.355318"
-       y="137.5443"
-       rx="0"
-       ry="0" />
     <rect
        style="fill:#818181;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
        id="rect1886"
@@ -393,22 +375,6 @@
        ry="2.6523657" />
     <rect
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#c0c0c0;fill-opacity:1;stroke:none;stroke-width:0.540395;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       id="rect8679"
-       width="75.02729"
-       height="22.935019"
-       x="2.468154"
-       y="166.08507"
-       ry="2.8160362" />
-    <rect
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#c0c0c0;fill-opacity:1;stroke:none;stroke-width:0.303593;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       id="rect8681"
-       width="73.016869"
-       height="7.4379945"
-       x="3.1058693"
-       y="127.94725"
-       ry="2.6523657" />
-    <rect
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#c0c0c0;fill-opacity:1;stroke:none;stroke-width:0.540395;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        id="rect8683"
        width="75.02729"
        height="22.935019"
@@ -455,5 +421,33 @@
        x="242.81841"
        y="127.94725"
        ry="2.6523657" />
+    <g
+       id="g9710"
+       transform="matrix(8.2710088,0,0,8.2710088,279.75539,-1472.9584)">
+      <circle
+         style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="path2548"
+         cx="-28.992064"
+         cy="196.36357"
+         r="2.0591061" />
+      <path
+         sodipodi:type="star"
+         style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="path2550"
+         sodipodi:sides="5"
+         sodipodi:cx="5.6703949"
+         sodipodi:cy="5.6703949"
+         sodipodi:r1="2.8351977"
+         sodipodi:r2="1.4102449"
+         sodipodi:arg1="1.5707963"
+         sodipodi:arg2="2.1991148"
+         inkscape:flatsided="false"
+         inkscape:rounded="2.42861e-17"
+         inkscape:randomized="0.009"
+         inkscape:transform-center-x="-0.013202008"
+         inkscape:transform-center-y="0.23488533"
+         transform="translate(-34.658402,190.68836)"
+         d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+    </g>
   </g>
 </svg>

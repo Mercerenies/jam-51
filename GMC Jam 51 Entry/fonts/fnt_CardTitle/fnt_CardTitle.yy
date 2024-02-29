@@ -201,7 +201,7 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Cards/Fonts.yy",
+    "path": "folders/Fonts.yy",
   },
   "pointRounding": 0,
   "ranges": [

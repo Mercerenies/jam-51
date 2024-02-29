@@ -18,7 +18,7 @@ function CardMushroom() : MinionCard(1, 1) constructor {
   }
 
   static getImageIndex = function() {
-    return 0; // TODO
+    return 1;
   }
 
   static getText = function() {
