@@ -16,3 +16,7 @@ CardGame_getDiscardPile(CardPlayer.RIGHT).cards = [CardPotOfLinguine, CardMushro
 // DEBUG CODE
 CardGame_getHand(CardPlayer.LEFT).cards = [CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardPotOfLinguine, CardPotOfLinguine, CardPotOfLinguine, CardMushroom]
 CardGame_getHand(CardPlayer.RIGHT).cards = [CardPotOfLinguine, CardMushroom, CardMushroom, CardMushroom, CardMushroom]
+CardGame_getMinionRow(CardPlayer.LEFT).cards = [CardMushroom]
+CardGame_getMinionRow(CardPlayer.RIGHT).cards = [CardPotOfLinguine]
+CardGame_getOngoingRow(CardPlayer.LEFT).cards = [CardMushroom, CardMushroom]
+CardGame_getOngoingRow(CardPlayer.RIGHT).cards = [CardPotOfLinguine, CardMushroom]
