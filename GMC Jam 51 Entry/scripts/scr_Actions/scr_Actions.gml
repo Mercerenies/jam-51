@@ -1,56 +1,50 @@
 
-// Actions which can be enqueued onto the actions queue.
+// Actions which can be run in the context of the game.
 
-// Abstract base class
+// Abstract base class. An action is defined to take a continuation
+// parameter, which it MUST execute exactly once when done.
+// Continuation must be an object with a nullary call().
 function Action() constructor {
-  static perform = function() {
+
+  static perform = function(continuation) {
     // Abstract method
+
+    // All subclasses should override, but just in case, we call the
+    // continuation here.
+    continuation.call();
+  }
+
+  static chain = function(second) {
+    return new ChainedAction(self, second);
   }
 }
 
-// Does not check hand limit. If deck is empty, does nothing.
-function DrawCardPrimitiveAction(owner_) constructor {
-  owner = owner_;
+function ChainedAction(first_, second_) : Action() constructor {
+  first = first_;
+  second = second_;
 
-  static perform = function() {
-    var deck = CardGame_getDeck(owner);
-    var top = deck.popCard();
-    if (!is_undefined(top)) {
-      var hand = CardGame_getHand(owner);
-      var dest_x = mean(hand.bbox_left, bbox_right);
-      var dest_y = mean(hand.bbox_top, bbox_bottom);
-      with (instance_create_layer(deck.x, deck.y, "Instances_UI", obj_MoveCardAnimation)) {
-        card = new DeckIcon();
-        target_x = dest_x;
-        target_y = dest_y;
-        callback = new DrawCardPrimitiveAction_Callback(hand, top);
-      }
-    }
-  }
-
-}
-
-function DrawCardPrimitiveAction_Callback(hand_, card_) {
-  hand = hand_;
-  card = card_;
-
-  static call = function() {
-    hand.appendCard(card);
+  static perform = function(continuation) {
+    first.perform({
+      continuation: continuation,
+      call: function() {
+        second.perform(continuation);
+      },
+    });
   }
 
 }
 
 // High-level DrawCard action, checks hand and deck. Reshuffles
 // discard if necessary.
-function DrawCardAction(owner_) constructor {
+function DrawCardAction(owner_) : Action() constructor {
   owner = owner_;
 
-  static perform = function() {
+  static perform = function(continuation) {
     // If the player's hand limit has been met, do not draw.
     var hand = CardGame_getHand(owner);
     var handLimit = CardGame_getStats(owner).handLimit;
     if (hand.cardCount() >= handLimit) {
-      CardGame_finishAction();
+      continuation.call();
       return;
     }
 
@@ -60,16 +54,43 @@ function DrawCardAction(owner_) constructor {
     var discard = CardGame_getDiscardPile(owner);
     if (deck.isEmpty()) {
       if (discard.isEmpty()) {
-        CardGame_finishAction();
+        continuation.call();
         return;
       }
-      CardGame_reshuffleDiscard(owner);
+      new ReshuffleDiscardAction(owner).chain(new DrawCardPrimitiveAction(owner)).perform(continuation);
+    } else {
+      new DrawCardPrimitiveAction(owner).perform(continuation);
     }
-
-    // Now draw a card.
-    CardGame_enqueue(new DrawCardPrimitiveAction(owner));
   }
+}
 
+// Low-level DrawCard action, checks no preconditions.
+function DrawCardPrimitiveAction(owner_) : Action() constructor {
+  owner = owner_;
+
+  static perform = function(continuation) {
+    var deck = CardGame_getDeck(owner);
+    var top = deck.popCard();
+    if (!is_undefined(top)) {
+      var hand = CardGame_getHand(owner);
+      var dest_x = mean(hand.bbox_left, hand.bbox_right);
+      var dest_y = mean(hand.bbox_top, hand.bbox_bottom);
+      with (instance_create_layer(deck.x, deck.y, "Instances_UI", obj_MoveCardAnimation)) {
+        card = new DeckIcon();
+        target_x = dest_x;
+        target_y = dest_y;
+        callback = {
+          hand: hand,
+          card: top,
+          continuation: continuation,
+          call: function() {
+            hand.appendCard(card);
+            continuation.call();
+          }
+        };
+      }
+    }
+  }
 }
 
 function ReshuffleDiscardAction(owner_) constructor {

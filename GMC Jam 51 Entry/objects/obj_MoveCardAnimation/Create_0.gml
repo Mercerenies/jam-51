@@ -2,7 +2,7 @@
 image_xscale = 0.25;
 image_yscale = 0.25;
 
-movement_speed = 4;
+movement_speed = 18;
 target_x = 0;
 target_y = 0;
 

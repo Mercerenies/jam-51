@@ -14,12 +14,7 @@ CardGame_getStats(CardPlayer.LEFT).fortDefense = global.__CardGame_fieldProfile.
 CardGame_getStats(CardPlayer.RIGHT).fortDefense = global.__CardGame_fieldProfile.defense;
 
 // The game begins with each player drawing five cards.
-for (var i = 0; i < DEFAULT_HAND_LIMIT; i++) {
-  CardGame_drawCard(CardPlayer.LEFT);
-}
-for (var i = 0; i < DEFAULT_HAND_LIMIT; i++) {
-  CardGame_drawCard(CardPlayer.RIGHT);
-}
+CardGame_runAction(new DrawCardAction(CardPlayer.LEFT));
 
 // DEBUG CODE
 /*

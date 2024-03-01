@@ -4,7 +4,7 @@ function CardGame_showingModal() {
 }
 
 function CardGame_canPlayerInteract() {
-  return !CardGame_showingModal();
+  return (!CardGame_showingModal()) && (ctrl_CardGameManager.actionsSemaphore <= 0);
 }
 
 function CardGame_showCardList(cards_array, show_empty_icon_if_empty = true) {
