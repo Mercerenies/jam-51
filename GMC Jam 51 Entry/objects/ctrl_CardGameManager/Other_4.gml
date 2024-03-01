@@ -9,6 +9,8 @@ array_shuffle_ext(enemyDeck);
 CardGame_getDeck(CardPlayer.RIGHT).cards = enemyDeck;
 CardGame_getDeck(CardPlayer.RIGHT).originalDeckSize = array_length(enemyDeck);
 
+enemyAi = global.__CardGame_enemyProfile.ai;
+
 // Start both sides with the same fort defense.
 CardGame_getStats(CardPlayer.LEFT).fortDefense = global.__CardGame_fieldProfile.defense;
 CardGame_getStats(CardPlayer.RIGHT).fortDefense = global.__CardGame_fieldProfile.defense;

@@ -40,6 +40,15 @@ function CardGame_Action_betweenTurns() {
   return new BetweenTurnsAction();
 }
 
+function CardGame_Action_enemyTurn() {
+  return new NullAction()
+    .chain(new ContinueEnemyTurnAction())
+    // End enemy turn
+    .chain(CardGame_Action_endTurn(CardPlayer.RIGHT))
+    .chain(CardGame_Action_betweenTurns())
+    .chain(CardGame_Action_startTurn(CardPlayer.LEFT));
+}
+
 function CardGame_Action_playCard(owner, cardIndex) {
   return new PlayCardAction(owner, cardIndex);
 }

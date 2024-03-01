@@ -404,11 +404,19 @@ function BetweenTurnsAction() : Action() constructor {
   }
 }
 
-function CreateEnemyAiObjectAction() : Action() constructor {
-  __actionType = "CreateEnemyAiObjectAction";
+function ContinueEnemyTurnAction() : Action() constructor {
+  __actionType = "ContinueEnemyTurnAction";
 
   static perform = function(continuation) {
-    instance_create_layer(0, 0, "Instances_UI", obj_EnemyAI);
-    continuation.call();
+    var ai = ctrl_CardGameManager.enemyAi;
+    var nextCardIndex = ai.chooseNextCardToPlay();
+    if (is_undefined(nextCardIndex)) {
+      continuation.call();
+    } else {
+      var action = new NullAction()
+          .chain(CardGame_Action_playCard(CardPlayer.RIGHT, nextCardIndex))
+          .chain(self);
+      action.perform(continuation);
+    }
   }
 }

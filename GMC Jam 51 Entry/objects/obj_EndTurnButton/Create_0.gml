@@ -9,6 +9,6 @@ onClick = function() {
   var action = new NullAction()
     .chain(CardGame_Action_endTurn(CardPlayer.LEFT))
     .chain(CardGame_Action_startTurn(CardPlayer.RIGHT))
-    .chain(new CreateEnemyAiObjectAction());
+    .chain(CardGame_Action_enemyTurn());
   CardGame_runAction(action);
 }
