@@ -4,6 +4,9 @@
 // Abstract base class. An action is defined to take a continuation
 // parameter, which it MUST execute exactly once when done.
 // Continuation must be an object with a nullary call().
+//
+// Actions MUST be immutable, as they can be reused by helpers such as
+// RepeatedAction.
 function Action() constructor {
 
   static perform = function(continuation) {
@@ -80,7 +83,7 @@ function DrawCardAction(owner_) : Action() constructor {
   static perform = function(continuation) {
     // If the player's hand limit has been met, do not draw.
     var hand = CardGame_getHand(owner);
-    var handLimit = CardGame_getStats(owner).handLimit;
+    var handLimit = CardGame_getStats(owner).getHandLimit();
     if (hand.cardCount() >= handLimit) {
       continuation.call();
       return;
@@ -111,50 +114,47 @@ function DrawCardPrimitiveAction(owner_) : Action() constructor {
     var top = deck.popCard();
     if (!is_undefined(top)) {
       var hand = CardGame_getHand(owner);
-      var dest_x = mean(hand.bbox_left, hand.bbox_right);
-      var dest_y = mean(hand.bbox_top, hand.bbox_bottom);
-      with (instance_create_layer(deck.x, deck.y, "Instances_UI", obj_MoveCardAnimation)) {
-        card = new DeckIcon();
-        target_x = dest_x;
-        target_y = dest_y;
-        callback = {
-          hand: hand,
-          card: top,
-          continuation: continuation,
-          call: function() {
-            hand.appendCard(card);
-            continuation.call();
-          }
-        };
-      }
+      doMoveCardAnimation(deck, hand, new DeckIcon(), {
+        hand: hand,
+        card: top,
+        continuation: continuation,
+        call: function() {
+          hand.appendCard(card);
+          continuation.call();
+        }
+      });
     }
   }
 }
 
-function ReshuffleDiscardAction(owner_) constructor {
+function ReshuffleDiscardAction(owner_) : Action() constructor {
   owner = owner_;
 
-  static perform = function() {
+  static perform = function(continuation) {
     var deck = CardGame_getDeck(owner);
     var discard = CardGame_getDiscardPile(owner);
     var shuffledPile = arrayCopy(discard.cards);
     array_shuffle(shuffledPile);
     discard.clear();
-    with (instance_create_layer(discard.x, discard.y, "Instances_UI", obj_MoveCardAnimation)) {
-      card = new DeckIcon();
-      target_x = deck.x;
-      target_y = deck.y;
-      callback = new ReshuffleDiscardAction_Callback(deck, shuffledPile);
-    }
+    doMoveCardAnimation(discard, deck, new DeckIcon(), {
+      deck: deck,
+      shuffledPile: shuffledPile,
+      continuation: continuation,
+      call: function() {
+        deck.replaceCards(shuffledPile);
+        continuation.call();
+      },
+    });
   }
-
 }
 
-function ReshuffleDiscardAction_Callback(deck_, shuffledPile_) constructor {
-  deck = deck_;
-  shuffledPile = shuffledPile_;
+function DelayAction(time_) : Action() constructor {
+  time = time_;
 
-  static call = function() {
-    deck.replaceCards(shuffledPile);
+  static perform = function(continuation) {
+    with (instance_create_layer(0, 0, "Instances_UI", obj_DelayAnimation)) {
+      time = other.time;
+      callback = continuation;
+    }
   }
 }

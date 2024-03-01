@@ -15,6 +15,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"scr_CardGame_playGame","order":3,"path":"scripts/scr_CardGame_playGame/scr_CardGame_playGame.yy",},
+    {"name":"obj_DelayAnimation","order":3,"path":"objects/obj_DelayAnimation/obj_DelayAnimation.yy",},
     {"name":"par_CardStrip","order":2,"path":"objects/par_CardStrip/par_CardStrip.yy",},
     {"name":"spr_Deck","order":3,"path":"sprites/spr_Deck/spr_Deck.yy",},
     {"name":"obj_PlayerOngoingRow","order":6,"path":"objects/obj_PlayerOngoingRow/obj_PlayerOngoingRow.yy",},
@@ -29,6 +30,7 @@
     {"name":"scr_CardGameUI","order":7,"path":"scripts/scr_CardGameUI/scr_CardGameUI.yy",},
     {"name":"scr_CardGameGetters","order":2,"path":"scripts/scr_CardGameGetters/scr_CardGameGetters.yy",},
     {"name":"struct_EffectCard","order":2,"path":"scripts/struct_EffectCard/struct_EffectCard.yy",},
+    {"name":"scr_doMoveCardAnimation","order":4,"path":"scripts/scr_doMoveCardAnimation/scr_doMoveCardAnimation.yy",},
     {"name":"fnt_CardFlavorText","order":2,"path":"fonts/fnt_CardFlavorText/fnt_CardFlavorText.yy",},
     {"name":"par_CardCollection","order":15,"path":"objects/par_CardCollection/par_CardCollection.yy",},
     {"name":"enum_Rarity","order":6,"path":"scripts/enum_Rarity/enum_Rarity.yy",},

@@ -33,6 +33,7 @@
   },
   "resources": [
     {"id":{"name":"scr_CardGame_playGame","path":"scripts/scr_CardGame_playGame/scr_CardGame_playGame.yy",},},
+    {"id":{"name":"obj_DelayAnimation","path":"objects/obj_DelayAnimation/obj_DelayAnimation.yy",},},
     {"id":{"name":"par_CardStrip","path":"objects/par_CardStrip/par_CardStrip.yy",},},
     {"id":{"name":"spr_Deck","path":"sprites/spr_Deck/spr_Deck.yy",},},
     {"id":{"name":"obj_PlayerOngoingRow","path":"objects/obj_PlayerOngoingRow/obj_PlayerOngoingRow.yy",},},
@@ -50,6 +51,7 @@
     {"id":{"name":"scr_Actions","path":"scripts/scr_Actions/scr_Actions.yy",},},
     {"id":{"name":"par_CardGameModal","path":"objects/par_CardGameModal/par_CardGameModal.yy",},},
     {"id":{"name":"struct_EffectCard","path":"scripts/struct_EffectCard/struct_EffectCard.yy",},},
+    {"id":{"name":"scr_doMoveCardAnimation","path":"scripts/scr_doMoveCardAnimation/scr_doMoveCardAnimation.yy",},},
     {"id":{"name":"fnt_CardFlavorText","path":"fonts/fnt_CardFlavorText/fnt_CardFlavorText.yy",},},
     {"id":{"name":"par_CardCollection","path":"objects/par_CardCollection/par_CardCollection.yy",},},
     {"id":{"name":"enum_Rarity","path":"scripts/enum_Rarity/enum_Rarity.yy",},},

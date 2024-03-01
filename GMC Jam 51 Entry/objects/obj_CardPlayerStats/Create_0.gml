@@ -5,4 +5,7 @@ evilPoints = 0;
 fortDefense = 0;
 
 // TODO Show this stat on screen as well
-handLimit = DEFAULT_HAND_LIMIT;
+getHandLimit = function() {
+  // TODO Calculate using card effects :)
+  return DEFAULT_HAND_LIMIT;
+}
