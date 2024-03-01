@@ -17,6 +17,21 @@ function Action() constructor {
   static chain = function(second) {
     return new ChainedAction(self, second);
   }
+
+  static times = function(n) {
+    if (n == 1) {
+      // Efficiency hack, don't construct a silly object if n == 1.
+      return self;
+    }
+    return new RepeatedAction(self, n);
+  }
+}
+
+// Do nothing and invoke the continuation.
+function NullAction() constructor {
+  static perform = function(continuation) {
+    continuation.call();
+  }
 }
 
 function ChainedAction(first_, second_) : Action() constructor {
@@ -26,10 +41,33 @@ function ChainedAction(first_, second_) : Action() constructor {
   static perform = function(continuation) {
     first.perform({
       continuation: continuation,
+      second: second,
       call: function() {
         second.perform(continuation);
       },
     });
+  }
+
+}
+
+// Just a repeated chain N times, but implemented as its own class for
+// efficiency.
+function RepeatedAction(action_, times_) : Action() constructor {
+  action = action_;
+  times = times_;
+
+  static perform = function(continuation) {
+    if (times < 0) {
+      continuation.call();
+    } else {
+      action.perform({
+        next: new RepeatedAction(action, times - 1),
+        continuation: continuation,
+        call: function() {
+          next.perform(continuation);
+        },
+      });
+    }
   }
 
 }
