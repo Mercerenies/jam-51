@@ -64,6 +64,11 @@ function Card(owner_) {
     return new NullAction();
   }
 
+  static onStandbyPhase = function() {
+    // Returns an Action to run in the standby phase.
+    return new NullAction();
+  }
+
   static getEPModifier = function() {
     return 0;
   }

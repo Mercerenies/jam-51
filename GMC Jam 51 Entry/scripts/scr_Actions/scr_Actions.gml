@@ -373,6 +373,20 @@ function PerformMoralePhaseAction(owner_) : Action() constructor {
   }
 }
 
+function PerformStandbyPhaseAction(owner_) : Action() constructor {
+  __actionType = "PerformStandbyPhaseAction";
+  owner = owner_;
+
+  static perform = function(continuation) {
+    var action = new NullAction();
+    var cards = CardGame_allCardsInPlay(owner);
+    for (var i = 0; i < array_length(cards); i++) {
+      action = action.chain(cards[i].onStandbyPhase());
+    }
+    action.perform(continuation);
+  }
+}
+
 function PlayCardAction(owner_, cardIndex_) : Action() constructor {
   __actionType = "PlayCardAction";
   owner = owner_;
@@ -452,5 +466,20 @@ function PowerUpArchetypesAction(archetype_, amount_ = 1) : Action() constructor
       }
     }
     continuation.call();
+  }
+}
+
+// Can only be used with TimedOngoingCards.
+function IncreaseTurnCounterAction(card_) : Action() constructor {
+  __actionType = "IncreaseTurnCounterAction";
+  card = card_;
+
+  static perform = function(continuation) {
+    card.turnCounter++;
+    if (card.turnCounter > card.totalTurns) {
+      new SendCardToDiscardAction(card.owner, card).perform(continuation);
+    } else {
+      continuation.call();
+    }
   }
 }

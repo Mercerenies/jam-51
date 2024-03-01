@@ -153,3 +153,7 @@
    + Add enough cards to test mechanics
    + Add cards
    + Most of your day will be spent adding cards and corresponding mechanics :)
+** STRETCH GOALS
+   + [ ] Improve UI of card game background
+   + [ ] Right click to insta-play card
+   + [ ] "Your Turn!" notification when it's your turn

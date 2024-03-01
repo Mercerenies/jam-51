@@ -16,7 +16,6 @@ function CardGame_Action_startGame(delay = 60) {
 function CardGame_Action_startTurn(owner) {
   var stats = CardGame_getStats(owner);
   var cardsToDraw = stats.getCardsPerTurn();
-  // TODO standby phase
   return new NullAction()
     // Draw Phase
     .chain(new ModifyEvilPointsAction(owner, 9999))
@@ -24,7 +23,9 @@ function CardGame_Action_startTurn(owner) {
     // Attack Phase
     .chain(new PerformAttackPhaseAction(owner))
     // Morale Phase
-    .chain(new PerformMoralePhaseAction(owner));
+    .chain(new PerformMoralePhaseAction(owner))
+    // Standby Phase
+    .chain(new PerformStandbyPhaseAction(owner));
 }
 
 function CardGame_Action_endTurn(owner) {
