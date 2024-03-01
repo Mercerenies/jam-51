@@ -1,5 +1,5 @@
 
-function CardNuclear(owner_) : EffectCard(owner_) constructor {
+function CardNuclear(owner_) : TimedOngoingCard(owner_, 4) constructor {
 
   static getId = function() {
     return 10;

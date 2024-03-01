@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "struct_MinionCard",
+  "name": "struct_TimedOngoingCard",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

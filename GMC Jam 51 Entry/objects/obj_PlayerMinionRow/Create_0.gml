@@ -11,7 +11,9 @@ shouldBeRotated = function() {
 }
 
 drawAtopCard = function(card, xx, yy) {
-  var stats = string(card.getLevel()) + " / " + string(card.getMorale());
-  var textY = yy + 0.3 * 0.25 * CARD_HEIGHT;
-  CardGame_drawOverlayText(xx, textY, stats);
+  var overlay = card.overlayText();
+  if (!is_undefined(overlay)) {
+    var textY = yy + 0.3 * 0.25 * CARD_HEIGHT;
+    CardGame_drawOverlayText(xx, textY, overlay);
+  }
 }

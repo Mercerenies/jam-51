@@ -74,6 +74,13 @@ function Card(owner_) {
     return false;
   }
 
+  static overlayText = function() {
+    // For minion cards, this is the current level and morale. For
+    // effects, this can be any state of the card, such as a turn
+    // counter for timed cards.
+    return undefined;
+  }
+
   static drawCard = function(xx, yy) { // (xx, yy) is center
     // Card frame
     var cardImageIndex = rarityImageIndex(getRarity())

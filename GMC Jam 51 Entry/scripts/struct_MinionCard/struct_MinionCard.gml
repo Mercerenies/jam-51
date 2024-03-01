@@ -40,6 +40,10 @@ function MinionCard(owner_, level_, morale_) : Card(owner_) constructor {
     _morale = max(_morale + delta, 0);
   }
 
+  static overlayText = function() {
+    return string(getLevel()) + " / " + string(getMorale());
+  }
+
   static _super_drawCard = drawCard;
 
   static drawCard = function(xx, yy) {
