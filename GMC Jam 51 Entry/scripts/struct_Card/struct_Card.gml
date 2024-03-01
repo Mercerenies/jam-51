@@ -7,6 +7,11 @@
 function Card() {
   owner = CardPlayer.LEFT;
 
+  static getCardType = function() {
+    var typeName = instanceof(self);
+    return asset_get_index(typeName);
+  }
+
   static getId = function() {
     // Abstract method
   }

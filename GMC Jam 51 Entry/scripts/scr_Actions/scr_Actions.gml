@@ -40,20 +40,24 @@ function Action() constructor {
 
 // Do nothing and invoke the continuation.
 function NullAction() : Action() constructor {
+  __actionType = "NullAction";
   static perform = function(continuation) {
     continuation.call();
   }
 }
 
 function ChainedAction(first_, second_) : Action() constructor {
+  __actionType = "ChainedAction";
   first = first_;
   second = second_;
 
   static perform = function(continuation) {
+    //show_message("First " + string(first));
     first.perform({
       continuation: continuation,
       second: second,
       call: function() {
+        //show_message("Second " + string(second));
         second.perform(continuation);
       },
     });
@@ -64,6 +68,7 @@ function ChainedAction(first_, second_) : Action() constructor {
 // Just a repeated chain N times, but implemented as its own class for
 // efficiency.
 function RepeatedAction(action_, times_) : Action() constructor {
+  __actionType = "RepeatedAction";
   action = action_;
   times = times_;
 
@@ -86,6 +91,7 @@ function RepeatedAction(action_, times_) : Action() constructor {
 // High-level DrawCard action, checks hand and deck. Reshuffles
 // discard if necessary.
 function DrawCardAction(owner_) : Action() constructor {
+  __actionType = "DrawCardAction";
   owner = owner_;
 
   static perform = function(continuation) {
@@ -115,6 +121,7 @@ function DrawCardAction(owner_) : Action() constructor {
 
 // Low-level DrawCard action, checks no preconditions.
 function DrawCardPrimitiveAction(owner_) : Action() constructor {
+  __actionType = "DrawCardPrimitiveAction";
   owner = owner_;
 
   static perform = function(continuation) {
@@ -135,7 +142,34 @@ function DrawCardPrimitiveAction(owner_) : Action() constructor {
   }
 }
 
+function SendCardToDiscardAction(owner_, card_) : Action() constructor {
+  __actionType = "SendCardToDiscardAction";
+  owner = owner_;
+  card = card_;
+
+  static perform = function(continuation) {
+    var discard = CardGame_getDiscardPile(owner);
+    var cardLocation = CardGame_findCard(card);
+    if (is_undefined(cardLocation)) {
+      // Can't play animation
+      continuation.call();
+      return;
+    }
+    cardLocation.object.removeCard(cardLocation.index);
+    doMoveCardAnimation(cardLocation.object, discard, card, {
+      discard: discard,
+      card: card,
+      continuation: continuation,
+      call: function() {
+        discard.appendCard(card.getCardType());
+        continuation.call();
+      }
+    });
+  }
+}
+
 function ReshuffleDiscardAction(owner_) : Action() constructor {
+  __actionType = "ReshuffleDiscardAction";
   owner = owner_;
 
   static perform = function(continuation) {
@@ -157,6 +191,7 @@ function ReshuffleDiscardAction(owner_) : Action() constructor {
 }
 
 function DelayAction(time_) : Action() constructor {
+  __actionType = "DelayAction";
   time = time_;
 
   static perform = function(continuation) {
@@ -168,6 +203,7 @@ function DelayAction(time_) : Action() constructor {
 }
 
 function SetEvilPointsAction(owner_, newPoints_) : Action() constructor {
+  __actionType = "SetEvilPointsAction";
   owner = owner_;
   newPoints = newPoints_;
 
@@ -182,6 +218,7 @@ function SetEvilPointsAction(owner_, newPoints_) : Action() constructor {
 }
 
 function SetFortPointsAction(owner_, newPoints_) : Action() constructor {
+  __actionType = "SetFortPointsAction";
   owner = owner_;
   newPoints = newPoints_;
 
@@ -196,23 +233,31 @@ function SetFortPointsAction(owner_, newPoints_) : Action() constructor {
 }
 
 function HighlightCardAction(cardX_, cardY_) : Action() constructor {
+  __actionType = "HighlightCardAction";
   cardX = cardX_;
   cardY = cardY_;
 
   static perform = function(continuation) {
-    instance_create_layer(cardX, cardY, "Instances_UI", obj_CardHighlightAnimation, {
-      callback: continuation,
-    });
+    with (instance_create_layer(cardX, cardY, "Instances_UI", obj_CardHighlightAnimation)) {
+      callback = continuation
+    }
   }
 }
 
-function PerformAttackAction(owner_, minionIndex_) : Action() constructor {
+function PerformAttackAction(owner_, minion_) : Action() constructor {
+  __actionType = "PerformAttackAction";
   owner = owner_;
-  minionIndex = minionIndex_; // Index into the minion row
+  minion = minion_;
 
   static perform = function(continuation) {
     var minionRow = CardGame_getMinionRow(owner);
-    var minion = minionRow.getCard(minionIndex);
+    var minionIndex = minionRow.searchCard(minion);
+    if (is_undefined(minionIndex)) {
+      // Minion was destroyed or something, so just skip.
+      continuation.call();
+      return;
+    }
+
     var enemyStats = CardGame_getStats(otherPlayer(owner));
     var minionLevel = minion.getLevel();
     if (minionLevel <= 0) {
@@ -230,14 +275,53 @@ function PerformAttackAction(owner_, minionIndex_) : Action() constructor {
 
 }
 
+function DropMoraleForMinionAction(owner_, minion_) : Action() constructor {
+  __actionType = "DropMoraleForMinionAction";
+  owner = owner_;
+  minion = minion_;
+
+  static perform = function(continuation) {
+    var minionRow = CardGame_getMinionRow(owner);
+    var minionIndex = minionRow.searchCard(minion);
+    if (is_undefined(minionIndex)) {
+      // Minion was destroyed or something, so just skip.
+      continuation.call();
+      return;
+    }
+
+    minion.modifyMorale(-1);
+    if (minion.getMorale() <= 0) {
+      new SendCardToDiscardAction(owner, minion).perform(continuation);
+    } else {
+      continuation.call();
+    }
+  }
+
+}
+
 function PerformAttackPhaseAction(owner_) : Action() constructor {
+  __actionType = "PerformAttackPhaseAction";
   owner = owner_;
 
   static perform = function(continuation) {
     var action = new NullAction();
-    var minionCount = CardGame_getMinionRow(owner).cardCount();
-    for (var i = 0; i < minionCount; i++) {
-      action = action.chain(new PerformAttackAction(owner, i));
+    var minions = CardGame_getMinionRow(owner).cards;
+    for (var i = 0; i < array_length(minions); i++) {
+      action = action.chain(new PerformAttackAction(owner, minions[i]));
+    }
+    action.perform(continuation);
+  }
+}
+
+function PerformMoralePhaseAction(owner_) : Action() constructor {
+  __actionType = "PerformMoralePhaseAction";
+  owner = owner_;
+
+  static perform = function(continuation) {
+    var action = new NullAction();
+    var minions = CardGame_getMinionRow(owner).cards;
+    for (var i = 0; i < array_length(minions); i++) {
+      action = action.chain(new DropMoraleForMinionAction(owner, minions[i]));
     }
     action.perform(continuation);
   }

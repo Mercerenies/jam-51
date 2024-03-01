@@ -44,3 +44,13 @@ isHidden = function() {
 shouldBeRotated = function() {
   return false;
 }
+
+searchCard = function(card) {
+  for (var i = 0; i < cardCount(); i++) {
+    var currCard = getCard(i);
+    if (currCard == card) {
+      return i;
+    }
+  }
+  return undefined;
+}

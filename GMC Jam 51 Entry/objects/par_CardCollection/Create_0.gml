@@ -14,6 +14,10 @@ popCard = function() {
   return array_pop(cards);
 }
 
+removeCard = function(idx) {
+  array_delete(cards, idx, 1);
+}
+
 // Returns undefined if collection is empty.
 topCard = function() {
   return array_last(cards);

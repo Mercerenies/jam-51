@@ -23,4 +23,17 @@ function CardGame_Action_startTurn(owner) {
     .chain(CardGame_Action_drawCards(owner, cardsToDraw))
     // Attack Phase
     .chain(new PerformAttackPhaseAction(owner))
+    // Morale Phase
+    .chain(new PerformMoralePhaseAction(owner));
+}
+
+// Look for the card on the field somewhere.
+function CardGame_findCard(card) {
+  with (par_CardStrip) {
+    var idx = searchCard(card);
+    if (!is_undefined(idx)) {
+      return { object: self.id, index: idx };
+    }
+  }
+  return undefined;
 }
