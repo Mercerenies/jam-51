@@ -3,6 +3,7 @@
 
 evilPoints = 0; // TODO Consider showing a denominator on this (EP per turn)
 fortDefense = 0;
+maxFortDefense = 0;
 
 // TODO Show this stat on screen as well
 getHandLimit = function() {
