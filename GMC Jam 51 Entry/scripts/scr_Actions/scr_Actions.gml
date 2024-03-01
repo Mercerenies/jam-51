@@ -392,6 +392,23 @@ function PlayCardAction(owner_, cardIndex_) : Action() constructor {
     }
 
     action.perform(continuation);
-    // TODO
+  }
+}
+
+function BetweenTurnsAction() : Action() constructor {
+  __actionType = "BetweenTurnsAction";
+
+  static perform = function(continuation) {
+    ctrl_CardGameManager.turnNumber++;
+    continuation.call();
+  }
+}
+
+function CreateEnemyAiObjectAction() : Action() constructor {
+  __actionType = "CreateEnemyAiObjectAction";
+
+  static perform = function(continuation) {
+    instance_create_layer(0, 0, "Instances_UI", obj_EnemyAI);
+    continuation.call();
   }
 }

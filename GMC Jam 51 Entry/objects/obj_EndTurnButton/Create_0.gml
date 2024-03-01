@@ -5,5 +5,10 @@ event_inherited();
 text = "End Turn";
 
 onClick = function() {
-  // TODO
+  // Player end turn -> enemy start turn
+  var action = new NullAction()
+    .chain(CardGame_Action_endTurn(CardPlayer.LEFT))
+    .chain(CardGame_Action_startTurn(CardPlayer.RIGHT))
+    .chain(new CreateEnemyAiObjectAction());
+  CardGame_runAction(action);
 }

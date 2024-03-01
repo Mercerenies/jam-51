@@ -26,6 +26,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Utils","folderPath":"folders/Utils.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animations","folderPath":"folders/Card Game/Animations.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Buttons","folderPath":"folders/Card Game/Buttons.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy AI","folderPath":"folders/Card Game/Enemy AI.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -36,6 +37,7 @@
   "resources": [
     {"id":{"name":"obj_EndTurnButton","path":"objects/obj_EndTurnButton/obj_EndTurnButton.yy",},},
     {"id":{"name":"scr_CardGame_playGame","path":"scripts/scr_CardGame_playGame/scr_CardGame_playGame.yy",},},
+    {"id":{"name":"obj_EnemyAI","path":"objects/obj_EnemyAI/obj_EnemyAI.yy",},},
     {"id":{"name":"obj_DelayAnimation","path":"objects/obj_DelayAnimation/obj_DelayAnimation.yy",},},
     {"id":{"name":"par_CardStrip","path":"objects/par_CardStrip/par_CardStrip.yy",},},
     {"id":{"name":"spr_Deck","path":"sprites/spr_Deck/spr_Deck.yy",},},
@@ -65,6 +67,7 @@
     {"id":{"name":"fnt_CardText","path":"fonts/fnt_CardText/fnt_CardText.yy",},},
     {"id":{"name":"obj_DebugCard","path":"objects/obj_DebugCard/obj_DebugCard.yy",},},
     {"id":{"name":"spr_PlayerHand","path":"sprites/spr_PlayerHand/spr_PlayerHand.yy",},},
+    {"id":{"name":"scr_EnemyAIs","path":"scripts/scr_EnemyAIs/scr_EnemyAIs.yy",},},
     {"id":{"name":"struct_CharacterProfile","path":"scripts/struct_CharacterProfile/struct_CharacterProfile.yy",},},
     {"id":{"name":"obj_DiscardPile","path":"objects/obj_DiscardPile/obj_DiscardPile.yy",},},
     {"id":{"name":"spr_CardProfiles","path":"sprites/spr_CardProfiles/spr_CardProfiles.yy",},},
