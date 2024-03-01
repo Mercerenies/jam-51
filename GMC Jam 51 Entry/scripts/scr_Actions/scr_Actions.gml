@@ -31,7 +31,7 @@ function Action() constructor {
 }
 
 // Do nothing and invoke the continuation.
-function NullAction() constructor {
+function NullAction() : Action() constructor {
   static perform = function(continuation) {
     continuation.call();
   }
@@ -156,5 +156,15 @@ function DelayAction(time_) : Action() constructor {
       time = other.time;
       callback = continuation;
     }
+  }
+}
+
+function SetEvilPointsAction(owner_, newPoints_) : Action() constructor {
+  owner = owner_;
+  newPoints = newPoints_;
+
+  static perform = function(continuation) {
+    CardGame_getStats(owner).evilPoints = newPoints;
+    continuation.call();
   }
 }
