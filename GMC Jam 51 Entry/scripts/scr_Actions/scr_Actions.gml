@@ -195,12 +195,24 @@ function SetFortPointsAction(owner_, newPoints_) : Action() constructor {
   }
 }
 
+function HighlightCardAction(cardX_, cardY_) : Action() constructor {
+  cardX = cardX_;
+  cardY = cardY_;
+
+  static perform = function(continuation) {
+    instance_create_layer(cardX, cardY, "Instances_UI", obj_CardHighlightAnimation, {
+      callback: continuation,
+    });
+  }
+}
+
 function PerformAttackAction(owner_, minionIndex_) : Action() constructor {
   owner = owner_;
   minionIndex = minionIndex_; // Index into the minion row
 
   static perform = function(continuation) {
-    var minion = CardGame_getMinionRow(owner).getCard(minionIndex);
+    var minionRow = CardGame_getMinionRow(owner);
+    var minion = minionRow.getCard(minionIndex);
     var enemyStats = CardGame_getStats(otherPlayer(owner));
     var minionLevel = minion.getLevel();
     if (minionLevel <= 0) {
@@ -210,7 +222,9 @@ function PerformAttackAction(owner_, minionIndex_) : Action() constructor {
     }
 
     var newFortPoints = enemyStats.fortDefense - minionLevel;
-    new SetFortPointsAction(otherPlayer(owner), newFortPoints)
+    new NullAction()
+      .chain(new SetFortPointsAction(otherPlayer(owner), newFortPoints))
+      .chain(new HighlightCardAction(minionRow.cardCenterX(minionIndex), minionRow.cardCenterY(minionIndex)))
       .perform(continuation);
   }
 

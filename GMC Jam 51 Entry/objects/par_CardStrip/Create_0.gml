@@ -5,6 +5,10 @@ cardCenterX = function(index) {
   return lerp(bbox_left, bbox_right, (index + 1) / (array_length(cards) + 1));
 }
 
+cardCenterY = function(index) {
+  return mean(bbox_top, bbox_bottom);
+}
+
 getCardToShow = function(index) {
   if (isHidden()) {
     return new DeckIcon();
