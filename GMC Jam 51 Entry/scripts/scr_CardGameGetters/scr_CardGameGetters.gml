@@ -43,3 +43,12 @@ function CardGame_getOngoingRow(owner_value) {
   }
   throw "Could not find ongoing row";
 }
+
+function CardGame_getStats(owner_value) {
+  with (obj_CardPlayerStats) {
+    if (owner == owner_value) {
+      return self.id;
+    }
+  }
+  throw "Could not find player stats";
+}

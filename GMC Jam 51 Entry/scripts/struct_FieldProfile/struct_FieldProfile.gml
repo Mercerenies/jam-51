@@ -1,4 +1,4 @@
 
-function FieldProfile() constructor {
-  // Currently an empty struct
+function FieldProfile(defense_) constructor {
+  defense = defense_;
 }

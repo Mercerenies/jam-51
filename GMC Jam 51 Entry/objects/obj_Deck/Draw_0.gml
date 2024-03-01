@@ -18,7 +18,7 @@ if (array_length(cards) > 4) {
 var overlayText = string(array_length(cards)) + " / " + string(originalDeckSize);
 var xx = mean(bbox_left, bbox_right);
 var yy = lerp(bbox_top, bbox_bottom, 0.8);
-drawOverlayText(xx, yy, overlayText);
+CardGame_drawOverlayText(xx, yy, overlayText);
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

@@ -9,6 +9,10 @@ array_shuffle_ext(enemyDeck);
 CardGame_getDeck(CardPlayer.RIGHT).cards = enemyDeck;
 CardGame_getDeck(CardPlayer.RIGHT).originalDeckSize = array_length(enemyDeck);
 
+// Start both sides with the same fort defense.
+CardGame_getStats(CardPlayer.LEFT).fortDefense = global.__CardGame_fieldProfile.defense;
+CardGame_getStats(CardPlayer.RIGHT).fortDefense = global.__CardGame_fieldProfile.defense;
+
 // DEBUG CODE
 CardGame_getDiscardPile(CardPlayer.LEFT).cards = []
 CardGame_getDiscardPile(CardPlayer.RIGHT).cards = [CardPotOfLinguine, CardMushroom, CardMushroom, CardMushroom, CardMushroom]
