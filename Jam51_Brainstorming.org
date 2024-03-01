@@ -146,3 +146,10 @@
    + Pasta cards tend to let you draw more cards.
    + Undead cards tend to revive themselves from the discard pile
      frequently.
+** DAY 2
+   Day 2 Notes:
+   + Finish implementing player's turn (other phases, and ability to play cards)
+   + Implement enemy turn (simple, eager AI for now)
+   + Add enough cards to test mechanics
+   + Add cards
+   + Most of your day will be spent adding cards and corresponding mechanics :)
