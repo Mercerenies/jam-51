@@ -53,6 +53,7 @@
     {"id":{"name":"par_CardGameModal","path":"objects/par_CardGameModal/par_CardGameModal.yy",},},
     {"id":{"name":"struct_EffectCard","path":"scripts/struct_EffectCard/struct_EffectCard.yy",},},
     {"id":{"name":"scr_AnimationHelpers","path":"scripts/scr_AnimationHelpers/scr_AnimationHelpers.yy",},},
+    {"id":{"name":"struct_CardSpikyMushroom","path":"scripts/struct_CardSpikyMushroom/struct_CardSpikyMushroom.yy",},},
     {"id":{"name":"fnt_CardFlavorText","path":"fonts/fnt_CardFlavorText/fnt_CardFlavorText.yy",},},
     {"id":{"name":"par_CardCollection","path":"objects/par_CardCollection/par_CardCollection.yy",},},
     {"id":{"name":"enum_Rarity","path":"scripts/enum_Rarity/enum_Rarity.yy",},},

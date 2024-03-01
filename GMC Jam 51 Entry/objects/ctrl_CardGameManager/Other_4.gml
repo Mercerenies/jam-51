@@ -25,11 +25,13 @@ CardGame_runAction(startAction);
 
 var m1 = new CardMushroom();
 m1.owner = CardPlayer.LEFT;
-CardGame_getMinionRow(CardPlayer.LEFT).cards = [m1]
+var m2 = new CardSpikyMushroom();
+m2.owner = CardPlayer.LEFT;
+CardGame_getMinionRow(CardPlayer.LEFT).cards = [m1, m2]
 
-var m2 = new CardMushroom();
-m2.owner = CardPlayer.RIGHT;
-CardGame_getMinionRow(CardPlayer.RIGHT).cards = [m2]
+var m3 = new CardMushroom();
+m3.owner = CardPlayer.RIGHT;
+CardGame_getMinionRow(CardPlayer.RIGHT).cards = [m3]
 
 /*
 CardGame_getOngoingRow(CardPlayer.LEFT).cards = [new CardMushroom(), new CardMushroom()]

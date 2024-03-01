@@ -31,6 +31,7 @@
     {"name":"scr_CardGameGetters","order":2,"path":"scripts/scr_CardGameGetters/scr_CardGameGetters.yy",},
     {"name":"struct_EffectCard","order":2,"path":"scripts/struct_EffectCard/struct_EffectCard.yy",},
     {"name":"scr_AnimationHelpers","order":3,"path":"scripts/scr_AnimationHelpers/scr_AnimationHelpers.yy",},
+    {"name":"struct_CardSpikyMushroom","order":2,"path":"scripts/struct_CardSpikyMushroom/struct_CardSpikyMushroom.yy",},
     {"name":"fnt_CardFlavorText","order":2,"path":"fonts/fnt_CardFlavorText/fnt_CardFlavorText.yy",},
     {"name":"par_CardCollection","order":15,"path":"objects/par_CardCollection/par_CardCollection.yy",},
     {"name":"enum_Rarity","order":6,"path":"scripts/enum_Rarity/enum_Rarity.yy",},
