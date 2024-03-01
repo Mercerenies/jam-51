@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Card Game",
-    "path": "folders/Card Game.yy",
+    "name": "Modals",
+    "path": "folders/Card Game/Modals.yy",
   },
   "parentObjectId": {
     "name": "par_CardGameModal",

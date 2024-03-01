@@ -17,6 +17,13 @@ getCardToShow = function(index) {
   }
 }
 
+actionButtonForCard = function(index) {
+  // Should return either undefined (for no button) or a
+  // CardListModalButton instance. Shows the button on the
+  // popup when a card is clicked.
+  return undefined;
+}
+
 overlappingCard = function(xx, yy) {
   if ((yy < bbox_top) || (yy > bbox_bottom)) {
     return undefined;

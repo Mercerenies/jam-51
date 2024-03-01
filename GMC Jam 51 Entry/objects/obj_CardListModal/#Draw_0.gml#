@@ -17,7 +17,7 @@ if (!is_undefined(button)) {
   var xx = buttonX();
   var yy = buttonY();
   var image_idx = 0;
-  if ((!button.isDisabled()) && overlapsButton(mouse_x, mouse_y)) {
+  if (overlapsButton(mouse_x, mouse_y)) {
     if (isClickingActionButton) {
       image_idx = 2;
     } else {
