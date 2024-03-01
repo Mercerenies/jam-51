@@ -89,13 +89,39 @@ function CardGame_endGame(winner) {
   game_end();
 }
 
-function CardGame_allCardsInPlay() {
+function CardGame_allCardsInPlay(owner_ = undefined) {
   var arr = [];
   var i = 0;
-  with (par_CardStrip) {
+  with (obj_PlayerMinionRow) {
+    if ((!is_undefined(owner_)) && (owner_ != owner)) {
+      continue;
+    }
+    for (var j = 0; j < cardCount(); j++) {
+      arr[i++] = getCard(j);
+    }
+  }
+  with (obj_PlayerOngoingRow) {
+    if ((!is_undefined(owner_)) && (owner_ != owner)) {
+      continue;
+    }
     for (var j = 0; j < cardCount(); j++) {
       arr[i++] = getCard(j);
     }
   }
   return arr;
+}
+
+function CardGame_querySum(owner, callable) {
+  // Invoke the callable for each card in play belonging to the given
+  // owner. Returns the sum of the results.
+  if (is_method(callable) || !is_struct(callable)) {
+    callable = { call: callable };
+  }
+
+  var arr = CardGame_allCardsInPlay(owner);
+  var sum = 0;
+  for (var i = 0; i < array_length(arr); i++) {
+    sum += callable.call(arr[i]);
+  }
+  return sum;
 }

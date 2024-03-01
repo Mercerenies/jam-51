@@ -33,10 +33,6 @@ function CardMirrorCrystal(owner_) : EffectCard(owner_) constructor {
     return false;
   }
 
-  static isLimited = function() {
-    return true;
-  }
-
   static onPlayed = function() {
     // Returns an Action which shall run when the card is first
     // played.

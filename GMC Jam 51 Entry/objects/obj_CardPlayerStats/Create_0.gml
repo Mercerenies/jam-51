@@ -17,8 +17,8 @@ getCardsPerTurn = function() {
 }
 
 getEvilPointsPerTurn = function() {
-  // TODO Augment with cards that are in play.
-  return min(ctrl_CardGameManager.turnNumber + STARTING_EVIL_POINTS_PER_TURN, ENDING_EVIL_POINTS_PER_TURN);
+  var basePoints = min(ctrl_CardGameManager.turnNumber + STARTING_EVIL_POINTS_PER_TURN, ENDING_EVIL_POINTS_PER_TURN);
+  return basePoints + CardGame_querySum(owner, function(card) { return card.getEPModifier(); });
 }
 
 evilPointsX = function() {

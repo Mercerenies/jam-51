@@ -64,6 +64,10 @@ function Card(owner_) {
     return new NullAction();
   }
 
+  static getEPModifier = function() {
+    return 0;
+  }
+
   static isLimited = function() {
     // An unlimited card (the default) can have 3 copies in your deck.
     // A limited card can only have one copy.

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Library",
-    "path": "folders/Cards/Library.yy",
+    "name": "Minions",
+    "path": "folders/Cards/Library/Minions.yy",
   },
 }
