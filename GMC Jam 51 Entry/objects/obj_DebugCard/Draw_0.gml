@@ -1,2 +1,0 @@
-
-card.drawCard(x, y);

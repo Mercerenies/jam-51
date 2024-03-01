@@ -1,7 +1,7 @@
 
 // Has owner variable (one of CardPlayer constants)
 
-evilPoints = 0; // TODO Consider showing a denominator on this (EP per turn)
+evilPoints = 0;
 fortDefense = 0;
 maxFortDefense = 0;
 
