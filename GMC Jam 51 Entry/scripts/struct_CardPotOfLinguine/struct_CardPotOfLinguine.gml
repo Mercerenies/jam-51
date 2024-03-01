@@ -36,7 +36,7 @@ function CardPotOfLinguine(owner_) : EffectCard(owner_) constructor {
   static onPlayed = function() {
     // Returns an Action which shall run when the card is first
     // played.
-    return CardGame_Action_drawCards(owner, 2);
+    return new HighlightCardAction(self).chain(CardGame_Action_drawCards(owner, 2));
   }
 
 }
