@@ -20,3 +20,27 @@ getEvilPointsPerTurn = function() {
   // TODO Augment with cards that are in play.
   return min(ctrl_CardGameManager.turnNumber + STARTING_EVIL_POINTS_PER_TURN, ENDING_EVIL_POINTS_PER_TURN);
 }
+
+evilPointsX = function() {
+  return x + 12;
+}
+
+evilPointsY = function() {
+  return y + 14;
+}
+
+fortDefenseX = function() {
+  return x + 12;
+}
+
+fortDefenseY = function() {
+  return y + 46;
+}
+
+handLimitX = function() {
+  return x + sprite_width / 2 + 30;
+}
+
+handLimitY = function() {
+  return y + 14;
+}

@@ -164,7 +164,10 @@ function SetEvilPointsAction(owner_, newPoints_) : Action() constructor {
   newPoints = newPoints_;
 
   static perform = function(continuation) {
-    CardGame_getStats(owner).evilPoints = newPoints;
+    var stats = CardGame_getStats(owner);
+    var difference = newPoints - stats.evilPoints;
+    stats.evilPoints = newPoints;
+    doTextAnimation(stats.evilPointsX(), stats.evilPointsY(), difference);
     continuation.call();
   }
 }

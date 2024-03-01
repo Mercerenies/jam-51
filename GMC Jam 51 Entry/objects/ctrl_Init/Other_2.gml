@@ -1,1 +1,2 @@
+randomize();
 global.cardSurface = undefined;
