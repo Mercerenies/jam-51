@@ -21,6 +21,14 @@ function Action() constructor {
     return new ChainedAction(self, second);
   }
 
+  static chainArray = function(arr) {
+    var curr = self;
+    for (var i = 0; i < array_length(arr); i++) {
+      curr = curr.chain(arr[i]);
+    }
+    return curr;
+  }
+
   static times = function(n) {
     if (n == 1) {
       // Efficiency hack, don't construct a silly object if n == 1.
@@ -165,9 +173,58 @@ function SetEvilPointsAction(owner_, newPoints_) : Action() constructor {
 
   static perform = function(continuation) {
     var stats = CardGame_getStats(owner);
-    var difference = newPoints - stats.evilPoints;
-    stats.evilPoints = newPoints;
+    var actualNewPoints = clamp(newPoints, 0, stats.getEvilPointsPerTurn());
+    var difference = actualNewPoints - stats.evilPoints;
+    stats.evilPoints = actualNewPoints;
     doTextAnimation(stats.evilPointsX(), stats.evilPointsY(), difference);
     continuation.call();
+  }
+}
+
+function SetFortPointsAction(owner_, newPoints_) : Action() constructor {
+  owner = owner_;
+  newPoints = newPoints_;
+
+  static perform = function(continuation) {
+    var stats = CardGame_getStats(owner);
+    var actualNewPoints = clamp(newPoints, 0, stats.maxFortDefense);
+    var difference = actualNewPoints - stats.fortDefense;
+    stats.fortDefense = actualNewPoints;
+    doTextAnimation(stats.fortDefenseX(), stats.fortDefenseY(), difference);
+    continuation.call();
+  }
+}
+
+function PerformAttackAction(owner_, minionIndex_) : Action() constructor {
+  owner = owner_;
+  minionIndex = minionIndex_; // Index into the minion row
+
+  static perform = function(continuation) {
+    var minion = CardGame_getMinionRow(owner).getCard(minionIndex);
+    var enemyStats = CardGame_getStats(otherPlayer(owner));
+    var minionLevel = minion.getLevel();
+    if (minionLevel <= 0) {
+      // No attack, skip.
+      continuation.call();
+      return;
+    }
+
+    var newFortPoints = enemyStats.fortDefense - minionLevel;
+    new SetFortPointsAction(otherPlayer(owner), newFortPoints)
+      .perform(continuation);
+  }
+
+}
+
+function PerformAttackPhaseAction(owner_) : Action() constructor {
+  owner = owner_;
+
+  static perform = function(continuation) {
+    var action = new NullAction();
+    var minionCount = CardGame_getMinionRow(owner).cardCount();
+    for (var i = 0; i < minionCount; i++) {
+      action = action.chain(new PerformAttackAction(owner, i));
+    }
+    action.perform(continuation);
   }
 }

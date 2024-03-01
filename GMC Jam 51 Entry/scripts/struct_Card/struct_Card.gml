@@ -5,6 +5,7 @@
 // field. Cards in the deck are stored as the Game Maker struct ID,
 // which must be a 0-argument constructor function.
 function Card() {
+  owner = CardPlayer.LEFT;
 
   static getId = function() {
     // Abstract method

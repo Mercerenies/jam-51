@@ -21,4 +21,6 @@ function CardGame_Action_startTurn(owner) {
     // Draw Phase
     .chain(new SetEvilPointsAction(owner, stats.getEvilPointsPerTurn()))
     .chain(CardGame_Action_drawCards(owner, cardsToDraw))
+    // Attack Phase
+    .chain(new PerformAttackPhaseAction(owner))
 }

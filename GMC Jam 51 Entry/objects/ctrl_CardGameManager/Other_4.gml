@@ -22,12 +22,16 @@ var startAction = CardGame_Action_startGame()
 CardGame_runAction(startAction);
 
 // DEBUG CODE
-CardGame_getDiscardPile(CardPlayer.LEFT).cards = [CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardPotOfLinguine, CardPotOfLinguine, CardPotOfLinguine, CardMushroom]
-CardGame_getDiscardPile(CardPlayer.RIGHT).cards = [CardPotOfLinguine, CardMushroom, CardMushroom, CardMushroom, CardMushroom]
+
+var m1 = new CardMushroom();
+m1.owner = CardPlayer.LEFT;
+CardGame_getMinionRow(CardPlayer.LEFT).cards = [m1]
+
+var m2 = new CardMushroom();
+m2.owner = CardPlayer.RIGHT;
+CardGame_getMinionRow(CardPlayer.RIGHT).cards = [m2]
 
 /*
-CardGame_getMinionRow(CardPlayer.LEFT).cards = [new CardMushroom()]
-CardGame_getMinionRow(CardPlayer.RIGHT).cards = [new CardMushroom()]
 CardGame_getOngoingRow(CardPlayer.LEFT).cards = [new CardMushroom(), new CardMushroom()]
 CardGame_getOngoingRow(CardPlayer.RIGHT).cards = [new CardPotOfLinguine(), new CardMushroom()]
 

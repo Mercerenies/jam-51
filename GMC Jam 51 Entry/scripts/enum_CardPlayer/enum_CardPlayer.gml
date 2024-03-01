@@ -5,3 +5,11 @@ enum CardPlayer {
   // The enemy always sits on the right
   RIGHT,
 }
+
+function otherPlayer(player) {
+  if (player == CardPlayer.LEFT) {
+    return CardPlayer.RIGHT;
+  } else {
+    return CardPlayer.LEFT;
+  }
+}

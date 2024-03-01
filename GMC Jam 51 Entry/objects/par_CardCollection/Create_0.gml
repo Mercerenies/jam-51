@@ -34,3 +34,7 @@ clear = function() {
 replaceCards = function(newArray) {
   cards = arrayCopy(newArray);
 }
+
+getCard = function(idx) {
+  return cards[idx];
+}
