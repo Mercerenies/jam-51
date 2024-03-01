@@ -19,7 +19,7 @@ function CardGame_Action_startTurn(owner) {
   // TODO standby phase
   return new NullAction()
     // Draw Phase
-    .chain(new SetEvilPointsAction(owner, stats.getEvilPointsPerTurn()))
+    .chain(new ModifyEvilPointsAction(owner, 9999))
     .chain(CardGame_Action_drawCards(owner, cardsToDraw))
     // Attack Phase
     .chain(new PerformAttackPhaseAction(owner))
@@ -33,7 +33,7 @@ function CardGame_Action_endTurn(owner) {
   // TODO end phase card actions
   return new NullAction()
     // End Phase
-    .chain(new SetEvilPointsAction(owner, 0))
+    .chain(new ModifyEvilPointsAction(owner, -9999))
 }
 
 function CardGame_Action_betweenTurns() {

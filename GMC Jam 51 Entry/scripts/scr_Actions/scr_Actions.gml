@@ -73,7 +73,7 @@ function RepeatedAction(action_, times_) : Action() constructor {
   times = times_;
 
   static perform = function(continuation) {
-    if (times < 0) {
+    if (times <= 0) {
       continuation.call();
     } else {
       action.perform({
@@ -227,14 +227,14 @@ function DelayAction(time_) : Action() constructor {
   }
 }
 
-function SetEvilPointsAction(owner_, newPoints_) : Action() constructor {
-  __actionType = "SetEvilPointsAction";
+function ModifyEvilPointsAction(owner_, deltaPoints_) : Action() constructor {
+  __actionType = "ModifyEvilPointsAction";
   owner = owner_;
-  newPoints = newPoints_;
+  deltaPoints = deltaPoints_;
 
   static perform = function(continuation) {
     var stats = CardGame_getStats(owner);
-    var actualNewPoints = clamp(newPoints, 0, stats.getEvilPointsPerTurn());
+    var actualNewPoints = clamp(stats.evilPoints + deltaPoints, 0, stats.getEvilPointsPerTurn());
     var difference = actualNewPoints - stats.evilPoints;
     stats.evilPoints = actualNewPoints;
     doTextAnimation(stats.evilPointsX(), stats.evilPointsY(), difference);
@@ -383,7 +383,7 @@ function PlayCardAction(owner_, cardIndex_) : Action() constructor {
       destination = CardGame_getOngoingRow(owner);
     }
     var action = new NullAction()
-      .chain(new SetEvilPointsAction(owner, currentEvilPoints - cardCost))
+      .chain(new ModifyEvilPointsAction(owner, - cardCost))
       .chain(new PlayCardFromHandAction(owner, cardIndex, card, destination))
       .chain(card.onPlayed());
 
@@ -410,10 +410,12 @@ function ContinueEnemyTurnAction() : Action() constructor {
   static perform = function(continuation) {
     var ai = ctrl_CardGameManager.enemyAi;
     var nextCardIndex = ai.chooseNextCardToPlay();
+    show_debug_message(nextCardIndex);
     if (is_undefined(nextCardIndex)) {
       continuation.call();
     } else {
       var action = new NullAction()
+          .chain(new DelayAction(30))
           .chain(CardGame_Action_playCard(CardPlayer.RIGHT, nextCardIndex))
           .chain(self);
       action.perform(continuation);

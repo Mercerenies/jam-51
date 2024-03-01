@@ -3,5 +3,5 @@
 CardGame_playGame(
   new CharacterProfile(undefined, [CardMushroom, CardSpikyMushroom, CardMushroom, CardPotOfLinguine, CardPotOfLinguine, CardPotOfLinguine]),
   new FieldProfile(10),
-  new CharacterProfile(new NullaryEnemyAI(), [CardMushroom, CardSpikyMushroom, CardMushroom, CardPotOfLinguine, CardPotOfLinguine, CardPotOfLinguine]),
+  new CharacterProfile(new EagerEnemyAI(), [CardMushroom, CardSpikyMushroom, CardMushroom, CardPotOfLinguine, CardPotOfLinguine, CardPotOfLinguine]),
 )
