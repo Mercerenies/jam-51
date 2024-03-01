@@ -29,8 +29,8 @@ overlapsButton = function(xx, yy) {
   if (is_undefined(button)) {
     return false;
   }
-  var w = sprite_get_width(spr_CardListModalButton);
-  var h = sprite_get_height(spr_CardListModalButton);
+  var w = sprite_get_width(spr_BlueButton);
+  var h = sprite_get_height(spr_BlueButton);
   return (abs(xx - buttonX()) <= w / 2) && (abs(yy - buttonY()) <= h / 2);
 }
 

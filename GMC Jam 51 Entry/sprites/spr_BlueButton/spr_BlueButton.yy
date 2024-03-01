@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_CardListModalButton",
+  "name": "spr_BlueButton",
   "bbox_bottom": 47,
   "bbox_left": 0,
   "bbox_right": 191,
@@ -27,14 +27,14 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Modals",
-    "path": "folders/Card Game/Modals.yy",
+    "name": "Buttons",
+    "path": "folders/Card Game/Buttons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_CardListModalButton",
+    "name": "spr_BlueButton",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -56,9 +56,9 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2158facd-f574-4332-9a6a-0339a6537bd3","path":"sprites/spr_CardListModalButton/spr_CardListModalButton.yy",},},},"Disabled":false,"id":"e1d27494-3754-4a73-8011-6ed3eb3b143b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d2290f2f-440d-4a18-a5bc-34c2d67b134e","path":"sprites/spr_CardListModalButton/spr_CardListModalButton.yy",},},},"Disabled":false,"id":"9a5411c2-7865-408f-809a-2657e7629e61","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fb9231c7-7e38-4085-8370-7461f00bd06a","path":"sprites/spr_CardListModalButton/spr_CardListModalButton.yy",},},},"Disabled":false,"id":"38881e40-b0c3-4f03-a37d-3f193889ebef","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2158facd-f574-4332-9a6a-0339a6537bd3","path":"sprites/spr_BlueButton/spr_BlueButton.yy",},},},"Disabled":false,"id":"e1d27494-3754-4a73-8011-6ed3eb3b143b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d2290f2f-440d-4a18-a5bc-34c2d67b134e","path":"sprites/spr_BlueButton/spr_BlueButton.yy",},},},"Disabled":false,"id":"9a5411c2-7865-408f-809a-2657e7629e61","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fb9231c7-7e38-4085-8370-7461f00bd06a","path":"sprites/spr_BlueButton/spr_BlueButton.yy",},},},"Disabled":false,"id":"38881e40-b0c3-4f03-a37d-3f193889ebef","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
