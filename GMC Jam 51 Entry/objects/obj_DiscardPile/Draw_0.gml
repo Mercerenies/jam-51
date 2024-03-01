@@ -2,7 +2,7 @@
 var xscale = image_xscale;
 var yscale = image_yscale;
 
-if (position_meeting(mouse_x, mouse_y, self.id) && (!CardGame_showingModal())) {
+if (position_meeting(mouse_x, mouse_y, self.id) && (CardGame_canPlayerInteract())) {
   xscale *= 1.2;
   yscale *= 1.2;
 }

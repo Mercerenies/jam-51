@@ -3,6 +3,10 @@ function CardGame_showingModal() {
   return instance_exists(par_CardGameModal);
 }
 
+function CardGame_canPlayerInteract() {
+  return !CardGame_showingModal();
+}
+
 function CardGame_showCardList(cards_array, show_empty_icon_if_empty = true) {
   if ((array_length(cards_array) == 0) && (show_empty_icon_if_empty)) {
     cards_array = [new BlankIcon()];

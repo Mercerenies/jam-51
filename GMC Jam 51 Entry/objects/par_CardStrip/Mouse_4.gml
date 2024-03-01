@@ -1,5 +1,5 @@
 
-if (CardGame_showingModal()) {
+if (!CardGame_canPlayerInteract()) {
   exit;
 }
 

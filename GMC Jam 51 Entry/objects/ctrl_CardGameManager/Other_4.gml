@@ -13,7 +13,16 @@ CardGame_getDeck(CardPlayer.RIGHT).originalDeckSize = array_length(enemyDeck);
 CardGame_getStats(CardPlayer.LEFT).fortDefense = global.__CardGame_fieldProfile.defense;
 CardGame_getStats(CardPlayer.RIGHT).fortDefense = global.__CardGame_fieldProfile.defense;
 
+// The game begins with each player drawing five cards.
+for (var i = 0; i < DEFAULT_HAND_LIMIT; i++) {
+  CardGame_drawCard(CardPlayer.LEFT);
+}
+for (var i = 0; i < DEFAULT_HAND_LIMIT; i++) {
+  CardGame_drawCard(CardPlayer.RIGHT);
+}
+
 // DEBUG CODE
+/*
 CardGame_getDiscardPile(CardPlayer.LEFT).cards = []
 CardGame_getDiscardPile(CardPlayer.RIGHT).cards = [CardPotOfLinguine, CardMushroom, CardMushroom, CardMushroom, CardMushroom]
 
@@ -24,3 +33,4 @@ CardGame_getMinionRow(CardPlayer.LEFT).cards = [new CardMushroom()]
 CardGame_getMinionRow(CardPlayer.RIGHT).cards = [new CardMushroom()]
 CardGame_getOngoingRow(CardPlayer.LEFT).cards = [new CardMushroom(), new CardMushroom()]
 CardGame_getOngoingRow(CardPlayer.RIGHT).cards = [new CardPotOfLinguine(), new CardMushroom()]
+*/

@@ -1,7 +1,7 @@
 
 // Instance variable: owner (CardPlayer constant)
 
-// List of card types.
-cards = [];
+// cards must be list of card types.
+event_inherited();
 
 originalDeckSize = 0;

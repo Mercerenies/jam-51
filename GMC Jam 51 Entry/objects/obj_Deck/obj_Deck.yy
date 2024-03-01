@@ -13,7 +13,10 @@
     "name": "Card Piles",
     "path": "folders/Card Game/Card Piles.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "par_CardCollection",
+    "path": "objects/par_CardCollection/par_CardCollection.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

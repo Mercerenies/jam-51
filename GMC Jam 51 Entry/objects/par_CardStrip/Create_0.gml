@@ -1,6 +1,5 @@
 
-// List of card types or cards. Some subclasses may require one or the other.
-cards = [];
+event_inherited();
 
 cardCenterX = function(index) {
   return lerp(bbox_left, bbox_right, (index + 1) / (array_length(cards) + 1));

@@ -15,7 +15,7 @@ for (var i = 0; i < array_length(cards); i++) {
 
 // Draw highlighted card larger
 var highlightIndex = overlappingCard(mouse_x, mouse_y);
-if (!is_undefined(highlightIndex)) {
+if ((!is_undefined(highlightIndex)) && CardGame_canPlayerInteract()) {
   var card = getCardToShow(highlightIndex);
   var xx = cardCenterX(highlightIndex);
   drawCard(card, xx, yy, 0.25 * 1.2, 0.25 * 1.2, rot, c_white, 1);

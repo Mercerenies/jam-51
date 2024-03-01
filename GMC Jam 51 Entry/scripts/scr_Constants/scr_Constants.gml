@@ -9,3 +9,5 @@
 #macro CARD_BLANK_INDEX 5
 
 #macro COLOR_UI_GRAY $999999
+
+#macro DEFAULT_HAND_LIMIT 5

@@ -1,5 +1,5 @@
 
 // Instance variable: owner (CardPlayer constant)
 
-// List of card types. Last element is top of stack.
-cards = [];
+// cards must be list of card types.
+event_inherited();
