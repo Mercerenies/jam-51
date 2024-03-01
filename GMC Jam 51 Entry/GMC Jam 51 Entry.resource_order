@@ -72,6 +72,7 @@
     {"name":"struct_PlayCardModalButton","order":5,"path":"scripts/struct_PlayCardModalButton/struct_PlayCardModalButton.yy",},
     {"name":"scr_Utils","order":1,"path":"scripts/scr_Utils/scr_Utils.yy",},
     {"name":"obj_MoveCardAnimation","order":1,"path":"objects/obj_MoveCardAnimation/obj_MoveCardAnimation.yy",},
+    {"name":"struct_CardMirrorCrystal","order":8,"path":"scripts/struct_CardMirrorCrystal/struct_CardMirrorCrystal.yy",},
     {"name":"enum_CardPlayer","order":13,"path":"scripts/enum_CardPlayer/enum_CardPlayer.yy",},
     {"name":"ctrl_CardGameManager","order":1,"path":"objects/ctrl_CardGameManager/ctrl_CardGameManager.yy",},
     {"name":"scr_drawCard","order":14,"path":"scripts/scr_drawCard/scr_drawCard.yy",},

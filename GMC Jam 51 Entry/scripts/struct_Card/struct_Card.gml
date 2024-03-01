@@ -36,6 +36,12 @@ function Card(owner_) {
     // Abstract method
   }
 
+  static getTextIcon = function() {
+    // Icon shown next to the text, as an Archetype constant. Default
+    // is undefined, which shows no icon.
+    return undefined;
+  }
+
   static getText = function() {
     // Abstract method
   }
@@ -82,9 +88,19 @@ function Card(owner_) {
     }
     // Card profile
     draw_sprite(getSprite(), getImageIndex(), xx, yy - 12);
+    // Card text icon
+    var textx = xx - 134;
+    var texty = yy + 49;
+    var textw = 268;
+    var texticon = getTextIcon();
+    if (!is_undefined(texticon)) {
+      draw_sprite(spr_CardIcons, archetypeImageIndex(texticon), textx + 14, texty + 14);
+      textx += 30;
+      textw -= 30;
+    }
     // Card text
     draw_set_font(isTextFlavor() ? fnt_CardFlavorText : fnt_CardText);
-    draw_text_ext(xx - 134, yy + 49, getText(), -1, 268);
+    draw_text_ext(textx, texty, getText(), -1, textw);
     // Card rarity
     draw_sprite(spr_CardIcons, rarityTextImageIndex(getRarity()), xx - 118, yy + 163);
   }

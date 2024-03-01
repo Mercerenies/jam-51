@@ -88,3 +88,14 @@ function CardGame_endGame(winner) {
   }
   game_end();
 }
+
+function CardGame_allCardsInPlay() {
+  var arr = [];
+  var i = 0;
+  with (par_CardStrip) {
+    for (var j = 0; j < cardCount(); j++) {
+      arr[i++] = getCard(j);
+    }
+  }
+  return arr;
+}

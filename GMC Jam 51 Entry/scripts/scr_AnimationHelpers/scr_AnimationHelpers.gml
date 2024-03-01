@@ -38,3 +38,19 @@ function doTextAnimation(xx, yy, text_, color_ = undefined, time = 60) {
     alarm[0] = time;
   }
 }
+
+function getCardX(card) {
+  var loc = CardGame_findCard(card);
+  if (is_undefined(loc)) {
+    return -9999;
+  }
+  return loc.object.cardCenterX(loc.index);
+}
+
+function getCardY(card) {
+  var loc = CardGame_findCard(card);
+  if (is_undefined(loc)) {
+    return -9999;
+  }
+  return loc.object.cardCenterY(loc.index);
+}

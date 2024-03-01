@@ -22,7 +22,7 @@ function CardCircle(owner_) : MinionCard(owner_, 3, 2) constructor {
   }
 
   static getText = function() {
-    return "A high-ranking military officer. The circles are often regarded as the most logical and strategic soldiers.";
+    return "A high-ranking military officer. Often regarded as the most logical and strategic soldiers in the Icosaking's army.";
   }
 
   static isTextFlavor = function() {

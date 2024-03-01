@@ -436,3 +436,21 @@ function ContinueEnemyTurnAction() : Action() constructor {
     }
   }
 }
+
+function PowerUpArchetypesAction(archetype_, amount_ = 1) : Action() constructor {
+  __actionType = "PowerUpArchetypesAction";
+  archetype = archetype_;
+  amount = amount_;
+
+  static perform = function(continuation) {
+    var allCards = CardGame_allCardsInPlay();
+    for (var i = 0; i < array_length(allCards); i++) {
+      var card = allCards[i];
+      if (is_instanceof(card, MinionCard) && array_contains(card.getArchetypes(), archetype)) {
+        card.modifyLevel(amount);
+        doTextAnimation(getCardX(card), getCardY(card), 1);
+      }
+    }
+    continuation.call();
+  }
+}

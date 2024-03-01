@@ -22,7 +22,7 @@ function CardPotOfLinguine(owner_) : EffectCard(owner_) constructor {
   }
 
   static getText = function() {
-    return "Draw 2 cards. Limit 1 per deck.";
+    return "Instant: Draw 2 cards. Limit 1 per deck.";
   }
 
   static isOngoing = function() {

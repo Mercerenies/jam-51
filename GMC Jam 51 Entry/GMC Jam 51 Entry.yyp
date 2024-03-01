@@ -102,6 +102,7 @@
     {"id":{"name":"struct_PlayCardModalButton","path":"scripts/struct_PlayCardModalButton/struct_PlayCardModalButton.yy",},},
     {"id":{"name":"scr_Utils","path":"scripts/scr_Utils/scr_Utils.yy",},},
     {"id":{"name":"obj_MoveCardAnimation","path":"objects/obj_MoveCardAnimation/obj_MoveCardAnimation.yy",},},
+    {"id":{"name":"struct_CardMirrorCrystal","path":"scripts/struct_CardMirrorCrystal/struct_CardMirrorCrystal.yy",},},
     {"id":{"name":"spr_BlueButton","path":"sprites/spr_BlueButton/spr_BlueButton.yy",},},
     {"id":{"name":"enum_CardPlayer","path":"scripts/enum_CardPlayer/enum_CardPlayer.yy",},},
     {"id":{"name":"ctrl_CardGameManager","path":"objects/ctrl_CardGameManager/ctrl_CardGameManager.yy",},},

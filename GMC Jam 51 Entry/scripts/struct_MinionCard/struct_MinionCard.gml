@@ -27,13 +27,17 @@ function MinionCard(owner_, level_, morale_) : Card(owner_) constructor {
     return _level;
   }
 
+  static modifyLevel = function(delta) {
+    _level = max(_level + delta, 0);
+  }
+
   static getMorale = function() {
     return _morale;
   }
 
   // Does NOT check for zero morale!
   static modifyMorale = function(delta) {
-    _morale += delta;
+    _morale = max(_morale + delta, 0);
   }
 
   static _super_drawCard = drawCard;
