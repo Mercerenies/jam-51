@@ -23,7 +23,7 @@ function PlayCardModalButton(owner_, cardIndex_) : CardListModalButton() constru
 
   static isDisabled = function() {
     var cardType = getCard();
-    var cost = new cardType().getCost();
+    var cost = new cardType(owner).getCost();
     return cost > CardGame_getStats(owner).evilPoints;
   }
 

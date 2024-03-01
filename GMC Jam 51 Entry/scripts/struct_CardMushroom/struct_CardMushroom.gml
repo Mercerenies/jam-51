@@ -1,5 +1,5 @@
 
-function CardMushroom() : MinionCard(1, 1) constructor {
+function CardMushroom(owner_) : MinionCard(owner_, 1, 1) constructor {
 
   static getId = function() {
     return 1;

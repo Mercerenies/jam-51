@@ -7,7 +7,7 @@ function drawCard(card, xx, yy, xscale, yscale, rot, col, alpha) {
   }
 
   if (!is_struct(card)) {
-    card = new card();
+    card = new card(CardPlayer.LEFT); // Instantiate temporary with default owner
   }
 
   surface_set_target(global.cardSurface);

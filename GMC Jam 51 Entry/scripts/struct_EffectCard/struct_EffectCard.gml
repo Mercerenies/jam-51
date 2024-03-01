@@ -1,5 +1,5 @@
 
-function EffectCard() : Card() constructor {
+function EffectCard(owner_) : Card(owner_) constructor {
 
   static isMinion = function() {
     return false;

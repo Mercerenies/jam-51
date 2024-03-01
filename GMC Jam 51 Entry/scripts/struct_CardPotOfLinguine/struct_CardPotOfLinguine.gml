@@ -1,5 +1,5 @@
 
-function CardPotOfLinguine() : EffectCard() constructor {
+function CardPotOfLinguine(owner_) : EffectCard(owner_) constructor {
 
   static getId = function() {
     return 2;
@@ -31,6 +31,12 @@ function CardPotOfLinguine() : EffectCard() constructor {
 
   static isLimited = function() {
     return true;
+  }
+
+  static onPlayed = function() {
+    // Returns an Action which shall run when the card is first
+    // played.
+    return CardGame_Action_drawCards(owner, 2);
   }
 
 }

@@ -3,9 +3,9 @@
 //
 // Concrete subclasses represent particular instances of cards on the
 // field. Cards in the deck are stored as the Game Maker struct ID,
-// which must be a 0-argument constructor function.
-function Card() {
-  owner = CardPlayer.LEFT;
+// which must be a 1-argument constructor function.
+function Card(owner_) {
+  owner = owner_;
 
   static getCardType = function() {
     var typeName = instanceof(self);
@@ -50,6 +50,12 @@ function Card() {
 
   static isOngoing = function() {
     // Abstract method
+  }
+
+  static onPlayed = function() {
+    // Returns an Action which shall run when the card is first
+    // played.
+    return new NullAction();
   }
 
   static isLimited = function() {

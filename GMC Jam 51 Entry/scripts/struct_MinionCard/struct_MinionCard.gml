@@ -1,5 +1,5 @@
 
-function MinionCard(level_, morale_) : Card() constructor {
+function MinionCard(owner_, level_, morale_) : Card(owner_) constructor {
   // These are the stats shown on the card. Do not modify these after
   // construction.
   base_level = level_;
