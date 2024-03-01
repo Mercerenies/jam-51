@@ -1,9 +1,14 @@
 
 // Actions which can be run in the context of the game.
 
-// Abstract base class. An action is defined to take a continuation
-// parameter, which it MUST execute exactly once when done.
-// Continuation must be an object with a nullary call().
+// Abstract base class.
+//
+// An action is defined to take a continuation parameter, which it
+// should execute when done. Continuation must be an object with a
+// nullary call(). Note that it is possible to execute the
+// continuation zero times or multiple times, but please be aware of
+// the consequences of doing this. Such things should be restricted to
+// special cases.
 //
 // Actions MUST be immutable, as they can be reused by helpers such as
 // RepeatedAction.
@@ -253,6 +258,16 @@ function SetFortPointsAction(owner_, newPoints_) : Action() constructor {
     var difference = actualNewPoints - stats.fortDefense;
     stats.fortDefense = actualNewPoints;
     doTextAnimation(stats.fortDefenseX(), stats.fortDefenseY(), difference);
+
+    // Check for endgame
+    var winner = CardGame_checkEndGame();
+    if (!is_undefined(winner)) {
+      CardGame_endGame(winner);
+      // Note: Explicitly do NOT call the continuation; we break the
+      // game loop here.
+      return;
+    }
+
     continuation.call();
   }
 }
@@ -410,7 +425,6 @@ function ContinueEnemyTurnAction() : Action() constructor {
   static perform = function(continuation) {
     var ai = ctrl_CardGameManager.enemyAi;
     var nextCardIndex = ai.chooseNextCardToPlay();
-    show_debug_message(nextCardIndex);
     if (is_undefined(nextCardIndex)) {
       continuation.call();
     } else {

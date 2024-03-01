@@ -63,3 +63,28 @@ function CardGame_findCard(card) {
   }
   return undefined;
 }
+
+// Returns a CardPlayer if there is a winner, or undefined if not.
+function CardGame_checkEndGame() {
+  var enemyStats = CardGame_getStats(CardPlayer.RIGHT);
+  if (enemyStats.fortDefense <= 0) {
+    return CardPlayer.LEFT;
+  }
+  var playerStats = CardGame_getStats(CardPlayer.LEFT);
+  if (playerStats.fortDefense <= 0) {
+    return CardPlayer.RIGHT;
+  }
+  return undefined;
+}
+
+function CardGame_endGame(winner) {
+  // winner shall be a CardPlayer.
+  //
+  // TODO Implement this for real. (DEBUG CODE)
+  if (winner == CardPlayer.LEFT) {
+    show_message("You win");
+  } else {
+    show_message("You lose");
+  }
+  game_end();
+}
