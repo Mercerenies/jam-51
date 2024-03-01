@@ -9,9 +9,9 @@ function PlayCardModalButton(owner_, cardIndex_) : CardListModalButton() constru
   }
 
   static onClick = function() {
-    // TODO
+    CardGame_runAction(CardGame_Action_playCard(owner, cardIndex));
   }
-  
+
   static buttonText = function() {
     if (isDisabled()) {
       return "(Can't afford)";

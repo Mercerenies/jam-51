@@ -168,6 +168,32 @@ function SendCardToDiscardAction(owner_, card_) : Action() constructor {
   }
 }
 
+// Primitive action that plays the card movement animation. Use
+// PlayCardAction for the full event, including EP subtraction and
+// card effects that fire from it.
+function PlayCardFromHandAction(owner_, cardIndex_, destination_) : Action() constructor {
+  __actionType = "PlayCardFromHandAction";
+  owner = owner_;
+  cardIndex = cardIndex_;
+  destination = destination_;
+
+  static perform = function(continuation) {
+    var hand = CardGame_getHand(owner);
+    var cardType = hand.getCard(cardIndex);
+    var card = new cardType();
+    hand.removeCard(cardIndex);
+    doMoveCardAnimation(hand, destination, card, {
+      destination: destination,
+      card: card,
+      continuation: continuation,
+      call: function() {
+        destination.appendCard(card);
+        continuation.call();
+      }
+    });
+  }
+}
+
 function ReshuffleDiscardAction(owner_) : Action() constructor {
   __actionType = "ReshuffleDiscardAction";
   owner = owner_;
@@ -324,5 +350,37 @@ function PerformMoralePhaseAction(owner_) : Action() constructor {
       action = action.chain(new DropMoraleForMinionAction(owner, minions[i]));
     }
     action.perform(continuation);
+  }
+}
+
+function PlayCardAction(owner_, cardIndex_) : Action() constructor {
+  __actionType = "PlayCardAction";
+  owner = owner_;
+  cardIndex = cardIndex_;
+
+  static perform = function(continuation) {
+    var currentEvilPoints = CardGame_getStats(owner).evilPoints;
+    var hand = CardGame_getHand(owner);
+    var cardType = hand.getCard(cardIndex);
+    var temporaryCard = new cardType();
+    var cardCost = temporaryCard.getCost();
+
+    if (currentEvilPoints < cardCost) {
+      // Can't pay, so we can't play the card.
+      continuation.call();
+      return;
+    }
+
+    var destination;
+    if (temporaryCard.isMinion()) {
+      destination = CardGame_getMinionRow(owner);
+    } else {
+      destination = CardGame_getOngoingRow(owner);
+    }
+    new NullAction()
+      .chain(new SetEvilPointsAction(owner, currentEvilPoints - cardCost))
+      .chain(new PlayCardFromHandAction(owner, cardIndex, destination))
+      .perform(continuation);
+    // TODO
   }
 }

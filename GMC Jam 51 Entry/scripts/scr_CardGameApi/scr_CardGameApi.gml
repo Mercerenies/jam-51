@@ -27,6 +27,10 @@ function CardGame_Action_startTurn(owner) {
     .chain(new PerformMoralePhaseAction(owner));
 }
 
+function CardGame_Action_playCard(owner, cardIndex) {
+  return new PlayCardAction(owner, cardIndex);
+}
+
 // Look for the card on the field somewhere.
 function CardGame_findCard(card) {
   with (par_CardStrip) {
