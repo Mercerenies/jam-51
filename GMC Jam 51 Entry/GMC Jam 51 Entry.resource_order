@@ -27,6 +27,7 @@
     {"name":"obj_PlayerOngoingRow","order":6,"path":"objects/obj_PlayerOngoingRow/obj_PlayerOngoingRow.yy",},
     {"name":"obj_CardListModal","order":3,"path":"objects/obj_CardListModal/obj_CardListModal.yy",},
     {"name":"rm_CardGame","order":1,"path":"rooms/rm_CardGame/rm_CardGame.yy",},
+    {"name":"struct_CardFusion","order":3,"path":"scripts/struct_CardFusion/struct_CardFusion.yy",},
     {"name":"spr_CardPlayerStats","order":11,"path":"sprites/spr_CardPlayerStats/spr_CardPlayerStats.yy",},
     {"name":"scr_CardFacades","order":15,"path":"scripts/scr_CardFacades/scr_CardFacades.yy",},
     {"name":"obj_PlayerMinionRow","order":5,"path":"objects/obj_PlayerMinionRow/obj_PlayerMinionRow.yy",},

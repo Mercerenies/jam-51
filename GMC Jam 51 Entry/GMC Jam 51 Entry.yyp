@@ -46,6 +46,7 @@
     {"id":{"name":"obj_PlayerOngoingRow","path":"objects/obj_PlayerOngoingRow/obj_PlayerOngoingRow.yy",},},
     {"id":{"name":"obj_CardListModal","path":"objects/obj_CardListModal/obj_CardListModal.yy",},},
     {"id":{"name":"rm_CardGame","path":"rooms/rm_CardGame/rm_CardGame.yy",},},
+    {"id":{"name":"struct_CardFusion","path":"scripts/struct_CardFusion/struct_CardFusion.yy",},},
     {"id":{"name":"spr_CardPlayerStats","path":"sprites/spr_CardPlayerStats/spr_CardPlayerStats.yy",},},
     {"id":{"name":"scr_CardFacades","path":"scripts/scr_CardFacades/scr_CardFacades.yy",},},
     {"id":{"name":"obj_PlayerMinionRow","path":"objects/obj_PlayerMinionRow/obj_PlayerMinionRow.yy",},},
