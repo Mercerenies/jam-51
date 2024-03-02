@@ -12,3 +12,4 @@ global.playerDeck = [
   CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
 ];
 global.playerTrunk = [];
+global.playerMoney = 10;

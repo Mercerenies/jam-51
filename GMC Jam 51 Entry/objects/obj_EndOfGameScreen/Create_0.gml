@@ -2,6 +2,8 @@
 event_inherited();
 
 playerWins = false;
+moneySpoils = 0;
+cardSpoils = [];
 
 alpha = 0;
 
@@ -16,7 +18,7 @@ overlapsButton = function(xx, yy) {
 }
 
 buttonIsDisabled = function() {
-  return false;
+  return instance_exists(obj_CardListModal);
 }
 
 buttonX = function() {
@@ -31,4 +33,26 @@ onButtonClick = function() {
   var field = global.__CardGame_fieldProfile;
   global.__CardGame_justWon = playerWins;
   room_goto(field.challenger.endgameRoom());
+}
+
+cardX = function(idx) {
+  return bbox_left + 64 + 86 * idx;
+}
+
+cardY = function(idx) {
+  return y + 100;
+}
+
+overlappingCard = function(xx, yy) {
+  if (instance_exists(obj_CardListModal)) {
+    return undefined;
+  }
+  for (var i = 0; i < array_length(cardSpoils); i++) {
+    var centerX = cardX(i);
+    var centerY = cardY(i);
+    if ((abs(centerX - xx) < CARD_WIDTH * 0.125) && (abs(centerY - yy) < CARD_HEIGHT * 0.125)) {
+      return i;
+    }
+  }
+  return undefined;
 }

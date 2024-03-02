@@ -48,6 +48,16 @@ function ChallengerProfile() constructor {
     return rm_ChooseOpponent; // TODO
   }
 
+  static rollMoneyReward = function() {
+    // Amount of money gained if the player wins this fight.
+    return 0;
+  }
+
+  static rollRegularReward = function() {
+    // Card(s) given as a result of simply winning the fight.
+    return [];
+  }
+
 }
 
 function RavenmanChallenger() : ChallengerProfile() constructor {
@@ -56,7 +66,10 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-  ]
+  ];
+  _rewardsPool = [
+    CardMushroom, CardSpikyMushroom,
+  ];
 
   static getTitle = function() {
     return "Ravenman";
@@ -73,6 +86,14 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
   static getDeck = function() {
     return _deck;
   }
+
+  static rollMoneyReward = function() {
+    return 2;
+  }
+
+  static rollRegularReward = function() {
+    return [arrayRandom(_rewardsPool), arrayRandom(_rewardsPool)];
+  }
 }
 
 // Probably DEBUG CODE, this is his un-disguised variant.
@@ -83,6 +104,9 @@ function FlyingBrickmanChallenger() : ChallengerProfile() constructor {
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
   ]
+  _rewardsPool = [
+    CardMushroom, CardSpikyMushroom,
+  ];
 
   static getTitle = function() {
     return "Flying Brickman";
@@ -98,6 +122,14 @@ function FlyingBrickmanChallenger() : ChallengerProfile() constructor {
 
   static getDeck = function() {
     return _deck;
+  }
+
+  static rollMoneyReward = function() {
+    return 2;
+  }
+
+  static rollRegularReward = function() {
+    return [arrayRandom(_rewardsPool)];
   }
 }
 

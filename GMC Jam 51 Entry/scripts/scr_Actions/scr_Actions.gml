@@ -491,8 +491,26 @@ function EndCardGameAction(winner_) : Action() constructor {
   winner = winner_;
 
   static perform = function(continuation) {
-    with (instance_create_layer(room_width / 2, room_height / 2, "Instances_UI", obj_EndOfGameScreen)) {
+    // Roll spoils
+    var moneyEarned = 0;
+    var cardsEarned = [];
+    if (winner == CardPlayer.LEFT) {
+      // TODO Bonus challenges
+      var challenger = global.__CardGame_fieldProfile.challenger;
+      moneyEarned = challenger.rollMoneyReward();
+      cardsEarned = challenger.rollRegularReward();
+    }
+
+    // Give the player the rewards
+    global.playerMoney += moneyEarned;
+    for (var i = 0; i < array_length(cardsEarned); i++) {
+      array_push(global.playerTrunk, cardsEarned[i]);
+    }
+
+    with (instance_create_layer(room_width / 2, room_height / 2, "Instances_BackUI", obj_EndOfGameScreen)) {
       playerWins = (other.winner == CardPlayer.LEFT);
+      moneySpoils = moneyEarned;
+      cardSpoils = cardsEarned;
     }
   }
 }

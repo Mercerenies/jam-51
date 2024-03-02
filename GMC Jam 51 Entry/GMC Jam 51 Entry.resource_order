@@ -68,6 +68,7 @@
     {"name":"struct_CardAssassin","order":8,"path":"scripts/struct_CardAssassin/struct_CardAssassin.yy",},
     {"name":"scr_EnemyAIs","order":1,"path":"scripts/scr_EnemyAIs/scr_EnemyAIs.yy",},
     {"name":"struct_CharacterProfile","order":4,"path":"scripts/struct_CharacterProfile/struct_CharacterProfile.yy",},
+    {"name":"spr_PlayerBaseStats","order":6,"path":"sprites/spr_PlayerBaseStats/spr_PlayerBaseStats.yy",},
     {"name":"struct_CardRhombus","order":3,"path":"scripts/struct_CardRhombus/struct_CardRhombus.yy",},
     {"name":"spr_LeftArrowButton","order":5,"path":"sprites/spr_LeftArrowButton/spr_LeftArrowButton.yy",},
     {"name":"obj_DiscardPile","order":1,"path":"objects/obj_DiscardPile/obj_DiscardPile.yy",},
@@ -121,5 +122,6 @@
     {"name":"spr_FlyingBrickman","order":4,"path":"sprites/spr_FlyingBrickman/spr_FlyingBrickman.yy",},
     {"name":"scr_drawCard","order":14,"path":"scripts/scr_drawCard/scr_drawCard.yy",},
     {"name":"spr_DiscardPile","order":4,"path":"sprites/spr_DiscardPile/spr_DiscardPile.yy",},
+    {"name":"obj_PlayerBaseStats","order":7,"path":"objects/obj_PlayerBaseStats/obj_PlayerBaseStats.yy",},
   ],
 }

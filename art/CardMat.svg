@@ -82,6 +82,16 @@
        y1="144.3869"
        x2="13.607142"
        y2="223.7619" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6814"
+       id="linearGradient7727"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.25328507,0,0,0.13867972,-121.66186,59.080629)"
+       x1="103.56548"
+       y1="144.3869"
+       x2="13.607142"
+       y2="223.7619" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -91,8 +101,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="-129.47939"
-     inkscape:cy="1172.5169"
+     inkscape:cx="317.00803"
+     inkscape:cy="247.21718"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -176,5 +186,16 @@
          x="38.78804"
          y="339.40652"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.784889">YOU WIN!</tspan></text>
+    <rect
+       style="fill:url(#linearGradient7727);fill-opacity:1;stroke:#000000;stroke-width:0.349165;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect7725"
+       width="50.798695"
+       height="27.81352"
+       x="-128.297"
+       y="69.285973"
+       ry="2.3977172"
+       inkscape:export-filename="StatBox.png"
+       inkscape:export-xdpi="96.128403"
+       inkscape:export-ydpi="96.128403" />
   </g>
 </svg>
