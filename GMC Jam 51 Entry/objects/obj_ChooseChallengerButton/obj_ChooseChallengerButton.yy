@@ -1,19 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ChooseOptionButton",
+  "name": "obj_ChooseChallengerButton",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Choose Option Room",
-    "path": "folders/UI/Choose Option Room.yy",
+    "name": "Choose Opponent Room",
+    "path": "folders/UI/Choose Option Room/Choose Opponent Room.yy",
   },
   "parentObjectId": {
-    "name": "par_BlueButton",
-    "path": "objects/par_BlueButton/par_BlueButton.yy",
+    "name": "obj_ChooseOptionButton",
+    "path": "objects/obj_ChooseOptionButton/obj_ChooseOptionButton.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -28,9 +28,7 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"text","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"\"","varType":2,},
-  ],
+  "properties": [],
   "solid": false,
   "spriteId": {
     "name": "spr_BlueButton",

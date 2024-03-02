@@ -56,7 +56,7 @@ function ChallengerProfile() : ChooserChoice() constructor {
   }
 
   static endgameRoom = function() {
-    return rm_ChooseOpponent; // TODO
+    return rm_ChooseLocation; // TODO
   }
 
   static rollMoneyReward = function() {

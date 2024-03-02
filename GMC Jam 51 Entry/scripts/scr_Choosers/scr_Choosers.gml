@@ -41,6 +41,7 @@ function ChooserChoice() constructor {
   }
 
   static isLocked = function() {
+    // Default is false, but overridable.
     return false;
   }
 

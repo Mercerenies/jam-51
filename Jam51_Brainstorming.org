@@ -165,3 +165,5 @@
    + [ ] Better indication of disabled buttons
    + [ ] Lock certain challengers until you have enough unique wins
    + [ ] More cards :D
+   + [ ] Improve inter-menu animations
+   + [ ] Way to get back to the proper title menu

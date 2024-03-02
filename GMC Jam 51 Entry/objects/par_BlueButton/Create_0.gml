@@ -1,7 +1,7 @@
 
 clicking = false;
 
-text = "";
+text = self[$ "text"] ?? "";
 
 isDisabled = function() {
   return false;
