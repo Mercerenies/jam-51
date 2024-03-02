@@ -126,3 +126,16 @@ function CardGame_querySum(owner, callable) {
   }
   return sum;
 }
+
+function CardGame_isImmuneTo(effectOwner, targetCard) {
+  if (targetCard.isImmuneTo(effectOwner)) {
+    return true;
+  }
+  var arr = CardGame_allCardsInPlay(targetCard.owner);
+  for (var i = 0; i < array_length(arr); i++) {
+    if (arr[i].grantsPassiveImmunity(effectOwner)) {
+      return true;
+    }
+  }
+  return false;
+}

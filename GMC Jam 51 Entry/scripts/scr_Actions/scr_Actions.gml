@@ -462,7 +462,7 @@ function PowerUpArchetypesAction(effectOwner_, archetype_, amount_ = 1) : Action
     for (var i = 0; i < array_length(allCards); i++) {
       var card = allCards[i];
       if (is_instanceof(card, MinionCard) && array_contains(card.getArchetypes(), archetype)) {
-        if (!card.isImmuneTo(effectOwner)) {
+        if (!CardGame_isImmuneTo(effectOwner, card)) {
           card.modifyLevel(amount);
           doTextAnimation(getCardX(card), getCardY(card), 1);
         }

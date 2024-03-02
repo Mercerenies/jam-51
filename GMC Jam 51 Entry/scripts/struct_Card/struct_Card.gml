@@ -92,6 +92,12 @@ function Card(owner_) {
     return false;
   }
 
+  static grantsPassiveImmunity = function(owner_) {
+    // True if this card grants immunity (from owner) to all cards on
+    // the same side of the field.
+    return false;
+  }
+
   static drawCard = function(xx, yy) { // (xx, yy) is center
     // Card frame
     var cardImageIndex = rarityImageIndex(getRarity())
