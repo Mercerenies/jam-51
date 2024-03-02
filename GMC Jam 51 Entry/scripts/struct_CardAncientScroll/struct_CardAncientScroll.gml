@@ -26,7 +26,7 @@ function CardAncientScroll(owner_) : EffectCard(owner_) constructor {
   }
 
   static getText = function() {
-    return "Instant: +1 Level to all NINJA cards in play.";
+    return "Instant: +1 Level to all NINJA Minions in play.";
   }
 
   static isOngoing = function() {

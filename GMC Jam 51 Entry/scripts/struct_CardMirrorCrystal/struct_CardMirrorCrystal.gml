@@ -26,7 +26,7 @@ function CardMirrorCrystal(owner_) : EffectCard(owner_) constructor {
   }
 
   static getText = function() {
-    return "Instant: +1 Level to all GEOMETRY cards in play.";
+    return "Instant: +1 Level to all GEOMETRY Minions in play.";
   }
 
   static isOngoing = function() {

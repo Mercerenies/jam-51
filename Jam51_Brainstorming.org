@@ -159,3 +159,4 @@
    + [ ] "Your Turn!" notification when it's your turn
    + [ ] Smarter AI?
    + [ ] List of cards you've collected so far
+   + [ ] Give Acorn some support (he's identical to Mushroom Man right now)
