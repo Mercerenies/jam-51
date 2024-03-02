@@ -486,3 +486,13 @@ function IncreaseTurnCounterAction(card_) : Action() constructor {
     }
   }
 }
+
+function EndCardGameAction(winner_) : Action() constructor {
+  winner = winner_;
+
+  static perform = function(continuation) {
+    with (instance_create_layer(room_width / 2, room_height / 2, "Instances_UI", obj_EndOfGameScreen)) {
+      playerWins = (other.winner == CardPlayer.LEFT);
+    }
+  }
+}

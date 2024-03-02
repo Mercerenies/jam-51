@@ -44,6 +44,10 @@ function ChallengerProfile() constructor {
     return new EagerEnemyAI();
   }
 
+  static endgameRoom = function() {
+    return rm_ChooseOpponent; // TODO
+  }
+
 }
 
 function RavenmanChallenger() : ChallengerProfile() constructor {
