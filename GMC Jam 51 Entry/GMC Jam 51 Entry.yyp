@@ -56,6 +56,7 @@
     {"id":{"name":"spr_Deck","path":"sprites/spr_Deck/spr_Deck.yy",},},
     {"id":{"name":"rm_ChooseOpponent","path":"rooms/rm_ChooseOpponent/rm_ChooseOpponent.yy",},},
     {"id":{"name":"obj_PlayerOngoingRow","path":"objects/obj_PlayerOngoingRow/obj_PlayerOngoingRow.yy",},},
+    {"id":{"name":"par_Chooser","path":"objects/par_Chooser/par_Chooser.yy",},},
     {"id":{"name":"obj_CardListModal","path":"objects/obj_CardListModal/obj_CardListModal.yy",},},
     {"id":{"name":"rm_CardGame","path":"rooms/rm_CardGame/rm_CardGame.yy",},},
     {"id":{"name":"struct_CardFusion","path":"scripts/struct_CardFusion/struct_CardFusion.yy",},},
@@ -158,6 +159,7 @@
     {"id":{"name":"struct_CardMirrorCrystal","path":"scripts/struct_CardMirrorCrystal/struct_CardMirrorCrystal.yy",},},
     {"id":{"name":"spr_Challenger","path":"sprites/spr_Challenger/spr_Challenger.yy",},},
     {"id":{"name":"struct_CardSpareBattery","path":"scripts/struct_CardSpareBattery/struct_CardSpareBattery.yy",},},
+    {"id":{"name":"rm_ChooseLocation","path":"rooms/rm_ChooseLocation/rm_ChooseLocation.yy",},},
     {"id":{"name":"scr_gotoDialogueRoom","path":"scripts/scr_gotoDialogueRoom/scr_gotoDialogueRoom.yy",},},
     {"id":{"name":"spr_BlueButton","path":"sprites/spr_BlueButton/spr_BlueButton.yy",},},
     {"id":{"name":"obj_GenericSemaphoreManager","path":"objects/obj_GenericSemaphoreManager/obj_GenericSemaphoreManager.yy",},},
@@ -178,6 +180,7 @@
     {"roomId":{"name":"rm_ChooseOpponent","path":"rooms/rm_ChooseOpponent/rm_ChooseOpponent.yy",},},
     {"roomId":{"name":"rm_Dialogue","path":"rooms/rm_Dialogue/rm_Dialogue.yy",},},
     {"roomId":{"name":"rm_TitleScreen","path":"rooms/rm_TitleScreen/rm_TitleScreen.yy",},},
+    {"roomId":{"name":"rm_ChooseLocation","path":"rooms/rm_ChooseLocation/rm_ChooseLocation.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
