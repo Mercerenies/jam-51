@@ -86,6 +86,12 @@ function Card(owner_) {
     return undefined;
   }
 
+  static isImmuneTo = function(owner_) {
+    // True if this card is immune to effects played by the given
+    // player.
+    return false;
+  }
+
   static drawCard = function(xx, yy) { // (xx, yy) is center
     // Card frame
     var cardImageIndex = rarityImageIndex(getRarity())

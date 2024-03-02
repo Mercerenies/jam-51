@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Cards",
-    "path": "folders/Cards.yy",
+    "name": "Base Classes",
+    "path": "folders/Cards/Library/Base Classes.yy",
   },
 }

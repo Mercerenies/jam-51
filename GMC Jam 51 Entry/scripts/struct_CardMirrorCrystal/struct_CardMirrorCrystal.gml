@@ -36,7 +36,8 @@ function CardMirrorCrystal(owner_) : EffectCard(owner_) constructor {
   static onPlayed = function() {
     // Returns an Action which shall run when the card is first
     // played.
-    return new HighlightCardAction(self).chain(new PowerUpArchetypesAction(Archetype.SHAPE));
+    return new HighlightCardAction(self)
+      .chain(new PowerUpArchetypesAction(owner, Archetype.SHAPE));
   }
 
 }

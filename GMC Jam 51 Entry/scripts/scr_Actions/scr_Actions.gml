@@ -451,8 +451,9 @@ function ContinueEnemyTurnAction() : Action() constructor {
   }
 }
 
-function PowerUpArchetypesAction(archetype_, amount_ = 1) : Action() constructor {
+function PowerUpArchetypesAction(effectOwner_, archetype_, amount_ = 1) : Action() constructor {
   __actionType = "PowerUpArchetypesAction";
+  effectOwner = effectOwner_;
   archetype = archetype_;
   amount = amount_;
 
@@ -461,8 +462,10 @@ function PowerUpArchetypesAction(archetype_, amount_ = 1) : Action() constructor
     for (var i = 0; i < array_length(allCards); i++) {
       var card = allCards[i];
       if (is_instanceof(card, MinionCard) && array_contains(card.getArchetypes(), archetype)) {
-        card.modifyLevel(amount);
-        doTextAnimation(getCardX(card), getCardY(card), 1);
+        if (!card.isImmuneTo(effectOwner)) {
+          card.modifyLevel(amount);
+          doTextAnimation(getCardX(card), getCardY(card), 1);
+        }
       }
     }
     continuation.call();
