@@ -13,7 +13,7 @@ getHandLimit = function() {
 
 // TODO Show this, if we decide to let cards augment it.
 getCardsPerTurn = function() {
-  return DEFAULT_CARDS_PER_TURN;
+  return DEFAULT_CARDS_PER_TURN + CardGame_querySum(owner, function(card) { return card.getDrawModifier(); });
 }
 
 getEvilPointsPerTurn = function() {

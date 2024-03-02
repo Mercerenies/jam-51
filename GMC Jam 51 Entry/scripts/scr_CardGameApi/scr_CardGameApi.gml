@@ -30,7 +30,6 @@ function CardGame_Action_startTurn(owner) {
 
 function CardGame_Action_endTurn(owner) {
   var stats = CardGame_getStats(owner);
-  var cardsToDraw = stats.getCardsPerTurn();
   // TODO end phase card actions
   return new NullAction()
     // End Phase
@@ -138,4 +137,13 @@ function CardGame_isImmuneTo(effectOwner, targetCard) {
     }
   }
   return false;
+}
+
+function CardGame_orderByPower(minion1, minion2) {
+  // Cards that refer to "most powerful" use this ordering. Cards are
+  // first compared by their level * morale. Then, as a tiebreaker, we
+  // use morale alone.
+  var m1 = 1000 * (minion1.getLevel() * minion1.getMorale()) + minion1.getMorale();
+  var m2 = 1000 * (minion2.getLevel() * minion2.getMorale()) + minion2.getMorale();
+  return sign(m1 - m2);
 }

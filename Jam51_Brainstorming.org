@@ -160,3 +160,4 @@
    + [ ] Smarter AI?
    + [ ] List of cards you've collected so far
    + [ ] Give Acorn some support (he's identical to Mushroom Man right now)
+   + [ ] Card to increase counters for cards that have turn counters

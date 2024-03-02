@@ -73,6 +73,11 @@ function Card(owner_) {
     return 0;
   }
 
+  static getDrawModifier = function() {
+    // Modification to number of cards to draw.
+    return 0;
+  }
+
   static isLimited = function() {
     // An unlimited card (the default) can have 3 copies in your deck.
     // A limited card can only have one copy.
