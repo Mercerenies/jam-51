@@ -1,6 +1,16 @@
 
 // Abstract base class
 function ChallengerProfile() constructor {
+  timesBeaten = 0;
+  timesLostTo = 0;
+
+  static markAsBeaten = function() {
+    timesBeaten++;
+  }
+
+  static markAsLostTo = function() {
+    timesLostTo++;
+  }
 
   static getTitle = function() {
     // Abstract method
@@ -93,6 +103,20 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
 
   static rollRegularReward = function() {
     return [arrayRandom(_rewardsPool), arrayRandom(_rewardsPool)];
+  }
+
+  // DEBUG CODE
+  static onChallenge = function() {
+    return new GotoDialogueRoomAction(
+      new DialogueCallback(
+        new NullAction()
+          .chain(new DialogueAction("Test dialogue"))
+          .chain(new DialogueAction("Test dialogue again"))
+          .chain(new DialogueAction("Whee I have so much dialogue to share and I love it and this had better screenwrap :) smiley face"))
+          .chain(new ChallengeOpponentAction(self)),
+      ),
+    )
+    return new ChallengeOpponentAction(self);
   }
 }
 

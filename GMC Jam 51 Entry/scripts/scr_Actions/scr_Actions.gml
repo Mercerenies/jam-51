@@ -494,11 +494,14 @@ function EndCardGameAction(winner_) : Action() constructor {
     // Roll spoils
     var moneyEarned = 0;
     var cardsEarned = [];
+    var challenger = global.__CardGame_fieldProfile.challenger;
     if (winner == CardPlayer.LEFT) {
       // TODO Bonus challenges
-      var challenger = global.__CardGame_fieldProfile.challenger;
       moneyEarned = challenger.rollMoneyReward();
       cardsEarned = challenger.rollRegularReward();
+      challenger.markAsBeaten();
+    } else {
+      challenger.markAsLostTo();
     }
 
     // Give the player the rewards

@@ -1,15 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Debug",
+  "name": "obj_TitleScreenRoom",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":56,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Debug",
-    "path": "folders/Debug.yy",
+    "name": "Title Screen Room",
+    "path": "folders/UI/Title Screen Room.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Debug",
-    "path": "sprites/spr_Debug/spr_Debug.yy",
+    "name": "spr_TitleScreenRoom",
+    "path": "sprites/spr_TitleScreenRoom/spr_TitleScreenRoom.yy",
   },
   "spriteMaskId": null,
   "visible": false,
