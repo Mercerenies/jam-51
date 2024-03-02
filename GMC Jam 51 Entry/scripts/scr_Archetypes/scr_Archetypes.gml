@@ -1,14 +1,14 @@
 
 enum Archetype {
-  HUMAN, FUNGUS, TURTLE, SHAPE, PASTA, CLOWN, ROBOT, BEE, NINJA, BOSS, UNDEAD,
+  HUMAN, NATURE, TURTLE, SHAPE, PASTA, CLOWN, ROBOT, BEE, NINJA, BOSS, UNDEAD,
 }
 
 function archetypeName(archetype) {
   switch (archetype) {
   case Archetype.HUMAN:
     return "Human"
-  case Archetype.FUNGUS:
-    return "Fungus"
+  case Archetype.NATURE:
+    return "Nature"
   case Archetype.TURTLE:
     return "Turtle"
   case Archetype.SHAPE:
@@ -35,7 +35,7 @@ function archetypeImageIndex(archetype) {
   switch (archetype) {
   case Archetype.HUMAN:
     return 1;
-  case Archetype.FUNGUS:
+  case Archetype.NATURE:
     return 2;
   case Archetype.TURTLE:
     return 3;

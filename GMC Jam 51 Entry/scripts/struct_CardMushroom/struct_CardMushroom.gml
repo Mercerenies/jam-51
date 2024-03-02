@@ -30,7 +30,7 @@ function CardMushroom(owner_) : MinionCard(owner_, 1, 1) constructor {
   }
 
   static getArchetypes = function() {
-    return [Archetype.FUNGUS];
+    return [Archetype.NATURE];
   }
 
 }
