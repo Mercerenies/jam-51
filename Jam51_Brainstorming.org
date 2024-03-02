@@ -158,3 +158,4 @@
    + [ ] Right click to insta-play card
    + [ ] "Your Turn!" notification when it's your turn
    + [ ] Smarter AI?
+   + [ ] List of cards you've collected so far
