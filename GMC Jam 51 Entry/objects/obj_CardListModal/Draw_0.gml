@@ -24,12 +24,5 @@ if (!is_undefined(button)) {
       image_idx = 1;
     }
   }
-  draw_sprite(spr_BlueButton, image_idx, xx, yy);
-  draw_set_font(fnt_GeneralUI);
-  draw_set_color((image_idx == 2) ? c_white : c_black);
-  draw_set_halign(fa_center);
-  draw_set_valign(fa_middle);
-  draw_text(xx, yy, button.buttonText());
-  draw_set_halign(fa_left);
-  draw_set_valign(fa_top);
+  drawButton(xx, yy, button.buttonText(), image_idx);
 }
