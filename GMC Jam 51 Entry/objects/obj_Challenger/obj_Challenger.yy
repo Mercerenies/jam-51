@@ -4,16 +4,17 @@
   "name": "obj_Challenger",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Choose Opponent Room",
-    "path": "folders/UI/Choose Opponent Room.yy",
+    "path": "folders/UI/Choose Option Room/Choose Opponent Room.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "par_ChooserIcon",
+    "path": "objects/par_ChooserIcon/par_ChooserIcon.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

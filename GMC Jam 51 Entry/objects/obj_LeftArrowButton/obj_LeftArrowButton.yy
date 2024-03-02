@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Choose Opponent Room",
-    "path": "folders/UI/Choose Opponent Room.yy",
+    "name": "Choose Option Room",
+    "path": "folders/UI/Choose Option Room.yy",
   },
   "parentObjectId": {
     "name": "par_BlueButton",

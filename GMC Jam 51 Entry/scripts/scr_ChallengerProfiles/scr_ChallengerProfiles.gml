@@ -1,15 +1,12 @@
 
 // Abstract base class
-function ChallengerProfile() constructor {
+function ChallengerProfile() : ChooserChoice() constructor {
   timesBeaten = 0;
   timesLostTo = 0;
 
-  static markAsBeaten = function() {
-    timesBeaten++;
-  }
-
-  static markAsLostTo = function() {
-    timesLostTo++;
+  static getLines = function() {
+    var winLossLine = "Wins " + string(timesBeaten) + " / Losses " + string(timesLostTo);
+    return getTitle() + "\n\n" + getSubtitle() + "\n\n" + winLossLine;
   }
 
   static getTitle = function() {
@@ -22,8 +19,12 @@ function ChallengerProfile() constructor {
     return "";
   }
 
-  static getSprite = function() {
-    // Abstract method
+  static markAsBeaten = function() {
+    timesBeaten++;
+  }
+
+  static markAsLostTo = function() {
+    timesLostTo++;
   }
 
   static getDeck = function() {
@@ -46,7 +47,7 @@ function ChallengerProfile() constructor {
     return new CharacterProfile(challengerAI(), getDeck());
   }
 
-  static onChallenge = function() {
+  static onChoose = function() {
     return new ChallengeOpponentAction(self);
   }
 
@@ -106,7 +107,7 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
   }
 
   // DEBUG CODE
-  static onChallenge = function() {
+  static onChoose = function() {
     return new GotoDialogueRoomAction(
       new DialogueCallback(
         new NullAction()

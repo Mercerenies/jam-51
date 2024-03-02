@@ -2,10 +2,10 @@
 event_inherited();
 
 isDisabled = function() {
-  var currIndex = ctrl_ChooseOpponentRoom.opponentIndex;
-  return (currIndex <= 0);
+  var currIndex = par_ChooserIcon.currentIndex;
+  return (currIndex <= par_ChooserIcon.getMinChoice());
 }
 
 onClick = function() {
-  obj_Challenger.scrollLeft();
+  par_ChooserIcon.scrollLeft();
 }

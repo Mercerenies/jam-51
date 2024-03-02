@@ -4,7 +4,7 @@ randomize();
 global.cardSurface = undefined;
 global.allChallengers = initChallengers();
 
-global.isFirstPlay = true;
+global.isFirstPlay = false; // DEBUG CODE (should be true or loaded from file)
 
 // DEBUG CODE (Set this to a real starter deck or load from file)
 global.playerDeck = [

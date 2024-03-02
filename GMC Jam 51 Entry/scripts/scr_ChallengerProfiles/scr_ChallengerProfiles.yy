@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Choose Opponent Room",
-    "path": "folders/UI/Choose Opponent Room.yy",
+    "path": "folders/UI/Choose Option Room/Choose Opponent Room.yy",
   },
 }

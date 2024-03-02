@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Choose Opponent Room",
-    "path": "folders/UI/Choose Opponent Room.yy",
+    "name": "Choose Option Room",
+    "path": "folders/UI/Choose Option Room.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

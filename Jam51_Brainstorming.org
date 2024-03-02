@@ -41,8 +41,6 @@
      acts as the first tutorial.
    + General Badguy :: Obviously a superhero in a bad disguise. Acts
      as the tutorial for Hero cards.
-   + ??? :: (Tutorial for Invention cards)
-   + ??? :: (Tutorial for Hostage cards)
    + Barry :: ???
    + Icosaking :: ???
    + Dr. Meguruku :: ???
@@ -155,6 +153,7 @@
    + Most of your day will be spent adding cards and corresponding mechanics :)
 ** STRETCH GOALS
    + [X] Improve UI of card game background
+   + [ ] Save/load
    + [ ] Right click to insta-play card
    + [ ] "Your Turn!" notification when it's your turn
    + [ ] Smarter AI?
@@ -165,3 +164,4 @@
    + [ ] SFX
    + [ ] Better indication of disabled buttons
    + [ ] Lock certain challengers until you have enough unique wins
+   + [ ] More cards :D

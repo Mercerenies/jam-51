@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_ChooseOpponentRoom",
+  "name": "scr_Choosers",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Choose Opponent Room",
-    "path": "folders/UI/Choose Opponent Room.yy",
+    "name": "Choose Option Room",
+    "path": "folders/UI/Choose Option Room.yy",
   },
 }
