@@ -4,7 +4,10 @@ function CardGame_showingModal() {
 }
 
 function CardGame_canPlayerInteract() {
-  return (!CardGame_showingModal()) && (ctrl_CardGameManager.actionsSemaphore <= 0);
+  if (CardGame_showingModal()) {
+    return false;
+  }
+  return (!instance_exists(par_ActionsSemaphoreManager)) || (par_ActionsSemaphoreManager.actionsSemaphore <= 0);
 }
 
 function CardGame_showCardList(cards_array, button_ = undefined, show_empty_icon_if_empty = true) {

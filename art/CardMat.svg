@@ -22,6 +22,22 @@
      id="defs6239">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient6830">
+      <stop
+         style="stop-color:#616161;stop-opacity:1"
+         offset="0"
+         id="stop6824" />
+      <stop
+         style="stop-color:#a6a6a6;stop-opacity:1"
+         offset="0.46775988"
+         id="stop6826" />
+      <stop
+         style="stop-color:#616161;stop-opacity:1"
+         offset="1"
+         id="stop6828" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient6814">
       <stop
          style="stop-color:#a7a7a7;stop-opacity:1;"
@@ -44,7 +60,28 @@
        y1="144.3869"
        x2="13.607142"
        y2="223.7619"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(53.672619,-86.934524)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6830"
+       id="linearGradient6822"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.78054103,0,0,0.78054103,-189.82198,190.35821)"
+       x1="103.56548"
+       y1="144.3869"
+       x2="13.607142"
+       y2="223.7619" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6830"
+       id="linearGradient6865"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.78054103,0,0,0.78054103,5.8587283,256.69773)"
+       x1="103.56548"
+       y1="144.3869"
+       x2="13.607142"
+       y2="223.7619" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -53,9 +90,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="400"
-     inkscape:cy="560"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-129.47939"
+     inkscape:cy="1172.5169"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -86,8 +123,58 @@
        id="rect6808"
        width="200.55939"
        height="200.55939"
-       x="-26.196365"
-       y="73.58934"
+       x="27.476254"
+       y="-13.345183"
        ry="17.289602" />
+    <rect
+       style="fill:url(#linearGradient6822);fill-opacity:1;stroke:#000000;stroke-width:1.45417;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect6820"
+       width="156.54483"
+       height="156.54483"
+       x="-210.26932"
+       y="247.79771"
+       ry="13.495244"
+       inkscape:export-filename="YouLose.png"
+       inkscape:export-xdpi="96.128403"
+       inkscape:export-ydpi="96.128403" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:14.6514px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';stroke-width:0.784889"
+       x="-161.48221"
+       y="275.15314"
+       id="text6834"
+       inkscape:export-filename="YouLose.png"
+       inkscape:export-xdpi="96.128403"
+       inkscape:export-ydpi="96.128403"><tspan
+         sodipodi:role="line"
+         id="tspan6832"
+         x="-161.48221"
+         y="275.15314"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.784889">YOU LOSE!</tspan></text>
+    <rect
+       style="fill:url(#linearGradient6865);fill-opacity:1;stroke:#000000;stroke-width:1.45417;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect6859"
+       width="156.54483"
+       height="156.54483"
+       x="-14.588601"
+       y="314.13724"
+       ry="13.495244"
+       inkscape:export-filename="YouWin.png"
+       inkscape:export-xdpi="96.128403"
+       inkscape:export-ydpi="96.128403" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:14.6514px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';stroke-width:0.784889"
+       x="38.78804"
+       y="339.40652"
+       id="text6863"
+       inkscape:export-filename="YouWin.png"
+       inkscape:export-xdpi="96.128403"
+       inkscape:export-ydpi="96.128403"><tspan
+         sodipodi:role="line"
+         id="tspan6861"
+         x="38.78804"
+         y="339.40652"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.784889">YOU WIN!</tspan></text>
   </g>
 </svg>

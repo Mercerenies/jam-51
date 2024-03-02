@@ -154,10 +154,13 @@
    + Add cards
    + Most of your day will be spent adding cards and corresponding mechanics :)
 ** STRETCH GOALS
-   + [ ] Improve UI of card game background
+   + [X] Improve UI of card game background
    + [ ] Right click to insta-play card
    + [ ] "Your Turn!" notification when it's your turn
    + [ ] Smarter AI?
    + [ ] List of cards you've collected so far
    + [ ] Give Acorn some support (he's identical to Mushroom Man right now)
    + [ ] Card to increase counters for cards that have turn counters
+   + [ ] More interesting background than the solid blue
+   + [ ] SFX
+   + [ ] Better indication of disabled buttons

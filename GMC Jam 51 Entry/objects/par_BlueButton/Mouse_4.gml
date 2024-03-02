@@ -1,4 +1,4 @@
 
-if ((!disabled) && CardGame_canPlayerInteract()) {
+if ((!isDisabled()) && CardGame_canPlayerInteract()) {
   clicking = true;
 }

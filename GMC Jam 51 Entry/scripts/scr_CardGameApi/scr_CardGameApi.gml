@@ -79,14 +79,9 @@ function CardGame_checkEndGame() {
 
 function CardGame_endGame(winner) {
   // winner shall be a CardPlayer.
-  //
-  // TODO Implement this for real. (DEBUG CODE)
-  if (winner == CardPlayer.LEFT) {
-    show_message("You win");
-  } else {
-    show_message("You lose");
+  with (instance_create_layer(room_width / 2, room_height / 2, "Instances_UI", obj_EndOfGameScreen)) {
+    playerWins = (winner == CardPlayer.LEFT);
   }
-  game_end();
 }
 
 function CardGame_allCardsInPlay(owner_ = undefined) {
