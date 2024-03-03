@@ -155,6 +155,8 @@
    MUST
    + [X] Shop
    + [ ] Trunk
+   + [ ] Sorting trunk
+   + [ ] Also right click to move cards in trunk
    + [ ] Intro dialogue and story
    + [ ] Credits
    + [ ] Proper title screen
@@ -166,7 +168,6 @@
    + [X] Improve UI of card game background
    + [ ] Save/load
    + [ ] Right click to insta-play card
-   + [ ] Also right click to move cards in trunk
    + [ ] "Your Turn!" notification when it's your turn
    + [ ] Smarter AI?
    + [ ] List of cards you've collected so far

@@ -28,7 +28,7 @@ function ShopEntry() constructor {
 
 function CardShopEntry(cardType_) : ShopEntry() constructor {
   cardType = cardType_;
-  card = new cardType_(); // Only allocate the temporary once, to avoid frivolous allocations
+  card = new cardType_(CardPlayer.LEFT); // Only allocate the temporary once, to avoid frivolous allocations
 
   static getName = function() {
     return card.getName();
