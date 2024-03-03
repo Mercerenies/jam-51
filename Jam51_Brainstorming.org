@@ -163,9 +163,9 @@
    + [X] Sorting trunk
    + [X] Also right click to move cards in trunk
    + [X] Intro dialogue and story
-   + [ ] Credits
+   + [X] Credits
    + [X] Proper title screen
-   + [ ] Splash screen
+   + [X] Splash screen
    + [ ] Integrate BGM
    + [X] Secondary goals
    + [X] Unique reward if all secondary goals are met
