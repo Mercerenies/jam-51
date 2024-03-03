@@ -84,6 +84,7 @@
     {"id":{"name":"fnt_DialogueBox","path":"fonts/fnt_DialogueBox/fnt_DialogueBox.yy",},},
     {"id":{"name":"spr_CardListModal","path":"sprites/spr_CardListModal/spr_CardListModal.yy",},},
     {"id":{"name":"struct_CardPentagon","path":"scripts/struct_CardPentagon/struct_CardPentagon.yy",},},
+    {"id":{"name":"scr_Cutscenes","path":"scripts/scr_Cutscenes/scr_Cutscenes.yy",},},
     {"id":{"name":"struct_CardAcorn","path":"scripts/struct_CardAcorn/struct_CardAcorn.yy",},},
     {"id":{"name":"obj_CardPlayerStats","path":"objects/obj_CardPlayerStats/obj_CardPlayerStats.yy",},},
     {"id":{"name":"struct_CardNuclear","path":"scripts/struct_CardNuclear/struct_CardNuclear.yy",},},

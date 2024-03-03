@@ -44,14 +44,16 @@
    + Barry :: ???
    + Icosaking :: ???
    + Dr. Meguruku :: ???
-   + The Clown :: ???
+   + Mute Mischief Mime :: Clown
    + Maxwell Sterling :: ???
-   + The Milkman :: ???
+   + Milkman Marauder :: ???
    + Count Carbonara :: ???
-   + Fireman :: A fire-breathing dragon-turtle thing that's definitely
-     /not/ inspired by Nintendo.
-   + Beekeeper :: ???
+   + Infernoshell :: A fire-breathing dragon-turtle thing that's
+                     definitely /not/ inspired by Nintendo.
+   + Venomatrix :: ???
    + Skullz :: Spiky-haired creep who loves graveyards
+   + Chris Cogsworth :: Not a supervillain. Just cleans clocks. Ended
+        up at the meeting anyway.
 ** CARD GAME RULES
    The game proceeds on a turn-by-turn basis. The human player
    character always goes first, and turns alternate from there.
@@ -189,6 +191,7 @@
    + [ ] Manual? (Might just be the readme)
    + [ ] Allow skipping cutscenes if you've seen them once
    + [ ] ... Upload decks?
+   + [ ] Character profiles on card game screen
 ** SHOP RULES
    + For simple minion cards that have no effect and match curve,
      their shop cost should be twice their EP cost.

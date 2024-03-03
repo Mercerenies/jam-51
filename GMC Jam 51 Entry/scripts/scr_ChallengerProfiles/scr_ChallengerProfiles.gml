@@ -162,16 +162,11 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
 
   // DEBUG CODE
   static onChoose = function() {
-    return new GotoDialogueRoomAction(
-      new DialogueCallback(
-        new NullAction()
-          .chain(setChars(spr_Ravengirl, spr_Ravenman))
-          .chain(bottomDia("Ravenman's text", Mugshot.RAVENMAN))
-          .chain(bottomDia("Ravengirl's text", Mugshot.RAVENGIRL_INTRO))
-          .chain(new ChallengeOpponentAction(self)),
-      ),
-    )
-    return new ChallengeOpponentAction(self);
+    var challengeAction = new ChallengeOpponentAction(self);
+    if (!shouldPlayTutorials()) {
+      return challengeAction;
+    }
+    return new GotoDialogueRoomAction(new DialogueCallback(Cutscene_ravenmanIntro(challengeAction)))
   }
 }
 
@@ -223,4 +218,10 @@ function initChallengers() {
     new RavenmanChallenger(),
     new FlyingBrickmanChallenger(),
   ]
+}
+
+function shouldPlayTutorials() {
+  // TODO Implement this as a toggle button on the main menu screen
+  // (if you've seen the given tutorial before)
+  return true;
 }
