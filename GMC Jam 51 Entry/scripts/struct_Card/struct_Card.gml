@@ -12,6 +12,14 @@ function Card(owner_) {
     return asset_get_index(typeName);
   }
 
+  static getLimit = function() {
+    if (isLimited()) {
+      return 1;
+    } else {
+      return 3;
+    }
+  }
+
   static getId = function() {
     // Abstract method
   }

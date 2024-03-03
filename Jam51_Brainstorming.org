@@ -172,13 +172,13 @@
    + [X] Display on the main screen if you've met all of his goals
      before
    + [ ] Enforce limited cards in the Trunk!
-   + [ ] Emphasize (in some dialogue) that the shop items get better
-     over time
 
    LATER
+   + [ ] Emphasize (in some dialogue) that the shop items get better
+     over time
    + [ ] Spice up title screen
    + [X] Improve UI of card game background
-   + [ ] Save/load
+   + [X] Save/load
    + [X] Right click to insta-play card
    + [ ] "Your Turn!" notification when it's your turn
    + [ ] Smarter AI?

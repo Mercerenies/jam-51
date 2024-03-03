@@ -15,6 +15,13 @@ if (inDeck == required) {
 var xx, yy;
 
 xx = x + 32;
-yy = y + sprite_height / 2;
+yy = y + sprite_height / 2 - 32;
 draw_sprite(spr_CardIcons, CARDS_ICON_INDEX, xx, yy);
 draw_text(xx + 16, yy - 12, string(inDeck) + " / " + string(required));
+
+xx = x + 32;
+yy = y + sprite_height / 2 + 32;
+draw_set_color(c_red);
+if (!validateDeckLimits()) {
+  draw_text(xx + 16, yy - 12, "Card Limit!");
+}
