@@ -154,9 +154,9 @@
 ** STRETCH GOALS
    MUST
    + [X] Shop
-   + [ ] Trunk
+   + [X] Trunk
    + [ ] Sorting trunk
-   + [ ] Also right click to move cards in trunk
+   + [X] Also right click to move cards in trunk
    + [ ] Intro dialogue and story
    + [ ] Credits
    + [ ] Proper title screen
