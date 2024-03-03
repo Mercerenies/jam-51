@@ -181,6 +181,7 @@
    + [ ] Improve inter-menu animations
    + [ ] Way to get back to the proper title menu
    + [ ] Show random tips on the "Game Win / Loss" screen
+   + [ ] "Cancel" button to revert deck on Trunk screen if you don't like your changes.
 ** SHOP RULES
    + For simple minion cards that have no effect and match curve,
      their shop cost should be twice their EP cost.

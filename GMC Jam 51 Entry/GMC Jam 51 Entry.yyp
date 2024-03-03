@@ -93,6 +93,7 @@
     {"id":{"name":"struct_EffectCard","path":"scripts/struct_EffectCard/struct_EffectCard.yy",},},
     {"id":{"name":"scr_AnimationHelpers","path":"scripts/scr_AnimationHelpers/scr_AnimationHelpers.yy",},},
     {"id":{"name":"spr_GenericSemaphoreManager","path":"sprites/spr_GenericSemaphoreManager/spr_GenericSemaphoreManager.yy",},},
+    {"id":{"name":"scr_TrunkRoomModalButtons","path":"scripts/scr_TrunkRoomModalButtons/scr_TrunkRoomModalButtons.yy",},},
     {"id":{"name":"struct_CardSpikyMushroom","path":"scripts/struct_CardSpikyMushroom/struct_CardSpikyMushroom.yy",},},
     {"id":{"name":"par_ActionsSemaphoreManager","path":"objects/par_ActionsSemaphoreManager/par_ActionsSemaphoreManager.yy",},},
     {"id":{"name":"spr_EndOfGameScreen","path":"sprites/spr_EndOfGameScreen/spr_EndOfGameScreen.yy",},},

@@ -32,3 +32,7 @@ overlappingCard = function(xx, yy) {
   }
   return undefined;
 }
+
+getActionButton = function(idx) {
+  return undefined;
+}
