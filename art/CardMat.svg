@@ -101,8 +101,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="-575.96682"
-     inkscape:cy="1802.8521"
+     inkscape:cx="9.9216593"
+     inkscape:cy="1245.2479"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -149,7 +149,7 @@
        inkscape:export-ydpi="96.128403" />
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:14.6514px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';stroke-width:0.784889"
+       style="font-weight:bold;font-size:14.6514px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';stroke-width:0.784889;fill:#000000;fill-opacity:1;"
        x="-161.48221"
        y="275.15314"
        id="text6834"
@@ -160,7 +160,7 @@
          id="tspan6832"
          x="-161.48221"
          y="275.15314"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.784889">YOU LOSE!</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#000000;fill-opacity:1;stroke-width:0.784889;">YOU LOSE!</tspan></text>
     <rect
        style="fill:url(#linearGradient6865);fill-opacity:1;stroke:#000000;stroke-width:1.45417;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="rect6859"
@@ -174,7 +174,7 @@
        inkscape:export-ydpi="96.128403" />
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:14.6514px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';stroke-width:0.784889"
+       style="font-weight:bold;font-size:14.6514px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';stroke-width:0.784889;fill:#000000;fill-opacity:1;"
        x="38.78804"
        y="339.40652"
        id="text6863"
@@ -185,7 +185,7 @@
          id="tspan6861"
          x="38.78804"
          y="339.40652"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.784889">YOU WIN!</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#000000;fill-opacity:1;stroke-width:0.784889;">YOU WIN!</tspan></text>
     <rect
        style="fill:url(#linearGradient7727);fill-opacity:1;stroke:#000000;stroke-width:0.349165;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="rect7725"

@@ -35,12 +35,16 @@ function ChallengerProfile() : ChooserChoice() constructor {
     return false; // TODO
   }
 
+  static fortStrength = function() {
+    return DEFAULT_FORT_STRENGTH;
+  }
+
   static buildPlayerProfile = function() {
     return new CharacterProfile(undefined, global.playerDeck);
   }
 
   static buildFieldProfile = function() {
-    return new FieldProfile(2, self); // (DEBUG CODE) DEFAULT_FORT_STRENGTH;
+    return new FieldProfile(fortStrength(), self);
   }
 
   static buildEnemyProfile = function() {
@@ -69,6 +73,11 @@ function ChallengerProfile() : ChooserChoice() constructor {
     return [];
   }
 
+  static getSecondaryConditions = function() {
+    // Array of SecondaryCondition objects.
+    return [];
+  }
+
 }
 
 function RavenmanChallenger() : ChallengerProfile() constructor {
@@ -81,6 +90,10 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
   _rewardsPool = [
     CardMushroom, CardSpikyMushroom,
   ];
+
+  static fortStrength = function() {
+    return 20;
+  }
 
   static getTitle = function() {
     return "Ravenman";
@@ -103,7 +116,12 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
   }
 
   static rollRegularReward = function() {
-    return [arrayRandom(_rewardsPool), arrayRandom(_rewardsPool)];
+    return [arrayRandom(_rewardsPool)];
+  }
+
+  static getSecondaryConditions = function() {
+    // DEBUG CODE
+    return [new QDebugCondition(CardFusion)];
   }
 
   // DEBUG CODE

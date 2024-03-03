@@ -155,7 +155,7 @@
    MUST
    + [X] Shop
    + [X] Trunk
-   + [ ] Sorting trunk
+   + [X] Sorting trunk
    + [X] Also right click to move cards in trunk
    + [ ] Intro dialogue and story
    + [ ] Credits
@@ -185,6 +185,7 @@
    + [ ] Codex of all unique cards owned, with gaps for missing ones
    + [ ] Manual? (Might just be the readme)
    + [ ] Allow skipping cutscenes if you've seen them once
+   + [ ] ... Upload decks?
 ** SHOP RULES
    + For simple minion cards that have no effect and match curve,
      their shop cost should be twice their EP cost.

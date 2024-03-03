@@ -495,11 +495,20 @@ function EndCardGameAction(winner_) : Action() constructor {
     var moneyEarned = 0;
     var cardsEarned = [];
     var challenger = global.__CardGame_fieldProfile.challenger;
+    var secondaryConditions = challenger.getSecondaryConditions();
+    var secondaryConditionsMask = array_map(secondaryConditions, function() { return false; });
     if (winner == CardPlayer.LEFT) {
-      // TODO Bonus challenges
+      challenger.markAsBeaten();
       moneyEarned = challenger.rollMoneyReward();
       cardsEarned = challenger.rollRegularReward();
-      challenger.markAsBeaten();
+      // Evaluate secondary conditions
+      for (var i = 0; i < array_length(secondaryConditions); i++) {
+        var cond = secondaryConditions[i];
+        if (cond.test()) {
+          array_push(cardsEarned, cond.reward);
+          secondaryConditionsMask[i] = true;
+        }
+      }
     } else {
       challenger.markAsLostTo();
     }
@@ -514,6 +523,8 @@ function EndCardGameAction(winner_) : Action() constructor {
       playerWins = (other.winner == CardPlayer.LEFT);
       moneySpoils = moneyEarned;
       cardSpoils = cardsEarned;
+      conditions = secondaryConditions;
+      conditionsMask = secondaryConditionsMask;
     }
   }
 }

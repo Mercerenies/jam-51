@@ -5,6 +5,11 @@ playerWins = false;
 moneySpoils = 0;
 cardSpoils = [];
 
+// Secondary conditions and which ones are met. These two arrays must
+// have the same length.
+conditions = [];
+conditionsMask = [];
+
 alpha = 0;
 
 y += room_height;

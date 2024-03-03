@@ -1,0 +1,1 @@
+qKeyPressed = true; // For debug condition

@@ -24,6 +24,7 @@
     {"name":"inst_1B199A1B","path":"rooms/rm_CardGame/rm_CardGame.yy",},
     {"name":"inst_3687B819","path":"rooms/rm_CardGame/rm_CardGame.yy",},
     {"name":"inst_2381FDB4","path":"rooms/rm_CardGame/rm_CardGame.yy",},
+    {"name":"inst_3309438","path":"rooms/rm_CardGame/rm_CardGame.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -68,6 +69,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_CardPlayerStats","path":"objects/obj_CardPlayerStats/obj_CardPlayerStats.yy",},"propertyId":{"name":"owner","path":"objects/obj_CardPlayerStats/obj_CardPlayerStats.yy",},"value":"CardPlayer.RIGHT",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":128.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1D54A989","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_EndTurnButton","path":"objects/obj_EndTurnButton/obj_EndTurnButton.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":704.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3309438","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ConditionMonitor","path":"objects/obj_ConditionMonitor/obj_ConditionMonitor.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":128.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_BG","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1B199A1B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_CardMat","path":"objects/obj_CardMat/obj_CardMat.yy",},"properties":[],"rotation":0.0,"scaleX":0.75,"scaleY":0.75,"x":230.0,"y":96.0,},
