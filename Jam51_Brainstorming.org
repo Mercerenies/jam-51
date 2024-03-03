@@ -184,6 +184,7 @@
    + [ ] "Cancel" button to revert deck on Trunk screen if you don't like your changes.
    + [ ] Codex of all unique cards owned, with gaps for missing ones
    + [ ] Manual? (Might just be the readme)
+   + [ ] Allow skipping cutscenes if you've seen them once
 ** SHOP RULES
    + For simple minion cards that have no effect and match curve,
      their shop cost should be twice their EP cost.
