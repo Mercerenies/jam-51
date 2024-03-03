@@ -87,8 +87,9 @@ function ChallengerProfile() : ChooserChoice() constructor {
     return new EagerEnemyAI();
   }
 
-  static endgameRoom = function() {
-    return rm_ChooseLocation; // TODO
+  static onEndgame = function(playerWins) {
+    // This function MUST move the game to a different room.
+    room_goto(rm_ChooseLocation);
   }
 
   static rollMoneyReward = function() {
@@ -136,6 +137,14 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
     return CardAssassin;
   }
 
+  static onEndgame = function(playerWins) {
+    if (playerWins) {
+      gotoDialogueRoom(new DialogueCallback(Cutscene_ravenmanWin()));
+    } else {
+      gotoDialogueRoom(new DialogueCallback(Cutscene_ravenmanLoss()));
+    }
+  }
+
   static getSprite = function() {
     return spr_Ravenman;
   }
@@ -152,6 +161,10 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
     return [arrayRandom(_rewardsPool)];
   }
 
+  static buildFieldProfile = function() {
+    return new RavenmanTutorialFieldProfile(fortStrength(), self);
+  }
+
   static getSecondaryConditions = function() {
     // DEBUG CODE
     return [
@@ -163,6 +176,7 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
   // DEBUG CODE
   static onChoose = function() {
     var challengeAction = new ChallengeOpponentAction(self);
+    return challengeAction; // DEBUG CODE
     if (!shouldPlayTutorials()) {
       return challengeAction;
     }

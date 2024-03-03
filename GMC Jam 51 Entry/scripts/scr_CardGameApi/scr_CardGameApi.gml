@@ -20,12 +20,14 @@ function CardGame_Action_startTurn(owner) {
     // Draw Phase
     .chain(new ModifyEvilPointsAction(owner, 9999))
     .chain(CardGame_Action_drawCards(owner, cardsToDraw))
+    .chain(global.__CardGame_fieldProfile.afterDrawPhase(owner))
     // Attack Phase
     .chain(new PerformAttackPhaseAction(owner))
     // Morale Phase
     .chain(new PerformMoralePhaseAction(owner))
     // Standby Phase
-    .chain(new PerformStandbyPhaseAction(owner));
+    .chain(new PerformStandbyPhaseAction(owner))
+    .chain(global.__CardGame_fieldProfile.afterStandbyPhase(owner))
 }
 
 function CardGame_Action_endTurn(owner) {

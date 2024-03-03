@@ -45,7 +45,7 @@ function Action() constructor {
 
 // Do nothing and invoke the continuation.
 function NullAction() : Action() constructor {
-  __actionType = "NullAction";
+  __actionType = "NullAction"; // These variables are just for debug prints :)
   static perform = function(continuation) {
     continuation.call();
   }

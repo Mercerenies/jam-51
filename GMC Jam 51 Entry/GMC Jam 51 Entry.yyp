@@ -116,6 +116,7 @@
     {"id":{"name":"rm_Dialogue","path":"rooms/rm_Dialogue/rm_Dialogue.yy",},},
     {"id":{"name":"obj_BackToMenuButton","path":"objects/obj_BackToMenuButton/obj_BackToMenuButton.yy",},},
     {"id":{"name":"spr_CardGameManager","path":"sprites/spr_CardGameManager/spr_CardGameManager.yy",},},
+    {"id":{"name":"obj_MockDialogueBox","path":"objects/obj_MockDialogueBox/obj_MockDialogueBox.yy",},},
     {"id":{"name":"struct_CardCircle","path":"scripts/struct_CardCircle/struct_CardCircle.yy",},},
     {"id":{"name":"spr_ArenaLocation","path":"sprites/spr_ArenaLocation/spr_ArenaLocation.yy",},},
     {"id":{"name":"spr_CardIcons","path":"sprites/spr_CardIcons/spr_CardIcons.yy",},},

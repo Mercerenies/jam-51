@@ -1,10 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_DialogueCharacter",
+  "name": "obj_MockDialogueBox",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -29,9 +28,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_DialogueCharacter",
-    "path": "sprites/spr_DialogueCharacter/spr_DialogueCharacter.yy",
+    "name": "spr_DialogueBox",
+    "path": "sprites/spr_DialogueBox/spr_DialogueBox.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

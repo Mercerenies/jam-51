@@ -86,6 +86,7 @@
     {"name":"enum_Rarity","order":6,"path":"scripts/enum_Rarity/enum_Rarity.yy",},
     {"name":"rm_Dialogue","order":3,"path":"rooms/rm_Dialogue/rm_Dialogue.yy",},
     {"name":"obj_BackToMenuButton","order":6,"path":"objects/obj_BackToMenuButton/obj_BackToMenuButton.yy",},
+    {"name":"obj_MockDialogueBox","order":10,"path":"objects/obj_MockDialogueBox/obj_MockDialogueBox.yy",},
     {"name":"spr_ArenaLocation","order":3,"path":"sprites/spr_ArenaLocation/spr_ArenaLocation.yy",},
     {"name":"spr_CardIcons","order":1,"path":"sprites/spr_CardIcons/spr_CardIcons.yy",},
     {"name":"obj_CardHighlightAnimation","order":4,"path":"objects/obj_CardHighlightAnimation/obj_CardHighlightAnimation.yy",},

@@ -37,7 +37,7 @@ buttonY = function() {
 onButtonClick = function() {
   var field = global.__CardGame_fieldProfile;
   global.__CardGame_justWon = playerWins;
-  room_goto(field.challenger.endgameRoom());
+  field.challenger.onEndgame(playerWins)
 }
 
 cardX = function(idx) {
