@@ -1,0 +1,41 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_BackToMenuButtonTrunk",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_BackToMenuButton","path":"objects/obj_BackToMenuButton/obj_BackToMenuButton.yy",},"propertyId":{"name":"targetRoom","path":"objects/obj_BackToMenuButton/obj_BackToMenuButton.yy",},"value":"rm_ChooseLocation",},
+  ],
+  "parent": {
+    "name": "Trunk Room",
+    "path": "folders/UI/Trunk Room.yy",
+  },
+  "parentObjectId": {
+    "name": "obj_BackToMenuButton",
+    "path": "objects/obj_BackToMenuButton/obj_BackToMenuButton.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_BlueButton",
+    "path": "sprites/spr_BlueButton/spr_BlueButton.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}

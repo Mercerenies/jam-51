@@ -51,8 +51,7 @@ function TrunkChoice() : ChooserChoice() constructor {
   }
 
   static onChoose = function() {
-    // TODO
-    return new RoomGotoAction(rm_ChooseOpponent);
+    return new RoomGotoAction(rm_Trunk);
   }
 
 }

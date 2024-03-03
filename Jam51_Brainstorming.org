@@ -159,6 +159,8 @@
    + [ ] Credits
    + [ ] Proper title screen
    + [ ] Splash screen
+   + [ ] Integrate BGM
+   + [ ] Secondary goals
 
    LATER
    + [X] Improve UI of card game background
