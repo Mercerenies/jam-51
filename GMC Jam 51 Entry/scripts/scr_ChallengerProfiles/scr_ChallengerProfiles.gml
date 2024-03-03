@@ -109,13 +109,13 @@ function ChallengerProfile() : ChooserChoice() constructor {
 }
 
 function RavenmanChallenger() : ChallengerProfile() constructor {
-  _deck = [
+  _deck = [ // TODO
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
   ];
-  _rewardsPool = [
+  _rewardsPool = [ // TODO
     CardMushroom, CardSpikyMushroom,
   ];
 
@@ -165,9 +165,9 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
     return new GotoDialogueRoomAction(
       new DialogueCallback(
         new NullAction()
-          .chain(new DialogueAction("Test dialogue"))
-          .chain(new DialogueAction("Test dialogue again"))
-          .chain(new DialogueAction("Whee I have so much dialogue to share and I love it and this had better screenwrap :) smiley face"))
+          .chain(setChars(spr_Ravengirl, spr_Ravenman))
+          .chain(bottomDia("Ravenman's text", Mugshot.RAVENMAN))
+          .chain(bottomDia("Ravengirl's text", Mugshot.RAVENGIRL_INTRO))
           .chain(new ChallengeOpponentAction(self)),
       ),
     )
@@ -177,13 +177,13 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
 
 // Probably DEBUG CODE, this is his un-disguised variant.
 function FlyingBrickmanChallenger() : ChallengerProfile() constructor {
-  _deck = [
+  _deck = [ // TODO
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
   ]
-  _rewardsPool = [
+  _rewardsPool = [ // TODO
     CardMushroom, CardSpikyMushroom,
   ];
 
