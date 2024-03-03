@@ -152,9 +152,13 @@
    + Add cards
    + Most of your day will be spent adding cards and corresponding mechanics :)
 ** STRETCH GOALS
-   NEXT
+   MUST
    + [X] Shop
    + [ ] Trunk
+   + [ ] Intro dialogue and story
+   + [ ] Credits
+   + [ ] Proper title screen
+   + [ ] Splash screen
 
    LATER
    + [X] Improve UI of card game background
@@ -173,8 +177,6 @@
    + [ ] More cards :D
    + [ ] Improve inter-menu animations
    + [ ] Way to get back to the proper title menu
-   + [ ] Proper title screen
-   + [ ] Splash screen
    + [ ] Show random tips on the "Game Win / Loss" screen
 ** SHOP RULES
    + For simple minion cards that have no effect and match curve,
