@@ -2,6 +2,37 @@
 // Helpers for miscellaneous cutscenes for challengers and story
 // purposes.
 
+function Cutscene_firstVisitChooseLocation() {
+  return new NullAction()
+    .chain(bottomDia("This is the main menu. Here, you can visit three locations."))
+    .chain(bottomDia("In the ARENA, you can face off against different supervillains."))
+    .chain(bottomDia("The SHOP sells various cards, and its stock changes every time you play a game of Evil Cards."))
+    .chain(bottomDia("Your TRUNK allows you to customize your deck with the new cards you've won or bought."));
+}
+
+function Cutscene_firstVisitArena() {
+  return new NullAction()
+    .chain(bottomDia("This is the ARENA. Here, you can face off against various supervillains."))
+    .chain(bottomDia("You can face the same villain as many times as you like."))
+    .chain(bottomDia("Note that later villains must be unlocked by beating the earlier ones."));
+}
+
+function Cutscene_firstVisitShop() {
+  return new NullAction()
+    .chain(bottomDia("This is the SHOP. You can spend your hard-earned money here on new cards."))
+    .chain(bottomDia("The shop's inventory changes after every game you play. But you can also pay to RESTOCK it yourself."))
+    .chain(bottomDia("The RANDOM CARD option will give you a random card. You can get any card in the game this way, except ULTRA RARE cards."))
+    .chain(bottomDia("New cards go in your TRUNK, not your DECK. You'll need to visit the \"Trunk\" on the main menu to add them to your deck."));
+}
+
+function Cutscene_firstVisitTrunk() {
+  return new NullAction()
+    .chain(bottomDia("This is your TRUNK. Here, you can modify your current deck."))
+    .chain(bottomDia("Click on a card to see details, and right click it to move it between the trunk or deck."))
+    .chain(bottomDia("Your deck must consist of exactly twenty cards. And you can have at most three copies of any given card in your deck."))
+    .chain(bottomDia("Some cards are further limited and can only be included once in your deck."));
+}
+
 function Cutscene_ravenmanIntro(challengeAction) {
   return new NullAction()
     .chain(setChars(spr_Ravengirl, spr_Ravenman))

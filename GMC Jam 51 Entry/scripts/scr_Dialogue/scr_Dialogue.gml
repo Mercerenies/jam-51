@@ -6,7 +6,7 @@ function DialogueAction(text_, mugshotIndex_, xx_ = 242, yy_ = 560) : Action() c
   yy = yy_;
 
   static perform = function(continuation) {
-    with (instance_create_layer(xx, yy, "Instances_UI", obj_DialogueBox)) {
+    with (instance_create_layer(xx, yy, "Instances_Dia", obj_DialogueBox)) {
       text = other.text;
       mugshotIndex = other.mugshotIndex;
       callback = continuation;

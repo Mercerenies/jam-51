@@ -6,6 +6,11 @@ global.allChallengers = initChallengers();
 global.shopPools = initShopPools();
 global.shop = rollShop();
 
+global.visitedLocation = false;
+global.visitedArena = false;
+global.visitedShop = false;
+global.visitedTrunk = false;
+
 global.isFirstPlay = false; // DEBUG CODE (should be true or loaded from file)
 
 // DEBUG CODE (Set this to a real starter deck or load from file)

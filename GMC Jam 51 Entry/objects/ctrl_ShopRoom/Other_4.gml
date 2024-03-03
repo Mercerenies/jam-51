@@ -17,3 +17,8 @@ for (var i = 0; i < array_length(shopEntries); i++) {
   spawnShopEntry(xx, yy, shopEntries[i]);
   yy += 90;
 }
+
+if (!global.visitedShop) {
+  global.visitedShop = true;
+  CardGame_runAction(Cutscene_firstVisitShop());
+}

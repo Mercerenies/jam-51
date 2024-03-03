@@ -169,6 +169,8 @@
    + [X] Display on the main screen if you've met all of his goals
      before
    + [ ] Enforce limited cards in the Trunk!
+   + [ ] Emphasize (in some dialogue) that the shop items get better
+     over time
 
    LATER
    + [X] Improve UI of card game background
