@@ -110,14 +110,18 @@ function ChallengerProfile() : ChooserChoice() constructor {
 }
 
 function RavenmanChallenger() : ChallengerProfile() constructor {
-  _deck = [ // TODO
+  _deck = [
+    CardMushroom, CardMushroom, CardMushroom, CardRobotMite, CardRobotMite,
+    CardRobotMite, CardChicken, CardChicken, CardChicken, CardChicken,
+    CardAcorn, CardAcorn, CardAcorn, CardBee, CardBee,
+    CardBee, CardZombie, CardZombie, CardZombie, CardTinyTurtle,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
     CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
   ];
-  _rewardsPool = [ // TODO
-    CardMushroom, CardSpikyMushroom,
+  _rewardsPool = [
+    CardMushroom, CardSpikyMushroom, CardAcorn,
   ];
 
   static fortStrength = function() {
@@ -184,53 +188,9 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
   }
 }
 
-// Probably DEBUG CODE, this is his un-disguised variant.
-function FlyingBrickmanChallenger() : ChallengerProfile() constructor {
-  _deck = [ // TODO
-    CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-    CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-    CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-    CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-  ]
-  _rewardsPool = [ // TODO
-    CardMushroom, CardSpikyMushroom,
-  ];
-
-  static getTitle = function() {
-    return "Flying Brickman";
-  }
-
-  static getSubtitle = function() {
-    return "The Man of Bricks";
-  }
-
-  static getUniqueCard = function() {
-    // DEBUG CODE
-    return CardAssassin;
-  }
-
-  static getSprite = function() {
-    return spr_FlyingBrickman;
-  }
-
-  static getDeck = function() {
-    return _deck;
-  }
-
-  static rollMoneyReward = function() {
-    return 2;
-  }
-
-  static rollRegularReward = function() {
-    return [arrayRandom(_rewardsPool)];
-  }
-}
-
-
 function initChallengers() {
   return [
     new RavenmanChallenger(),
-    new FlyingBrickmanChallenger(),
   ]
 }
 

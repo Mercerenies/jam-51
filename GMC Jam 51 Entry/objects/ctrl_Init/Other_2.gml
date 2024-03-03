@@ -15,10 +15,10 @@ global.isFirstPlay = false; // DEBUG CODE (should be true or loaded from file)
 
 // DEBUG CODE (Set this to a real starter deck or load from file)
 global.playerDeck = [
-  CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-  CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-  CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-  CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
+  CardMushroom, CardMushroom, CardSpikyMushroom, CardRobotMite, CardRobotMite,
+  CardRobotMite, CardChicken, CardChicken, CardChicken, CardChicken,
+  CardAcorn, CardAcorn, CardSquare, CardRhombus, CardTriangle,
+  CardTriangle, CardTinyTurtle, CardMaskedTurtle, CardMeatball, CardBee,
 ];
 global.playerTrunk = [];
 global.playerMoney = 10;

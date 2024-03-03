@@ -9,13 +9,15 @@ function initShopPools() {
     CardBee, CardMushroom, CardNinja,
     CardRhombus, CardRobotMite, CardSpikyMushroom,
     CardSquare, CardTriangle, CardZombie,
-    CardAcorn,
+    CardAcorn, CardTinyTurtle, CardRavioli,
+    CardMeatball, CardChicken,
   ];
   var uncommonMinions = [
     CardAssassin, CardCircle, CardPentagon,
+    CardMaskedTurtle,
   ];
   var rareMinions = [
-    CardGoldenAcorn,
+    CardGoldenAcorn, CardSpikyTurtle, 
   ];
   var commonEffects = [
     CardAncientScroll, CardMirrorCrystal,
