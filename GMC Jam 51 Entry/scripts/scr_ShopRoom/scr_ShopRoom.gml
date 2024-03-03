@@ -17,7 +17,7 @@ function initShopPools() {
     CardMaskedTurtle,
   ];
   var rareMinions = [
-    CardGoldenAcorn, CardSpikyTurtle, 
+    CardGoldenAcorn, CardSpikyTurtle,
   ];
   var commonEffects = [
     CardAncientScroll, CardMirrorCrystal,
@@ -36,6 +36,40 @@ function initShopPools() {
     uncommonAny: array_concat(uncommonMinions, uncommonEffects),
     rareAny: array_concat(rareMinions, rareEffects),
   }
+}
+
+function initAllCards() {
+  var s = {};
+  s[$ script_get_name(CardMushroom)] = 1;
+  s[$ script_get_name(CardPotOfLinguine)] = 2;
+  s[$ script_get_name(CardSpikyMushroom)] = 3;
+  s[$ script_get_name(CardPentagon)] = 4;
+  s[$ script_get_name(CardRhombus)] = 5;
+  s[$ script_get_name(CardCircle)] = 6;
+  s[$ script_get_name(CardSquare)] = 7;
+  s[$ script_get_name(CardTriangle)] = 8;
+  s[$ script_get_name(CardMirrorCrystal)] = 9;
+  s[$ script_get_name(CardNuclear)] = 10;
+  s[$ script_get_name(CardFusion)] = 11;
+  s[$ script_get_name(CardNinja)] = 12;
+  s[$ script_get_name(CardAssassin)] = 13;
+  s[$ script_get_name(CardAncientScroll)] = 14;
+  s[$ script_get_name(CardCoverOfMoonlight)] = 15;
+  s[$ script_get_name(CardZombie)] = 16;
+  s[$ script_get_name(CardBee)] = 17;
+  s[$ script_get_name(CardAcorn)] = 18;
+  s[$ script_get_name(CardGoldenAcorn)] = 19;
+  s[$ script_get_name(CardRobotMite)] = 20;
+  s[$ script_get_name(CardSpareBattery)] = 21;
+  s[$ script_get_name(CardMilkDelivery)] = 22;
+  s[$ script_get_name(CardWithExtraCheese)] = 23;
+  s[$ script_get_name(CardTinyTurtle)] = 24;
+  s[$ script_get_name(CardMaskedTurtle)] = 25;
+  s[$ script_get_name(CardSpikyTurtle)] = 26;
+  s[$ script_get_name(CardRavioli)] = 27;
+  s[$ script_get_name(CardMeatball)] = 28;
+  s[$ script_get_name(CardChicken)] = 29;
+  return s;
 }
 
 function getShopGameState() {

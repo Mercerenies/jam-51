@@ -11,6 +11,10 @@ by Mercerenies
 
 Background Music
 by Alicia
+
+
+Special thanks to Alice
+for the GM Community Toolbox
 "
 
 draw_set_font(fnt_CardTitle);

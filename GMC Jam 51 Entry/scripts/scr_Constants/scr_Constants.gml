@@ -25,3 +25,5 @@
 
 #macro RANDOM_SHOP_COST 3
 #macro RESTOCK_SHOP_COST 1
+
+#macro GAME_FILENAME "evilcon_save.json"

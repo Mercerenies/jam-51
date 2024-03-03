@@ -177,10 +177,8 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
     ];
   }
 
-  // DEBUG CODE
   static onChoose = function() {
     var challengeAction = new ChallengeOpponentAction(self);
-    return challengeAction; // DEBUG CODE
     if (!shouldPlayTutorials()) {
       return challengeAction;
     }
