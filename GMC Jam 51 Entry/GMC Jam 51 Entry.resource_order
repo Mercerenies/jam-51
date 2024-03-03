@@ -29,6 +29,7 @@
     {"name":"Trunk Room","order":9,"path":"folders/UI/Trunk Room.yy",},
     {"name":"Sort Buttons","order":11,"path":"folders/UI/Trunk Room/Sort Buttons.yy",},
     {"name":"Utils","order":2,"path":"folders/Utils.yy",},
+    {"name":"Credits","order":10,"path":"folders/UI/Credits.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_ShopLocation","order":4,"path":"sprites/spr_ShopLocation/spr_ShopLocation.yy",},
@@ -99,6 +100,7 @@
     {"name":"struct_CharacterProfile","order":4,"path":"scripts/struct_CharacterProfile/struct_CharacterProfile.yy",},
     {"name":"spr_PlayerBaseStats","order":2,"path":"sprites/spr_PlayerBaseStats/spr_PlayerBaseStats.yy",},
     {"name":"scr_ShopEntry","order":4,"path":"scripts/scr_ShopEntry/scr_ShopEntry.yy",},
+    {"name":"rm_CreditsScreen","order":8,"path":"rooms/rm_CreditsScreen/rm_CreditsScreen.yy",},
     {"name":"spr_TitleScreen","order":2,"path":"sprites/spr_TitleScreen/spr_TitleScreen.yy",},
     {"name":"struct_CardRhombus","order":3,"path":"scripts/struct_CardRhombus/struct_CardRhombus.yy",},
     {"name":"spr_LeftArrowButton","order":5,"path":"sprites/spr_LeftArrowButton/spr_LeftArrowButton.yy",},
@@ -136,6 +138,7 @@
     {"name":"obj_CardMat","order":1,"path":"objects/obj_CardMat/obj_CardMat.yy",},
     {"name":"obj_PlayerHand","order":1,"path":"objects/obj_PlayerHand/obj_PlayerHand.yy",},
     {"name":"obj_ExitButton","order":6,"path":"objects/obj_ExitButton/obj_ExitButton.yy",},
+    {"name":"ctrl_CreditsManager","order":1,"path":"objects/ctrl_CreditsManager/ctrl_CreditsManager.yy",},
     {"name":"spr_RavengirlMaid","order":1,"path":"sprites/spr_RavengirlMaid/spr_RavengirlMaid.yy",},
     {"name":"spr_DialogueCharacter","order":6,"path":"sprites/spr_DialogueCharacter/spr_DialogueCharacter.yy",},
     {"name":"struct_CardMilkDelivery","order":6,"path":"scripts/struct_CardMilkDelivery/struct_CardMilkDelivery.yy",},

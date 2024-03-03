@@ -1,0 +1,1 @@
+// Alarm event placeholder (cannot return to main room if alarm[0] > 0
