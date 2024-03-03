@@ -171,7 +171,7 @@
    + [X] Unique reward if all secondary goals are met
    + [X] Display on the main screen if you've met all of his goals
      before
-   + [ ] Enforce limited cards in the Trunk!
+   + [X] Enforce limited cards in the Trunk!
 
    LATER
    + [ ] Emphasize (in some dialogue) that the shop items get better
@@ -198,6 +198,7 @@
    + [ ] Allow skipping cutscenes if you've seen them once
    + [ ] ... Upload decks?
    + [ ] Character profiles on card game screen
+   + [ ] Screen transition when battles start
 ** SHOP RULES
    + For simple minion cards that have no effect and match curve,
      their shop cost should be twice their EP cost.
