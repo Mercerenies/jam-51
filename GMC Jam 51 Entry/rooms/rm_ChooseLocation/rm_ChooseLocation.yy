@@ -13,6 +13,7 @@
     {"name":"inst_770E0A0D_1","path":"rooms/rm_ChooseLocation/rm_ChooseLocation.yy",},
     {"name":"inst_641750CF_1","path":"rooms/rm_ChooseLocation/rm_ChooseLocation.yy",},
     {"name":"inst_4309BE4F","path":"rooms/rm_ChooseLocation/rm_ChooseLocation.yy",},
+    {"name":"inst_6DCA6816","path":"rooms/rm_ChooseLocation/rm_ChooseLocation.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -23,6 +24,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_770E0A0D_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ChooseOptionButton","path":"objects/obj_ChooseOptionButton/obj_ChooseOptionButton.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_ChooseOptionButton","path":"objects/obj_ChooseOptionButton/obj_ChooseOptionButton.yy",},"propertyId":{"name":"text","path":"objects/obj_ChooseOptionButton/obj_ChooseOptionButton.yy",},"value":"Go",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":672.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6DCA6816","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_BackToMenuButton","path":"objects/obj_BackToMenuButton/obj_BackToMenuButton.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_BackToMenuButton","path":"objects/obj_BackToMenuButton/obj_BackToMenuButton.yy",},"propertyId":{"name":"text","path":"objects/obj_BackToMenuButton/obj_BackToMenuButton.yy",},"value":"Back to Title",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":736.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_34C0C7D9_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_GenericSemaphoreManager","path":"objects/obj_GenericSemaphoreManager/obj_GenericSemaphoreManager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":96.0,},
