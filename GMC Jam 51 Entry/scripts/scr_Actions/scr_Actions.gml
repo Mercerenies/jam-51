@@ -509,6 +509,12 @@ function EndCardGameAction(winner_) : Action() constructor {
           secondaryConditionsMask[i] = true;
         }
       }
+      var hasUniqueCardAlready = challenger.metAllConditions();
+      challenger.markConditions(secondaryConditionsMask);
+      var hasUniqueCardNow = challenger.metAllConditions();
+      if (hasUniqueCardNow && !hasUniqueCardAlready) {
+        array_push(cardsEarned, challenger.getUniqueCard());
+      }
     } else {
       challenger.markAsLostTo();
     }

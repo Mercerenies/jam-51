@@ -16,7 +16,7 @@ global.playerDeck = [
   CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
 ];
 global.playerTrunk = [];
-global.playerMoney = 10;
+global.playerMoney = 100; // DEBUG CODE 10;
 
 // DEBUG CODE (Do a proper splash screen)
 room_goto(rm_TitleScreen);

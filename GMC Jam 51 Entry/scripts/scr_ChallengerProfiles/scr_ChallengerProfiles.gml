@@ -3,10 +3,24 @@
 function ChallengerProfile() : ChooserChoice() constructor {
   timesBeaten = 0;
   timesLostTo = 0;
+  uniqueConditionsMet = [];
+
+  static getUniqueConditionsCount = function() {
+    var total = 0;
+    for (var i = 0; i < array_length(uniqueConditionsMet); i++) {
+      total += uniqueConditionsMet[i];
+    }
+    return total;
+  }
+
+  static metAllConditions = function() {
+    return getUniqueConditionsCount() >= array_length(getSecondaryConditions());
+  }
 
   static getLines = function() {
     var winLossLine = "Wins " + string(timesBeaten) + " / Losses " + string(timesLostTo);
-    return getTitle() + "\n\n" + getSubtitle() + "\n\n" + winLossLine;
+    var conditionsLine = "Goals " + string(getUniqueConditionsCount()) + " / " + string(array_length(getSecondaryConditions()));
+    return getTitle() + "\n\n" + getSubtitle() + "\n\n" + winLossLine + "\n\n" + conditionsLine;
   }
 
   static getTitle = function() {
@@ -25,6 +39,20 @@ function ChallengerProfile() : ChooserChoice() constructor {
 
   static markAsLostTo = function() {
     timesLostTo++;
+  }
+
+  static markConditions = function(bitmask) {
+    // Takes a list of Booleans
+    array_resize(uniqueConditionsMet, array_length(bitmask));
+    for (var i = 0; i < array_length(bitmask); i++) {
+      if (bitmask[i]) {
+        uniqueConditionsMet[i] = 1;
+      }
+    }
+  }
+
+  static getUniqueCard = function() {
+    // Abstract method
   }
 
   static getDeck = function() {
@@ -103,6 +131,11 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
     return "Ravenman's Lesson";
   }
 
+  static getUniqueCard = function() {
+    // DEBUG CODE
+    return CardAssassin;
+  }
+
   static getSprite = function() {
     return spr_Ravenman;
   }
@@ -121,7 +154,10 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
 
   static getSecondaryConditions = function() {
     // DEBUG CODE
-    return [new QDebugCondition(CardFusion)];
+    return [
+      new QDebugCondition(CardFusion),
+      new ZDebugCondition(CardNuclear),
+    ];
   }
 
   // DEBUG CODE
@@ -157,6 +193,11 @@ function FlyingBrickmanChallenger() : ChallengerProfile() constructor {
 
   static getSubtitle = function() {
     return "The Man of Bricks";
+  }
+
+  static getUniqueCard = function() {
+    // DEBUG CODE
+    return CardAssassin;
   }
 
   static getSprite = function() {

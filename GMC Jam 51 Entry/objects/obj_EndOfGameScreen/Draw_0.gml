@@ -17,7 +17,7 @@ for (var i = 0; i < array_length(conditions); i++) {
   var checkboxIdx = (conditionsMask[i] ? 1 : 0);
   draw_sprite(spr_Checkbox, checkboxIdx, xx, yy);
   draw_text(xx + 28, yy - 10, conditions[i].getText());
-  yy += 25;
+  yy += 28;
 }
 
 // Draw "Spoils" header
