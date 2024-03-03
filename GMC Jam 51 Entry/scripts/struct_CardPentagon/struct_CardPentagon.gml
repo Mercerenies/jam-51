@@ -13,6 +13,10 @@ function CardPentagon(owner_) : MinionCard(owner_, 2, 2) constructor {
     return 4;
   }
 
+  static getMoneyCost = function() {
+    return 8;
+  }
+
   static getRarity = function() {
     return Rarity.UNCOMMON;
   }

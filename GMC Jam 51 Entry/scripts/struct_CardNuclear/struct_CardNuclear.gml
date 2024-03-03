@@ -13,6 +13,10 @@ function CardNuclear(owner_) : TimedOngoingCard(owner_, 4) constructor {
     return 3;
   }
 
+  static getMoneyCost = function() {
+    return 10;
+  }
+
   static getRarity = function() {
     return Rarity.UNCOMMON;
   }

@@ -13,6 +13,10 @@ function CardMilkDelivery(owner_) : EffectCard(owner_) constructor {
     return 4;
   }
 
+  static getMoneyCost = function() {
+    return 14;
+  }
+
   static getRarity = function() {
     return Rarity.RARE;
   }

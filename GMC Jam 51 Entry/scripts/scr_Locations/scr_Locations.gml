@@ -15,12 +15,43 @@ function ArenaChoice() : ChooserChoice() constructor {
   }
 
   static getSprite = function() {
-    // TODO This properly
-    return spr_Ravenman;
+    return spr_ArenaLocation;
   }
 
   static onChoose = function() {
-    // Abstract method; must return an Action
+    return new RoomGotoAction(rm_ChooseOpponent);
+  }
+
+}
+
+function ShopChoice() : ChooserChoice() constructor {
+
+  static getLines = function() {
+    return "The Shop\n\nBuy some new cards!";
+  }
+
+  static getSprite = function() {
+    return spr_ShopLocation;
+  }
+
+  static onChoose = function() {
+    return new RoomGotoAction(rm_Shop);
+  }
+
+}
+
+function TrunkChoice() : ChooserChoice() constructor {
+
+  static getLines = function() {
+    return "Your Trunk\n\nBuild your deck!";
+  }
+
+  static getSprite = function() {
+    return spr_TrunkLocation;
+  }
+
+  static onChoose = function() {
+    // TODO
     return new RoomGotoAction(rm_ChooseOpponent);
   }
 

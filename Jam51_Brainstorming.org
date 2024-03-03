@@ -152,6 +152,11 @@
    + Add cards
    + Most of your day will be spent adding cards and corresponding mechanics :)
 ** STRETCH GOALS
+   NEXT
+   + [ ] Shop
+   + [ ] Trunk
+
+   LATER
    + [X] Improve UI of card game background
    + [ ] Save/load
    + [ ] Right click to insta-play card
@@ -167,3 +172,12 @@
    + [ ] More cards :D
    + [ ] Improve inter-menu animations
    + [ ] Way to get back to the proper title menu
+   + [ ] Proper title screen
+   + [ ] Splash screen
+** SHOP RULES
+   + For simple minion cards that have no effect and match curve,
+     their shop cost should be twice their EP cost.
+   + For those can don't match curve (like Zombie), start at (level *
+     morale) and consider increasing slightly.
+   + For effects, use rarity as a rough indicator (Common starts at 4,
+     Uncommon starts at 8, Rare starts at 12), but use your own judgment.

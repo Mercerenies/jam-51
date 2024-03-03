@@ -13,6 +13,10 @@ function CardWithExtraCheese(owner_) : TimedOngoingCard(owner_, 2) constructor {
     return 1;
   }
 
+  static getMoneyCost = function() {
+    return 7;
+  }
+
   static getRarity = function() {
     return Rarity.UNCOMMON;
   }

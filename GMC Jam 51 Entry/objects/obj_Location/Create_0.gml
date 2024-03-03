@@ -3,6 +3,8 @@ event_inherited();
 
 allChoices = [
   new ArenaChoice(),
+  new ShopChoice(),
+  new TrunkChoice(),
 ];
 
 getCurrentChoice = function() {

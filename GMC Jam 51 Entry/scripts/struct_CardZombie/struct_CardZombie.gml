@@ -13,6 +13,10 @@ function CardZombie(owner_) : MinionCard(owner_, 1, 1) constructor {
     return 2;
   }
 
+  static getMoneyCost = function() {
+    return 3;
+  }
+
   static getRarity = function() {
     return Rarity.COMMON;
   }

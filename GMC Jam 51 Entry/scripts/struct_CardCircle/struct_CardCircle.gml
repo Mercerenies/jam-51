@@ -13,6 +13,10 @@ function CardCircle(owner_) : MinionCard(owner_, 3, 2) constructor {
     return 6;
   }
 
+  static getMoneyCost = function() {
+    return 12;
+  }
+
   static getRarity = function() {
     return Rarity.UNCOMMON;
   }

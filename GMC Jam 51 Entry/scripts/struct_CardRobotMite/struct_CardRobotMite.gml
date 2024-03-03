@@ -13,6 +13,10 @@ function CardRobotMite(owner_) : MinionCard(owner_, 1, 1) constructor {
     return 1;
   }
 
+  static getMoneyCost = function() {
+    return 2;
+  }
+
   static getRarity = function() {
     return Rarity.COMMON;
   }

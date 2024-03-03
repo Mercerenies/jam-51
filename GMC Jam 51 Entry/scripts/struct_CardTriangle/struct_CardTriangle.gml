@@ -9,6 +9,10 @@ function CardTriangle(owner_) : MinionCard(owner_, 1, 1) constructor {
     return "Triangle Trooper";
   }
 
+  static getMoneyCost = function() {
+    return 2;
+  }
+
   static getCost = function() {
     return 1;
   }

@@ -24,6 +24,10 @@ function Card(owner_) {
     // Abstract method
   }
 
+  static getMoneyCost = function() {
+    // Abstract method
+  }
+
   static getRarity = function() {
     // Abstract method
   }

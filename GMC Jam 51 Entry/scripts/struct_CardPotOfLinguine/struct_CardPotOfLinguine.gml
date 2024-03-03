@@ -13,6 +13,10 @@ function CardPotOfLinguine(owner_) : EffectCard(owner_) constructor {
     return 1;
   }
 
+  static getMoneyCost = function() {
+    return 10;
+  }
+
   static getRarity = function() {
     return Rarity.UNCOMMON;
   }

@@ -13,6 +13,10 @@ function CardRhombus(owner_) : MinionCard(owner_, 2, 1) constructor {
     return 2;
   }
 
+  static getMoneyCost = function() {
+    return 4;
+  }
+
   static getRarity = function() {
     return Rarity.COMMON;
   }

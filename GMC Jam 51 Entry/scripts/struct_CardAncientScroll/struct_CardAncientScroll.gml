@@ -13,6 +13,10 @@ function CardAncientScroll(owner_) : EffectCard(owner_) constructor {
     return 2;
   }
 
+  static getMoneyCost = function() {
+    return 4;
+  }
+
   static getRarity = function() {
     return Rarity.COMMON;
   }

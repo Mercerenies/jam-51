@@ -13,6 +13,10 @@ function CardFusion(owner_) : TimedOngoingCard(owner_, 6) constructor {
     return 4;
   }
 
+  static getMoneyCost = function() {
+    return 14;
+  }
+
   static getRarity = function() {
     return Rarity.RARE;
   }

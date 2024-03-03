@@ -5,6 +5,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
@@ -15,7 +16,78 @@
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
    sodipodi:docname="CharacterProfiles.svg">
   <defs
-     id="defs1349" />
+     id="defs1349">
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path8609" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6814"
+       id="linearGradient6816"
+       x1="103.56548"
+       y1="144.3869"
+       x2="13.607142"
+       y2="223.7619"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.37362738,0,0,0.29646596,199.87107,135.57346)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6814">
+      <stop
+         style="stop-color:#a7a7a7;stop-opacity:1;"
+         offset="0"
+         id="stop6810" />
+      <stop
+         style="stop-color:#d3d3d3;stop-opacity:1"
+         offset="0.46775988"
+         id="stop6818" />
+      <stop
+         style="stop-color:#a7a7a7;stop-opacity:1"
+         offset="1"
+         id="stop6812" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6814"
+       id="linearGradient8304"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.37362738,0,0,0.29646596,199.87107,133.68358)"
+       x1="103.56548"
+       y1="144.3869"
+       x2="13.607142"
+       y2="223.7619" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6814"
+       id="linearGradient8308"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.37362738,0,0,0.29646596,249.00797,143.51096)"
+       x1="103.56548"
+       y1="144.3869"
+       x2="13.607142"
+       y2="223.7619" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6814"
+       id="linearGradient8312"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.37362738,0,0,0.29646596,275.46631,117.80858)"
+       x1="103.56548"
+       y1="144.3869"
+       x2="13.607142"
+       y2="223.7619" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,9 +95,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="524.92227"
-     inkscape:cy="673.39165"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="1345.8535"
+     inkscape:cy="395.152"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -36,7 +108,7 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     showguides="false" />
+     showguides="true" />
   <metadata
      id="metadata1352">
     <rdf:RDF>
@@ -53,6 +125,47 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <path
+       id="rect8977"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#b1941c;fill-opacity:1;stroke:#000000;stroke-width:3.77952761;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M 1641.875 735.67578 C 1631.1907 735.67578 1622.5898 744.27666 1622.5898 754.96094 L 1622.5898 898.2168 C 1622.5898 905.87101 1627.015 912.43712 1633.4473 915.55664 L 1659.6797 943.48242 L 1675.998 917.50195 L 1920.4922 917.50195 C 1931.1765 917.50195 1939.7773 908.90107 1939.7773 898.2168 L 1939.7773 808.84766 L 1967.2715 781.35352 L 1939.3945 751.11133 C 1937.6198 742.28419 1929.8573 735.67578 1920.4922 735.67578 L 1641.875 735.67578 z "
+       transform="scale(0.26458333)"
+       inkscape:export-filename="TrunkIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:url(#linearGradient8312);fill-opacity:1;stroke:#000000;stroke-width:0.599909;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect8310"
+       width="10.205358"
+       height="38.931545"
+       x="130.02382"
+       y="210.53273"
+       ry="5.1026788"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:url(#linearGradient8308);fill-opacity:1;stroke:#000000;stroke-width:0.599909;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect8306"
+       width="10.205358"
+       height="38.931545"
+       x="103.56548"
+       y="236.23512"
+       ry="5.1026788"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:url(#linearGradient8304);fill-opacity:1;stroke:#000000;stroke-width:0.599909;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect8275"
+       width="10.205358"
+       height="38.931545"
+       x="54.42857"
+       y="226.40773"
+       ry="5.1026788"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ececec;fill-opacity:1;stroke:none;stroke-width:1.25122;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        id="rect6237"
@@ -3764,6 +3877,705 @@
        d="m -30.654155,165.48844 c 1.026062,0.31248 1.776044,0.81377 1.681573,1.12397 l -0.236107,0.77529 c -0.09447,0.31021 -0.99656,0.30839 -2.022622,-0.004"
        sodipodi:nodetypes="cssc"
        inkscape:export-filename="FlyingBrickmanDisguised.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:url(#linearGradient6816);fill-opacity:1;stroke:#000000;stroke-width:0.62005;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect6808"
+       width="74.934479"
+       height="59.45903"
+       x="190.08339"
+       y="157.39021"
+       ry="5.1257787"
+       transform="matrix(0.9448419,0.32752677,-0.63895129,0.7692472,0,0)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g9850"
+       transform="matrix(0.07129323,0.0336887,-0.04780962,0.05023626,66.139131,221.10435)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect9842"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g9848"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="circle9844"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path9846"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g8358"
+       transform="matrix(0.07129323,0.0336887,-0.04780962,0.05023626,77.478417,226.01804)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect8350"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g8356"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="circle8352"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path8354"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g8368"
+       transform="matrix(0.07129323,0.0336887,-0.04780962,0.05023626,88.817703,230.93173)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect8360"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g8366"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="circle8362"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path8364"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g8378"
+       transform="matrix(0.07129323,0.0336887,-0.04780962,0.05023626,102.80282,236.60137)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect8370"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g8376"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="circle8372"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path8374"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g8388"
+       transform="matrix(0.07129323,0.0336887,-0.04780962,0.05023626,86.549844,195.02399)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect8380"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g8386"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="circle8382"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path8384"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g8398"
+       transform="matrix(0.07129323,0.0336887,-0.04780962,0.05023626,100.15699,199.93768)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect8390"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g8396"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="circle8392"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path8394"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g8408"
+       transform="matrix(0.07129323,0.0336887,-0.04780962,0.05023626,113.00818,203.71744)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect8400"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g8406"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="circle8402"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path8404"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g8418"
+       transform="matrix(0.07129323,0.0336887,-0.04780962,0.05023626,125.48139,209.76506)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect8410"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g8416"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="circle8412"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path8414"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g8428"
+       transform="matrix(0.07129323,0.0336887,-0.04780962,0.05023626,125.48139,209.76506)"
+       inkscape:export-filename="ArenaIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect8420"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g8426"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="circle8422"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path8424"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g9840"
+       transform="matrix(0.27294572,0,0,0.27294572,305.3637,209.22294)"
+       inkscape:export-filename="ShopIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#393004;fill-opacity:1;stroke:#000000;stroke-width:1.76082;stroke-opacity:1;stop-color:#000000"
+         id="rect1880"
+         width="78.143349"
+         height="100.10377"
+         x="-8.4556026"
+         y="-24.302252"
+         rx="9.8047791"
+         ry="9.0167007" />
+      <g
+         id="g9710"
+         transform="matrix(8.2710088,0,0,8.2710088,270.30359,-1600.4574)">
+        <circle
+           style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.111178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path2548-8"
+           cx="-28.992064"
+           cy="196.36357"
+           r="2.0591061" />
+        <path
+           sodipodi:type="star"
+           style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.153082;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+           id="path2550-0"
+           sodipodi:sides="5"
+           sodipodi:cx="5.6703949"
+           sodipodi:cy="5.6703949"
+           sodipodi:r1="2.8351977"
+           sodipodi:r2="1.4102449"
+           sodipodi:arg1="1.5707963"
+           sodipodi:arg2="2.1991148"
+           inkscape:flatsided="false"
+           inkscape:rounded="2.42861e-17"
+           inkscape:randomized="0.009"
+           inkscape:transform-center-x="-0.013202008"
+           inkscape:transform-center-y="0.23488533"
+           transform="translate(-34.658402,190.68836)"
+           d="M 5.6450733,8.4854695 4.8276609,6.7877592 2.9609425,6.5343672 4.3473143,5.2145581 3.9794067,3.3528754 5.6958876,4.2623017 7.3410045,3.380648 7.0244029,5.2226168 8.382851,6.5623033 6.513434,6.8193405 Z" />
+      </g>
+    </g>
+    <g
+       id="g8582"
+       transform="matrix(6.463882,0,0,6.463882,-808.70939,-1000.84)"
+       inkscape:export-filename="ShopIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="font-variation-settings:normal;vector-effect:none;fill:#44ff3c;fill-opacity:1;stroke:#2b9f26;stroke-width:0.0913844;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect7615"
+         width="6.203743"
+         height="2.8950799"
+         x="158.29396"
+         y="187.16258"
+         ry="0"
+         rx="0" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.65442px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';fill:#2b9f26;fill-opacity:1;stroke-width:0.088629"
+         x="158.3988"
+         y="188.47864"
+         id="text7636"><tspan
+           sodipodi:role="line"
+           id="tspan7634"
+           x="158.3988"
+           y="188.47864"
+           style="fill:#2b9f26;fill-opacity:1;stroke-width:0.088629">$</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.65442px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';fill:#2b9f26;fill-opacity:1;stroke-width:0.088629"
+         x="163.45424"
+         y="189.70706"
+         id="text7640"><tspan
+           sodipodi:role="line"
+           id="tspan7638"
+           x="163.45424"
+           y="189.70706"
+           style="fill:#2b9f26;fill-opacity:1;stroke-width:0.088629">$</tspan></text>
+      <circle
+         style="font-variation-settings:normal;vector-effect:none;fill:#2b9f26;fill-opacity:1;stroke:#2b9f26;stroke-width:0.0685479;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="path7650"
+         cx="158.96262"
+         cy="189.48419"
+         r="0.37227672" />
+      <circle
+         style="font-variation-settings:normal;vector-effect:none;fill:#2b9f26;fill-opacity:1;stroke:#2b9f26;stroke-width:0.0685479;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="circle7652"
+         cx="163.94717"
+         cy="187.73605"
+         r="0.37227672" />
+      <ellipse
+         style="font-variation-settings:normal;vector-effect:none;fill:#2b9f26;fill-opacity:1;stroke:#2b9f26;stroke-width:0.171696;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="circle7654"
+         cx="161.4549"
+         cy="188.52744"
+         rx="0.81654936"
+         ry="1.0648429" />
+      <path
+         style="font-variation-settings:normal;vector-effect:none;fill:#2b9f26;fill-opacity:1;stroke:#2b9f26;stroke-width:0.0957577;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="circle7656"
+         sodipodi:type="arc"
+         sodipodi:cx="159.9548"
+         sodipodi:cy="188.79015"
+         sodipodi:rx="0.36290905"
+         sodipodi:ry="0.74523491"
+         sodipodi:start="3.1415927"
+         sodipodi:end="6.272154"
+         sodipodi:arc-type="arc"
+         sodipodi:open="true"
+         d="m 159.59189,188.79015 a 0.36290905,0.74523491 0 0 1 0.36091,-0.74523 0.36290905,0.74523491 0 0 1 0.36489,0.73701" />
+      <rect
+         style="font-variation-settings:normal;vector-effect:none;fill:#2b9f26;fill-opacity:1;stroke:#2b9f26;stroke-width:0.104396;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect7658"
+         width="0.66145831"
+         height="0.1063058"
+         x="162.58882"
+         y="188.10222" />
+      <rect
+         style="font-variation-settings:normal;vector-effect:none;fill:#2b9f26;fill-opacity:1;stroke:#2b9f26;stroke-width:0.104396;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect7660"
+         width="0.66145831"
+         height="0.1063058"
+         x="162.58882"
+         y="188.63138" />
+      <rect
+         style="font-variation-settings:normal;vector-effect:none;fill:#2b9f26;fill-opacity:1;stroke:#2b9f26;stroke-width:0.104396;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect7662"
+         width="0.66145831"
+         height="0.1063058"
+         x="162.58882"
+         y="188.38333" />
+      <circle
+         style="font-variation-settings:normal;vector-effect:none;fill:#44ff3c;fill-opacity:1;stroke:none;stroke-width:0.0913844;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="path7666"
+         sodipodi:type="arc"
+         sodipodi:cx="161.09512"
+         sodipodi:cy="188.0425"
+         sodipodi:rx="0.22550866"
+         sodipodi:ry="0.22550866"
+         sodipodi:start="0.38370004"
+         sodipodi:end="4.2249817"
+         sodipodi:arc-type="arc"
+         sodipodi:open="true"
+         d="m 161.30423,188.12692 a 0.22550866,0.22550866 0 0 1 -0.23012,0.1401 0.22550866,0.22550866 0 0 1 -0.20013,-0.18038 0.22550866,0.22550866 0 0 1 0.11553,-0.24339" />
+      <circle
+         style="font-variation-settings:normal;vector-effect:none;fill:#44ff3c;fill-opacity:1;stroke:none;stroke-width:0.0913844;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="circle7685"
+         sodipodi:type="arc"
+         sodipodi:cx="-161.79924"
+         sodipodi:cy="188.01888"
+         sodipodi:rx="0.22550866"
+         sodipodi:ry="0.22550866"
+         sodipodi:start="0.38370004"
+         sodipodi:end="4.2249817"
+         sodipodi:arc-type="arc"
+         sodipodi:open="true"
+         transform="scale(-1,1)"
+         d="m -161.59013,188.1033 a 0.22550866,0.22550866 0 0 1 -0.23013,0.1401 0.22550866,0.22550866 0 0 1 -0.20013,-0.18038 0.22550866,0.22550866 0 0 1 0.11554,-0.24339" />
+      <rect
+         style="font-variation-settings:normal;vector-effect:none;fill:#44ff3c;fill-opacity:1;stroke:none;stroke-width:0.0913844;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect7687"
+         width="0.60239953"
+         height="0.1889881"
+         x="238.23563"
+         y="65.414467"
+         transform="rotate(34.005311)" />
+      <rect
+         style="font-variation-settings:normal;vector-effect:none;fill:#44ff3c;fill-opacity:1;stroke:none;stroke-width:0.0913844;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect7689"
+         width="0.60239953"
+         height="0.1889881"
+         x="-29.455397"
+         y="245.98196"
+         transform="matrix(-0.82898573,0.55926975,0.55926975,0.82898573,0,0)" />
+      <rect
+         style="font-variation-settings:normal;vector-effect:none;fill:#44ff3c;fill-opacity:1;stroke:none;stroke-width:0.0913844;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect7691"
+         width="0.60239953"
+         height="0.1889881"
+         x="239.4422"
+         y="66.189163"
+         transform="rotate(34.005311)" />
+      <rect
+         style="font-variation-settings:normal;vector-effect:none;fill:#44ff3c;fill-opacity:1;stroke:none;stroke-width:0.0913844;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect7693"
+         width="0.60239953"
+         height="0.1889881"
+         x="-28.238918"
+         y="246.77135"
+         transform="matrix(-0.82898573,0.55926975,0.55926975,0.82898573,0,0)" />
+      <path
+         id="path7695"
+         style="font-variation-settings:normal;vector-effect:none;fill:#2b9f26;fill-opacity:1;stroke:#2b9f26;stroke-width:0.129196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         inkscape:transform-center-x="0.00022709497"
+         inkscape:transform-center-y="-0.039989461"
+         d="m 160.44529,187.31514 c -0.056,0.0146 -0.0714,0.078 -0.0829,0.12706 -0.006,0.038 -0.0146,0.0756 -0.026,0.11256 -0.0135,0.0609 0.004,0.12344 0.0215,0.18182 0.0294,0.0917 0.0851,0.17228 0.15056,0.24193 0.0442,0.0515 0.0884,0.10332 0.12461,0.16084 0.0547,0.0229 0.0252,-0.0628 0.0367,-0.0928 0.0145,-0.0429 0.0693,-0.0682 0.0633,-0.11824 -0.0138,-0.063 -0.0748,-0.0998 -0.0978,-0.15873 -0.0542,-0.10471 -0.0664,-0.22446 -0.11118,-0.33265 -0.0216,-0.0434 -0.0517,-0.0818 -0.0788,-0.12183 z" />
+      <path
+         id="path7723"
+         style="font-variation-settings:normal;vector-effect:none;fill:#2b9f26;fill-opacity:1;stroke:#2b9f26;stroke-width:0.129196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         inkscape:transform-center-x="-0.0002272942"
+         inkscape:transform-center-y="-0.039989461"
+         d="m 162.49642,187.33994 c 0.056,0.0146 0.0714,0.078 0.0829,0.12707 0.006,0.038 0.0146,0.0756 0.026,0.11256 0.0135,0.0609 -0.004,0.12343 -0.0215,0.18181 -0.0294,0.0917 -0.0851,0.17228 -0.15056,0.24193 -0.0442,0.0515 -0.0884,0.10332 -0.12461,0.16085 -0.0547,0.0228 -0.0252,-0.0628 -0.0367,-0.0928 -0.0145,-0.0429 -0.0693,-0.0682 -0.0633,-0.11824 0.0138,-0.063 0.0748,-0.0998 0.0978,-0.15874 0.0542,-0.1047 0.0664,-0.22446 0.11117,-0.33264 0.0216,-0.0434 0.0517,-0.0818 0.0788,-0.12183 z" />
+    </g>
+    <g
+       id="path8584"
+       style="opacity:1;stroke:#000000;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+       inkscape:export-filename="ShopIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+         d="M 278.26367 196.46289 C 271.13613 196.49888 264.31741 199.59967 260.09766 205.3125 A 0.60786998 0.60786998 0 0 0 260.22461 206.16406 A 0.60786998 0.60786998 0 0 0 261.07617 206.03516 C 265.04886 200.65681 271.49051 197.71196 278.26953 197.67773 C 279.88139 197.66958 283.30058 198.69953 286.63867 199.97461 C 289.97676 201.24969 293.31159 202.75166 295.0625 203.61133 A 0.60786998 0.60786998 0 0 0 295.87695 203.33398 A 0.60786998 0.60786998 0 0 0 295.59961 202.51953 C 293.8034 201.63763 290.45503 200.13199 287.07227 198.83984 C 283.6895 197.5477 280.34928 196.45234 278.26367 196.46289 z "
+         id="path8973" />
+      <g
+         id="g8963"
+         style="stroke:#000000;stroke-opacity:1;fill:#ffffff;fill-opacity:1">
+        <g
+           id="path8965"
+           style="opacity:1;stroke:#000000;stroke-opacity:1;fill:#ffffff;fill-opacity:1">
+          <path
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.835821;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             d="m 286.04197,192.49552 10.74774,11.26258 -15.48374,-1.6166 c 3.49342,-1.81871 5.39414,-5.7205 4.736,-9.64598 z"
+             id="path8969" />
+        </g>
+      </g>
+    </g>
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#856f15;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect8975"
+       width="83.922653"
+       height="48.108513"
+       x="436.71838"
+       y="202.05577"
+       ry="5.1026745"
+       inkscape:export-filename="TrunkIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="rect8999"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#b1941c;fill-opacity:1;stroke:#000000;stroke-width:0.889969;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 460.0336,183.9603 c -2.50843,0 -4.52771,2.03124 -4.52769,4.55452 v 11.19074 h 3.57987 v -9.48176 c 0,-2.0616 1.6501,-3.72101 3.69956,-3.72101 H 487.358 c 2.04946,0 3.69956,1.65941 3.69956,3.72101 v 9.48176 h 3.57987 v -11.19074 c 0,-2.52328 -2.01973,-4.55452 -4.52816,-4.55452 z"
+       inkscape:export-filename="TrunkIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="rect9007"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#56480e;fill-opacity:1;stroke:none;stroke-width:0.988827;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 455.5448,202.59042 v 47.0391 h 9.75548 v -47.0391 z"
+       inkscape:export-filename="TrunkIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="rect9009"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#56480e;fill-opacity:1;stroke:none;stroke-width:0.988827;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 491.22531,202.59042 v 47.0391 h 9.75548 v -47.0391 z"
+       inkscape:export-filename="TrunkIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="fill:#dfda15;fill-opacity:1;stroke:#8f904e;stroke-width:0.393645;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="path2548-8-4"
+       cx="477.79276"
+       cy="226.13423"
+       r="7.2906375"
+       inkscape:export-filename="TrunkIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="star"
+       style="fill:#df1515;fill-opacity:1;stroke:#6d3434;stroke-width:0.542014;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="path2550-0-8"
+       sodipodi:sides="5"
+       sodipodi:cx="20.077057"
+       sodipodi:cy="20.077057"
+       sodipodi:r1="10.038529"
+       sodipodi:r2="4.993227"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.1991148"
+       inkscape:flatsided="false"
+       inkscape:rounded="2.42861e-17"
+       inkscape:randomized="0.009"
+       inkscape:transform-center-x="-0.028464753"
+       inkscape:transform-center-y="0.37542697"
+       transform="translate(457.73004,206.04011)"
+       d="m 20.128833,30.103291 -2.921478,-6.059495 -6.604054,-0.884279 4.770219,-4.556698 -1.158726,-6.676634 5.914123,3.18348 5.869782,-3.226425 -1.243485,6.564814 4.843674,4.642994 -6.531321,1.093391 z"
+       inkscape:export-filename="TrunkIcon.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
   </g>

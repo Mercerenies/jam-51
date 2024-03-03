@@ -13,6 +13,10 @@ function CardGoldenAcorn(owner_) : MinionCard(owner_, 8, 1) constructor {
     return 8;
   }
 
+  static getMoneyCost = function() {
+    return 16;
+  }
+
   static getRarity = function() {
     return Rarity.RARE;
   }

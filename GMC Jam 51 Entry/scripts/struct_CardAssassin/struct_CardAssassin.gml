@@ -13,6 +13,10 @@ function CardAssassin(owner_) : MinionCard(owner_, 1, 3) constructor {
     return 3;
   }
 
+  static getMoneyCost = function() {
+    return 6;
+  }
+
   static getRarity = function() {
     return Rarity.UNCOMMON;
   }

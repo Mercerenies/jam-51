@@ -3,6 +3,8 @@ randomize();
 
 global.cardSurface = undefined;
 global.allChallengers = initChallengers();
+global.shopPools = initShopPools();
+global.shop = rollShop();
 
 global.isFirstPlay = false; // DEBUG CODE (should be true or loaded from file)
 

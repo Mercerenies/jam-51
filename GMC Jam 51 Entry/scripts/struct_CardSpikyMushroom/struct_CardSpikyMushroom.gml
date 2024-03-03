@@ -13,6 +13,10 @@ function CardSpikyMushroom(owner_) : MinionCard(owner_, 1, 2) constructor {
     return 2;
   }
 
+  static getMoneyCost = function() {
+    return 4;
+  }
+
   static getRarity = function() {
     return Rarity.COMMON;
   }

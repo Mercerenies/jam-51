@@ -13,6 +13,10 @@ function CardCoverOfMoonlight(owner_) : TimedOngoingCard(owner_, 2) constructor 
     return 2;
   }
 
+  static getMoneyCost = function() {
+    return 12;
+  }
+
   static getRarity = function() {
     return Rarity.RARE;
   }

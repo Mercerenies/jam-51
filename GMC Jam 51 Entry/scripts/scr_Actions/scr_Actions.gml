@@ -206,7 +206,7 @@ function ReshuffleDiscardAction(owner_) : Action() constructor {
     var deck = CardGame_getDeck(owner);
     var discard = CardGame_getDiscardPile(owner);
     var shuffledPile = arrayCopy(discard.cards);
-    array_shuffle(shuffledPile);
+    array_shuffle_ext(shuffledPile);
     discard.clear();
     doMoveCardAnimation(discard, deck, new DeckIcon(), {
       deck: deck,
