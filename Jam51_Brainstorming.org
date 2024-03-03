@@ -167,7 +167,7 @@
    LATER
    + [X] Improve UI of card game background
    + [ ] Save/load
-   + [ ] Right click to insta-play card
+   + [X] Right click to insta-play card
    + [ ] "Your Turn!" notification when it's your turn
    + [ ] Smarter AI?
    + [ ] List of cards you've collected so far
@@ -182,6 +182,8 @@
    + [ ] Way to get back to the proper title menu
    + [ ] Show random tips on the "Game Win / Loss" screen
    + [ ] "Cancel" button to revert deck on Trunk screen if you don't like your changes.
+   + [ ] Codex of all unique cards owned, with gaps for missing ones
+   + [ ] Manual? (Might just be the readme)
 ** SHOP RULES
    + For simple minion cards that have no effect and match curve,
      their shop cost should be twice their EP cost.
