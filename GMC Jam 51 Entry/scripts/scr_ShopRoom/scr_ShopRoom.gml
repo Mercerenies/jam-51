@@ -79,5 +79,11 @@ function rollShop() {
 }
 
 function spawnShopEntry(xx, yy, entry) {
-  instance_create_layer(xx + 120, yy - 16, "Instances_UI", obj_ShopEntryText, { entry });
+  instance_create_layer(xx, yy, "Instances", obj_DisplayedCard, {
+    card: entry.getCard(),
+    image_xscale: 0.2,
+    image_yscale: 0.2,
+  });
+  instance_create_layer(xx + 146, yy, "Instances", obj_BuyButton, { entry });
+  instance_create_layer(xx + 252, yy - 16, "Instances", obj_ShopEntryText, { entry });
 }

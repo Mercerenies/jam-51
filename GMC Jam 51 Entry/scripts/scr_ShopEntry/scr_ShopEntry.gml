@@ -20,6 +20,10 @@ function ShopEntry() constructor {
   static getText = function() {
     return getName() + " ($" + string(getMoneyCost()) + ")";
   }
+
+  static onPurchase = function() {
+    // Abstract method
+  }
 }
 
 function CardShopEntry(cardType_) : ShopEntry() constructor {
@@ -37,6 +41,11 @@ function CardShopEntry(cardType_) : ShopEntry() constructor {
   static getMoneyCost = function() {
     return card.getMoneyCost();
   }
+
+  static onPurchase = function() {
+    array_push(global.playerTrunk, cardType);
+    CardGame_showCardList([cardType]);
+  }
 }
 
 function LootShopEntry() : ShopEntry() constructor {
@@ -50,6 +59,21 @@ function LootShopEntry() : ShopEntry() constructor {
 
   static getMoneyCost = function() {
     return RANDOM_SHOP_COST;
+  }
+
+  static onPurchase = function() {
+    var poolName = "commonAny";
+    var rnd = random(1.0);
+    if (rnd < 0.6) {
+      poolName = "commonAny";
+    } else if (rnd < 0.95) {
+      poolName = "uncommonAny";
+    } else {
+      poolName = "rareAny";
+    }
+    var cardType = arrayRandom(global.shopPools[$ poolName]);
+    array_push(global.playerTrunk, cardType);
+    CardGame_showCardList([cardType]);
   }
 }
 
@@ -65,5 +89,10 @@ function RestockShopEntry() : ShopEntry() constructor {
 
   static getMoneyCost = function() {
     return RESTOCK_SHOP_COST;
+  }
+
+  static onPurchase = function() {
+    global.shop = rollShop();
+    room_restart();
   }
 }

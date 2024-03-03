@@ -15,5 +15,5 @@ var xx = 64;
 var yy = 64;
 for (var i = 0; i < array_length(shopEntries); i++) {
   spawnShopEntry(xx, yy, shopEntries[i]);
-  yy += 65;
+  yy += 90;
 }
