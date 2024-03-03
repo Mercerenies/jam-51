@@ -140,6 +140,14 @@ function Card(owner_) {
     draw_text_ext(textx, texty, getText(), -1, textw);
     // Card rarity
     draw_sprite(spr_CardIcons, rarityTextImageIndex(getRarity()), xx - 118, yy + 163);
+    // Card ID
+    draw_set_valign(fa_bottom);
+    draw_set_halign(fa_center);
+    draw_set_font(fnt_CardIdText);
+    draw_set_color(c_black);
+    draw_text(xx, yy + CARD_HEIGHT / 2 - 8, "Unique ID: " + string(getId()));
+    draw_set_valign(fa_top);
+    draw_set_halign(fa_left);
   }
 
 }

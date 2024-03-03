@@ -46,6 +46,7 @@
     {"name":"rm_ChooseOpponent","order":2,"path":"rooms/rm_ChooseOpponent/rm_ChooseOpponent.yy",},
     {"name":"obj_PlayerOngoingRow","order":6,"path":"objects/obj_PlayerOngoingRow/obj_PlayerOngoingRow.yy",},
     {"name":"obj_CardListModal","order":3,"path":"objects/obj_CardListModal/obj_CardListModal.yy",},
+    {"name":"fnt_CardIdText","order":8,"path":"fonts/fnt_CardIdText/fnt_CardIdText.yy",},
     {"name":"rm_CardGame","order":1,"path":"rooms/rm_CardGame/rm_CardGame.yy",},
     {"name":"struct_CardFusion","order":2,"path":"scripts/struct_CardFusion/struct_CardFusion.yy",},
     {"name":"spr_CardPlayerStats","order":11,"path":"sprites/spr_CardPlayerStats/spr_CardPlayerStats.yy",},
