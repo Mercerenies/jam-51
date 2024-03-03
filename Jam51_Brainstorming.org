@@ -163,8 +163,8 @@
    + [ ] Splash screen
    + [ ] Integrate BGM
    + [X] Secondary goals
-   + [ ] Unique reward if all secondary goals are met
-   + [ ] Display on the main screen if you've met all of his goals
+   + [X] Unique reward if all secondary goals are met
+   + [X] Display on the main screen if you've met all of his goals
      before
 
    LATER
