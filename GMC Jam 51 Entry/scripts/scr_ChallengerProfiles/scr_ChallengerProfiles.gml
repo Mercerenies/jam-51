@@ -115,10 +115,6 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
     CardRobotMite, CardChicken, CardChicken, CardChicken, CardChicken,
     CardAcorn, CardAcorn, CardAcorn, CardBee, CardBee,
     CardBee, CardZombie, CardZombie, CardZombie, CardTinyTurtle,
-    CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-    CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-    CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
-    CardMushroom, CardMushroom, CardMushroom, CardMushroom, CardMushroom,
   ];
   _rewardsPool = [
     CardMushroom, CardSpikyMushroom, CardAcorn,
@@ -186,9 +182,77 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
   }
 }
 
+function CountChallenger() : ChallengerProfile() constructor {
+  _deck = [
+    CardRavioli, CardRavioli, CardRavioli, CardMeatball, CardMeatball,
+    CardMeatball, CardPotOfLinguine, // TODO
+  ];
+  _rewardsPool = [
+    // TODO
+  ];
+
+  static fortStrength = function() {
+    return 30;
+  }
+
+  static getTitle = function() {
+    return "Count Carbonara";
+  }
+
+  static getSubtitle = function() {
+    return "The Count of Monte Crusto";
+  }
+
+  static getUniqueCard = function() {
+    // DEBUG CODE
+    return CardAssassin;
+  }
+
+  static onEndgame = function(playerWins) {
+    if (playerWins) {
+      gotoDialogueRoom(new DialogueCallback(Cutscene_countWin()));
+    } else {
+      gotoDialogueRoom(new DialogueCallback(Cutscene_countLoss()));
+    }
+  }
+
+  static getSprite = function() {
+    return spr_Count;
+  }
+
+  static getDeck = function() {
+    return _deck;
+  }
+
+  static rollMoneyReward = function() {
+    return 3;
+  }
+
+  static rollRegularReward = function() {
+    return [arrayRandom(_rewardsPool)];
+  }
+
+  static getSecondaryConditions = function() {
+    // DEBUG CODE
+    return [
+      new QDebugCondition(CardFusion),
+      new ZDebugCondition(CardNuclear),
+    ];
+  }
+
+  static onChoose = function() {
+    var challengeAction = new ChallengeOpponentAction(self);
+    if (!shouldPlayTutorials()) {
+      return challengeAction;
+    }
+    return new GotoDialogueRoomAction(new DialogueCallback(Cutscene_countIntro(challengeAction)))
+  }
+}
+
 function initChallengers() {
   return [
     new RavenmanChallenger(),
+    new CountChallenger(),
   ]
 }
 

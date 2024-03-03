@@ -93,3 +93,25 @@ function Cutscene_ravenmanEnd() {
     .chain(bottomDia("Anyway, I recommend heading to the Shop next. You can buy some better cards before you face any real opponents."))
     .chain(new GotoRoomAction());
 }
+
+function Cutscene_countIntro(challengeAction) {
+  return new NullAction()
+    .chain(setChars(spr_Ravengirl, spr_Count))
+    .chain(bottomDia("Stand in deference, girl! You are in the presence of the one and only Count Carbonara!", Mugshot.COUNT))
+    .chain(bottomDia("I would be happy to play cards against you, but you'll fall before my various pasta-themed machinations.", Mugshot.COUNT))
+    .chain(challengeAction)
+}
+
+function Cutscene_countLoss() {
+  return new NullAction()
+    .chain(setChars(spr_RavengirlMaid, spr_Count))
+    .chain(bottomDia("Better luck next time! Perhaps you should study up on your pasta!", Mugshot.COUNT))
+    .chain(new GotoRoomAction());
+}
+
+function Cutscene_countWin() {
+  return new NullAction()
+    .chain(setChars(spr_RavengirlMaid, spr_Count))
+    .chain(bottomDia("Whaaaat?! You beat me? But you're not even wearing a big purple hat!", Mugshot.COUNT))
+    .chain(new GotoRoomAction());
+}
