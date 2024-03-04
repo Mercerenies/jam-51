@@ -166,7 +166,7 @@
    + [X] Credits
    + [X] Proper title screen
    + [X] Splash screen
-   + [ ] Integrate BGM
+   + [X] Integrate BGM
    + [X] Secondary goals
    + [X] Unique reward if all secondary goals are met
    + [X] Display on the main screen if you've met all of his goals
@@ -176,29 +176,31 @@
    LATER
    + [ ] Emphasize (in some dialogue) that the shop items get better
      over time
-   + [ ] Spice up title screen
+   + [ ] Smarter AI?
    + [X] Improve UI of card game background
    + [X] Save/load
    + [X] Right click to insta-play card
+   + [ ] Lock certain challengers until you have enough unique wins
+   + [ ] More cards :D
+   + [X] Way to get back to the proper title menu
+   + [ ] Manual? (Might just be the readme)
+
+   NOT GONNA HAPPEN
+   + [ ] Character profiles on card game screen
+   + [ ] Screen transition when battles start
+   + [ ] Allow skipping cutscenes if you've seen them once
+   + [ ] ... Upload decks?
+   + [ ] Show random tips on the "Game Win / Loss" screen
+   + [ ] "Cancel" button to revert deck on Trunk screen if you don't like your changes.
+   + [ ] Codex of all unique cards owned, with gaps for missing ones
+   + [ ] Improve inter-menu animations
    + [ ] "Your Turn!" notification when it's your turn
-   + [ ] Smarter AI?
    + [ ] Give Acorn some support (he's identical to Mushroom Man right now)
    + [ ] Card to increase counters for cards that have turn counters
    + [ ] More interesting background than the solid blue
    + [ ] SFX
    + [ ] Better indication of disabled buttons
-   + [ ] Lock certain challengers until you have enough unique wins
-   + [ ] More cards :D
-   + [ ] Improve inter-menu animations
-   + [ ] Way to get back to the proper title menu
-   + [ ] Show random tips on the "Game Win / Loss" screen
-   + [ ] "Cancel" button to revert deck on Trunk screen if you don't like your changes.
-   + [ ] Codex of all unique cards owned, with gaps for missing ones
-   + [ ] Manual? (Might just be the readme)
-   + [ ] Allow skipping cutscenes if you've seen them once
-   + [ ] ... Upload decks?
-   + [ ] Character profiles on card game screen
-   + [ ] Screen transition when battles start
+   + [ ] Spice up title screen
 ** SHOP RULES
    + For simple minion cards that have no effect and match curve,
      their shop cost should be twice their EP cost.

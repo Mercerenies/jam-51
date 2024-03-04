@@ -96,7 +96,7 @@ function Cutscene_ravenmanEnd() {
 
 function Cutscene_countIntro(challengeAction) {
   return new NullAction()
-    .chain(setChars(spr_Ravengirl, spr_Count))
+    .chain(setChars(spr_RavengirlMaid, spr_Count))
     .chain(bottomDia("Stand in deference, girl! You are in the presence of the one and only Count Carbonara!", Mugshot.COUNT))
     .chain(bottomDia("I would be happy to play cards against you, but you'll fall before my various pasta-themed machinations.", Mugshot.COUNT))
     .chain(challengeAction)
