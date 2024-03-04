@@ -77,7 +77,6 @@ function LootShopEntry() : ShopEntry() constructor {
   }
 }
 
-// TODO Auto-Restock all shop entries after X games.
 function RestockShopEntry() : ShopEntry() constructor {
   static getName = function() {
     return "Restock";

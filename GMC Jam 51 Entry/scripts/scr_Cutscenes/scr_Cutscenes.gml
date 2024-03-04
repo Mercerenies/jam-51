@@ -72,8 +72,8 @@ function Cutscene_ravenmanWin() {
     .chain(setChars(spr_RavengirlMaid, spr_Ravenman))
     .chain(bottomDia("Good work, Ravengirl!", Mugshot.RAVENMAN))
     .chain(bottomDia("When you win a game of Evil Cards, you'll get some money and at least one new card!", Mugshot.RAVENMAN))
-    .chain(bottomDia("Every player also has some unique objectives. If you meet those objectives and win, you'll get a rarer card.", Mugshot.RAVENMAN))
-    .chain(bottomDia("And if you meet all of the objectives, you'll get an exclusive ULTRA RARE card.", Mugshot.RAVENMAN))
+//    .chain(bottomDia("Every player also has some unique objectives. If you meet those objectives and win, you'll get a rarer card.", Mugshot.RAVENMAN))
+//    .chain(bottomDia("And if you meet all of the objectives, you'll get an exclusive ULTRA RARE card.", Mugshot.RAVENMAN))
     .chain(Cutscene_ravenmanEnd());
 }
 

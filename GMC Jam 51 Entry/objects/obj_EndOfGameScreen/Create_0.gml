@@ -1,6 +1,8 @@
 
 event_inherited();
 
+global.shop = rollShop();
+
 playerWins = false;
 moneySpoils = 0;
 cardSpoils = [];

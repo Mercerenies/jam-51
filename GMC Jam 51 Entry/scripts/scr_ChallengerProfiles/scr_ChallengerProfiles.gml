@@ -19,8 +19,8 @@ function ChallengerProfile() : ChooserChoice() constructor {
 
   static getLines = function() {
     var winLossLine = "Wins " + string(timesBeaten) + " / Losses " + string(timesLostTo);
-    var conditionsLine = "Goals " + string(getUniqueConditionsCount()) + " / " + string(array_length(getSecondaryConditions()));
-    return getTitle() + "\n\n" + getSubtitle() + "\n\n" + winLossLine + "\n\n" + conditionsLine;
+    //var conditionsLine = "Goals " + string(getUniqueConditionsCount()) + " / " + string(array_length(getSecondaryConditions()));
+    return getTitle() + "\n\n" + getSubtitle() + "\n\n" + winLossLine; // + "\n\n" + conditionsLine;
   }
 
   static getTitle = function() {
@@ -60,7 +60,7 @@ function ChallengerProfile() : ChooserChoice() constructor {
   }
 
   static isLocked = function() {
-    return false; // TODO
+    return false; // Didn't have time to do this
   }
 
   static fortStrength = function() {
@@ -117,7 +117,7 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
     CardBee, CardZombie, CardZombie, CardZombie, CardTinyTurtle,
   ];
   _rewardsPool = [
-    CardMushroom, CardSpikyMushroom, CardAcorn,
+    CardMushroom, CardSpikyMushroom, CardAcorn, CardBee, CardZombie,
   ];
 
   static fortStrength = function() {
@@ -130,11 +130,6 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
 
   static getSubtitle = function() {
     return "Ravenman's Lesson";
-  }
-
-  static getUniqueCard = function() {
-    // DEBUG CODE
-    return CardAssassin;
   }
 
   static onEndgame = function(playerWins) {
@@ -165,14 +160,6 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
     return new RavenmanTutorialFieldProfile(fortStrength(), self);
   }
 
-  static getSecondaryConditions = function() {
-    // DEBUG CODE
-    return [
-      new QDebugCondition(CardFusion),
-      new ZDebugCondition(CardNuclear),
-    ];
-  }
-
   static onChoose = function() {
     var challengeAction = new ChallengeOpponentAction(self);
     if (!shouldPlayTutorials()) {
@@ -185,10 +172,12 @@ function RavenmanChallenger() : ChallengerProfile() constructor {
 function CountChallenger() : ChallengerProfile() constructor {
   _deck = [
     CardRavioli, CardRavioli, CardRavioli, CardMeatball, CardMeatball,
-    CardMeatball, CardPotOfLinguine, // TODO
+    CardMeatball, CardPotOfLinguine, CardPennePikeman, CardPenneSharpshooter, CardPennePikeman,
+    CardPennePikeman, CardPenneSharpshooter, CardSpaghetti, CardFarmer, CardFarmer,
+    CardPastaPower, CardSecondCourse, CardWithExtraCheese, CardPenneSharpshooter, CardPastaPower,
   ];
   _rewardsPool = [
-    // TODO
+    CardRavioli, CardMeatball, CardPotOfLinguine, CardFarmer, CardSpaghetti,
   ];
 
   static fortStrength = function() {
@@ -201,11 +190,6 @@ function CountChallenger() : ChallengerProfile() constructor {
 
   static getSubtitle = function() {
     return "The Count of Monte Crusto";
-  }
-
-  static getUniqueCard = function() {
-    // DEBUG CODE
-    return CardAssassin;
   }
 
   static onEndgame = function(playerWins) {
@@ -225,19 +209,11 @@ function CountChallenger() : ChallengerProfile() constructor {
   }
 
   static rollMoneyReward = function() {
-    return 3;
+    return 6;
   }
 
   static rollRegularReward = function() {
     return [arrayRandom(_rewardsPool)];
-  }
-
-  static getSecondaryConditions = function() {
-    // DEBUG CODE
-    return [
-      new QDebugCondition(CardFusion),
-      new ZDebugCondition(CardNuclear),
-    ];
   }
 
   static onChoose = function() {
@@ -249,15 +225,153 @@ function CountChallenger() : ChallengerProfile() constructor {
   }
 }
 
+function MinionmanChallenger() : ChallengerProfile() constructor {
+  _deck = [
+    CardRavioli, CardRavioli, CardRavioli, CardMeatball, CardMeatball,
+    CardMeatball, CardMushroom, CardMushroom, CardMushroom, CardPennePikeman,
+    CardSpikyMushroom, CardSpikyMushroom, CardSpikyMushroom, CardTinyTurtle, CardTinyTurtle,
+    CardTinyTurtle, CardMaskedTurtle, CardBabyClown, CardMaskedTurtle, CardPig,
+  ];
+  _rewardsPool = [
+    CardRavioli, CardMeatball, CardSpikyMushroom, CardTinyTurtle, CardBabyClown,
+  ];
+
+  static fortStrength = function() {
+    return 30;
+  }
+
+  static getTitle = function() {
+    return "Minionman";
+  }
+
+  static getSubtitle = function() {
+    return "King of Minions";
+  }
+
+  static getSprite = function() {
+    return spr_Minionman;
+  }
+
+  static getDeck = function() {
+    return _deck;
+  }
+
+  static rollMoneyReward = function() {
+    return 3;
+  }
+
+  static rollRegularReward = function() {
+    return [arrayRandom(_rewardsPool)];
+  }
+
+  static onChoose = function() {
+    var challengeAction = new ChallengeOpponentAction(self);
+    return challengeAction;
+  }
+}
+
+function IcosakingChallenger() : ChallengerProfile() constructor {
+  _deck = [
+    CardTriangle, CardTriangle, CardTriangle, CardSquare, CardSquare,
+    CardSquare, CardRhombus, CardRhombus, CardRhombus, CardPentagon,
+    CardPentagon, CardPentagon, CardCircle, CardCircle, CardCircle,
+    CardMirrorCrystal, CardMirrorCrystal, CardNinja, CardAssassin, CardAssassin,
+  ];
+  _rewardsPool = [
+    CardTriangle, CardRhombus, CardSquare, CardPentagon, CardCircle, CardMirrorCrystal,
+  ];
+
+  static fortStrength = function() {
+    return 30;
+  }
+
+  static getTitle = function() {
+    return "Icosaking";
+  }
+
+  static getSubtitle = function() {
+    return "Usurper of Prismania";
+  }
+
+  static getSprite = function() {
+    return spr_Icosaking;
+  }
+
+  static getDeck = function() {
+    return _deck;
+  }
+
+  static rollMoneyReward = function() {
+    return 7;
+  }
+
+  static rollRegularReward = function() {
+    return [arrayRandom(_rewardsPool)];
+  }
+
+  static onChoose = function() {
+    var challengeAction = new ChallengeOpponentAction(self);
+    return challengeAction;
+  }
+}
+
+function MaxwellChallenger() : ChallengerProfile() constructor {
+  _deck = [
+    CardIntern, CardIntern, CardIntern, CardMetalSpider, CardTempWorker,
+    CardTempWorker, CardTempWorker, CardITWorker, CardITWorker, CardITWorker,
+    CardContractor, CardContractor, CardContractor, CardMiddleManager, CardMiddleManager,
+    CardInternet, CardSecondCourse, CardWithExtraCheese, CardMaskedTurtle, CardMetalSpider,
+  ];
+  _rewardsPool = [
+    CardIntern, CardMetalSpider, CardTempWorker, CardITWorker, CardMiddleManager, CardContractor,
+  ];
+
+  static fortStrength = function() {
+    return 30;
+  }
+
+  static getTitle = function() {
+    return "Maxwell Sterling";
+  }
+
+  static getSubtitle = function() {
+    return "Bullseye Cola Exec";
+  }
+
+  static getSprite = function() {
+    return spr_Maxwell;
+  }
+
+  static getDeck = function() {
+    return _deck;
+  }
+
+  static rollMoneyReward = function() {
+    return 9;
+  }
+
+  static rollRegularReward = function() {
+    return [arrayRandom(_rewardsPool)];
+  }
+
+  static onChoose = function() {
+    var challengeAction = new ChallengeOpponentAction(self);
+    return challengeAction;
+  }
+}
+
 function initChallengers() {
   return [
     new RavenmanChallenger(),
+    new MinionmanChallenger(),
     new CountChallenger(),
+    new IcosakingChallenger(),
+    new MaxwellChallenger(),
   ]
 }
 
 function shouldPlayTutorials() {
-  // TODO Implement this as a toggle button on the main menu screen
-  // (if you've seen the given tutorial before)
+  // Implement this as a toggle button on the main menu screen (if
+  // you've seen the given tutorial before) [didn't have time]
   return true;
 }

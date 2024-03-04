@@ -13,7 +13,6 @@ isDisabled = function() {
 }
 
 onClick = function() {
-  // TODO "Cha-ching" sound effect
   global.playerMoney -= entry.getMoneyCost();
   entry.onPurchase();
   saveGame(); // Prevent save-scumming on the "Random Card" option

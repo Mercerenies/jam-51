@@ -22,15 +22,3 @@ var startPlayer = CardPlayer.LEFT;
 var startAction = CardGame_Action_startGame()
     .chain(CardGame_Action_startTurn(startPlayer));
 CardGame_runAction(startAction);
-
-/*
-// DEBUG CODE
-CardGame_getMinionRow(CardPlayer.LEFT).cards = [new CardMushroom(CardPlayer.LEFT), new CardSpikyMushroom(CardPlayer.LEFT)]
-CardGame_getMinionRow(CardPlayer.RIGHT).cards = [new CardMushroom(CardPlayer.RIGHT)]
-
-CardGame_getOngoingRow(CardPlayer.LEFT).cards = [new CardMushroom(CardPlayer.LEFT), new CardMushroom(CardPlayer.LEFT)]
-CardGame_getOngoingRow(CardPlayer.RIGHT).cards = [new CardPotOfLinguine(CardPlayer.RIGHT), new CardMushroom(CardPlayer.RIGHT)]
-
-CardGame_getDiscardPile(CardPlayer.LEFT).cards = []
-CardGame_getDiscardPile(CardPlayer.RIGHT).cards = [CardPotOfLinguine, CardMushroom, CardMushroom, CardMushroom, CardMushroom]
-*/

@@ -10,9 +10,7 @@ function CardGame_semaDown() {
   par_ActionsSemaphoreManager.actionsSemaphore--;
 }
 
-// Emergency reset switch. TODO If the game ends up hanging a lot,
-// maybe put this on a function key and let players bail out
-// themselves?
+// Emergency reset switch.
 function CardGame_semaReset() {
   par_ActionsSemaphoreManager.actionsSemaphore = 0;
 }

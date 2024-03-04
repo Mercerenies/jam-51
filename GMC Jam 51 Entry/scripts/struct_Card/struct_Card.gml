@@ -81,6 +81,11 @@ function Card(owner_) {
     return new NullAction();
   }
 
+  static onEndPhase = function() {
+    // Returns an Action to run in the end phase.
+    return new NullAction();
+  }
+
   static getEPModifier = function() {
     return 0;
   }

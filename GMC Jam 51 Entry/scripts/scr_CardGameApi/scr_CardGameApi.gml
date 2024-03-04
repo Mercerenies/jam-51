@@ -32,9 +32,9 @@ function CardGame_Action_startTurn(owner) {
 
 function CardGame_Action_endTurn(owner) {
   var stats = CardGame_getStats(owner);
-  // TODO end phase card actions
   return new NullAction()
     // End Phase
+    .chain(new PerformEndPhaseAction(owner))
     .chain(new ModifyEvilPointsAction(owner, -9999))
 }
 

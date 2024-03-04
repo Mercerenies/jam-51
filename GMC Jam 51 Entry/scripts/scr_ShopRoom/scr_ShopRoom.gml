@@ -23,6 +23,8 @@ function initShopPools() {
   ];
   var rareMinions = [
     CardGoldenAcorn, CardSpikyTurtle,
+    // Ultra rares
+    CardMilkman, CardCharmer,
   ];
   var commonEffects = [
     CardAncientScroll, CardMirrorCrystal, CardPastaPower,

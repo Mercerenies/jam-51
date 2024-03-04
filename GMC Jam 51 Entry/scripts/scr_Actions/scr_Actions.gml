@@ -387,6 +387,20 @@ function PerformStandbyPhaseAction(owner_) : Action() constructor {
   }
 }
 
+function PerformEndPhaseAction(owner_) : Action() constructor {
+  __actionType = "PerformEndPhaseAction";
+  owner = owner_;
+
+  static perform = function(continuation) {
+    var action = new NullAction();
+    var cards = CardGame_allCardsInPlay(owner);
+    for (var i = 0; i < array_length(cards); i++) {
+      action = action.chain(cards[i].onEndPhase());
+    }
+    action.perform(continuation);
+  }
+}
+
 function PlayCardAction(owner_, cardIndex_) : Action() constructor {
   __actionType = "PlayCardAction";
   owner = owner_;
