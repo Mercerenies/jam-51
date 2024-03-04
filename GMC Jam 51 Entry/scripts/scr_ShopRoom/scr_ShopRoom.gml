@@ -10,11 +10,13 @@ function initShopPools() {
     CardRhombus, CardRobotMite, CardSpikyMushroom,
     CardSquare, CardTriangle, CardZombie,
     CardAcorn, CardTinyTurtle, CardRavioli,
-    CardMeatball, CardChicken,
+    CardMeatball, CardChicken, CardIntern,
+    CardTempWorker, CardITWorker, CardPennePikeman,
   ];
   var uncommonMinions = [
     CardAssassin, CardCircle, CardPentagon,
-    CardMaskedTurtle,
+    CardMaskedTurtle, CardContractor, CardMiddleManager,
+    CardPennePikeman, CardSpaghetti,
   ];
   var rareMinions = [
     CardGoldenAcorn, CardSpikyTurtle,
@@ -69,16 +71,22 @@ function initAllCards() {
   s[$ script_get_name(CardRavioli)] = 27;
   s[$ script_get_name(CardMeatball)] = 28;
   s[$ script_get_name(CardChicken)] = 29;
+  s[$ script_get_name(CardIntern)] = 30;
+  s[$ script_get_name(CardTempWorker)] = 31;
+  s[$ script_get_name(CardITWorker)] = 32;
+  s[$ script_get_name(CardContractor)] = 33;
+  s[$ script_get_name(CardMiddleManager)] = 34;
+  s[$ script_get_name(CardPennePikeman)] = 35;
+  s[$ script_get_name(CardPenneSharpshooter)] = 36;
+  s[$ script_get_name(CardSpaghetti)] = 37;
   return s;
 }
 
 function getShopGameState() {
-  // TODO Determine this by number of unique wins so far
-  //
   // 1 = early game
   // 2 = mid game
   // 3 = late game
-  return 1;
+  return 3; // Didn't have time to implement this for real, so lock it at the highest setting.
 }
 
 // Note: global.shop only includes regular cards, not the "Lootbox" and "Restock" options.
