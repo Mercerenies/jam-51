@@ -12,11 +12,13 @@ function initShopPools() {
     CardAcorn, CardTinyTurtle, CardRavioli,
     CardMeatball, CardChicken, CardIntern,
     CardTempWorker, CardITWorker, CardPennePikeman,
+    CardPig, CardGiantPig, CardBabyClown, CardToddlerClown,
   ];
   var uncommonMinions = [
     CardAssassin, CardCircle, CardPentagon,
     CardMaskedTurtle, CardContractor, CardMiddleManager,
-    CardPennePikeman, CardSpaghetti,
+    CardPennePikeman, CardSpaghetti, CardFarmer,
+    CardUndeadPig,
   ];
   var rareMinions = [
     CardGoldenAcorn, CardSpikyTurtle,
@@ -79,6 +81,12 @@ function initAllCards() {
   s[$ script_get_name(CardPennePikeman)] = 35;
   s[$ script_get_name(CardPenneSharpshooter)] = 36;
   s[$ script_get_name(CardSpaghetti)] = 37;
+  s[$ script_get_name(CardPig)] = 38;
+  s[$ script_get_name(CardGiantPig)] = 39;
+  s[$ script_get_name(CardFarmer)] = 40;
+  s[$ script_get_name(CardUndeadPig)] = 41;
+  s[$ script_get_name(CardBabyClown)] = 42;
+  s[$ script_get_name(CardToddlerClown)] = 43;
   return s;
 }
 
