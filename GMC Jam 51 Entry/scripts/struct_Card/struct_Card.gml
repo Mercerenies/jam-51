@@ -90,6 +90,11 @@ function Card(owner_) {
     return 0;
   }
 
+  static getHandModifier = function() {
+    // Modification to hand limit.
+    return 0;
+  }
+
   static isLimited = function() {
     // An unlimited card (the default) can have 3 copies in your deck.
     // A limited card can only have one copy.

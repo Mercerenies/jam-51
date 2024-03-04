@@ -13,22 +13,24 @@ function initShopPools() {
     CardMeatball, CardChicken, CardIntern,
     CardTempWorker, CardITWorker, CardPennePikeman,
     CardPig, CardGiantPig, CardBabyClown, CardToddlerClown,
+    CardMetalSpider,
   ];
   var uncommonMinions = [
     CardAssassin, CardCircle, CardPentagon,
     CardMaskedTurtle, CardContractor, CardMiddleManager,
     CardPennePikeman, CardSpaghetti, CardFarmer,
-    CardUndeadPig,
+    CardUndeadPig, CardGhoul, CardRobotAssistant, CardDeathCyborg,
   ];
   var rareMinions = [
     CardGoldenAcorn, CardSpikyTurtle,
   ];
   var commonEffects = [
-    CardAncientScroll, CardMirrorCrystal,
+    CardAncientScroll, CardMirrorCrystal, CardPastaPower,
+    CardInternet,
   ];
   var uncommonEffects = [
     CardNuclear, CardSpareBattery, CardWithExtraCheese,
-    CardPotOfLinguine,
+    CardPotOfLinguine, CardSecondCourse,
   ];
   var rareEffects = [
     CardCoverOfMoonlight, CardFusion, CardMilkDelivery,
@@ -87,6 +89,15 @@ function initAllCards() {
   s[$ script_get_name(CardUndeadPig)] = 41;
   s[$ script_get_name(CardBabyClown)] = 42;
   s[$ script_get_name(CardToddlerClown)] = 43;
+  s[$ script_get_name(CardMetalSpider)] = 44;
+  s[$ script_get_name(CardRobotAssistant)] = 45;
+  s[$ script_get_name(CardDeathCyborg)] = 46;
+  s[$ script_get_name(CardMilkman)] = 47;
+  s[$ script_get_name(CardCharmer)] = 48;
+  s[$ script_get_name(CardGhoul)] = 49;
+  s[$ script_get_name(CardPastaPower)] = 50;
+  s[$ script_get_name(CardInternet)] = 51;
+  s[$ script_get_name(CardSecondCourse)] = 52;
   return s;
 }
 
